@@ -64,10 +64,9 @@ namespace ProiectIP
             this.panelAbout.BackColor = System.Drawing.Color.Transparent;
             this.panelAbout.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelAbout.BackgroundImage")));
             this.panelAbout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panelAbout.Location = new System.Drawing.Point(100, 469);
-            this.panelAbout.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panelAbout.Location = new System.Drawing.Point(67, 305);
             this.panelAbout.Name = "panelAbout";
-            this.panelAbout.Size = new System.Drawing.Size(146, 95);
+            this.panelAbout.Size = new System.Drawing.Size(97, 62);
             this.panelAbout.TabIndex = 12;
             // 
             // buttonLogin
@@ -75,42 +74,44 @@ namespace ProiectIP
             this.buttonLogin.BackColor = System.Drawing.Color.Maroon;
             this.buttonLogin.Font = new System.Drawing.Font("Constantia", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLogin.ForeColor = System.Drawing.Color.FloralWhite;
-            this.buttonLogin.Location = new System.Drawing.Point(266, 477);
-            this.buttonLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonLogin.Location = new System.Drawing.Point(177, 310);
+            this.buttonLogin.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.Size = new System.Drawing.Size(256, 72);
+            this.buttonLogin.Size = new System.Drawing.Size(171, 47);
             this.buttonLogin.TabIndex = 0;
             this.buttonLogin.Text = "Login";
             this.buttonLogin.UseVisualStyleBackColor = false;
+            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
             // labelEmail
             // 
             this.labelEmail.AutoSize = true;
             this.labelEmail.BackColor = System.Drawing.Color.White;
             this.labelEmail.Font = new System.Drawing.Font("Constantia", 20F);
-            this.labelEmail.Location = new System.Drawing.Point(143, 247);
+            this.labelEmail.Location = new System.Drawing.Point(95, 161);
+            this.labelEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelEmail.Name = "labelEmail";
-            this.labelEmail.Size = new System.Drawing.Size(135, 49);
+            this.labelEmail.Size = new System.Drawing.Size(93, 33);
             this.labelEmail.TabIndex = 1;
             this.labelEmail.Text = "E-mail";
             // 
             // textBoxEmail
             // 
             this.textBoxEmail.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxEmail.Location = new System.Drawing.Point(305, 254);
-            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxEmail.Location = new System.Drawing.Point(203, 165);
+            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(343, 41);
+            this.textBoxEmail.Size = new System.Drawing.Size(230, 30);
             this.textBoxEmail.TabIndex = 2;
             // 
             // textBoxParola
             // 
             this.textBoxParola.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxParola.Location = new System.Drawing.Point(305, 369);
-            this.textBoxParola.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxParola.Location = new System.Drawing.Point(203, 240);
+            this.textBoxParola.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.textBoxParola.Name = "textBoxParola";
             this.textBoxParola.PasswordChar = '*';
-            this.textBoxParola.Size = new System.Drawing.Size(343, 41);
+            this.textBoxParola.Size = new System.Drawing.Size(230, 30);
             this.textBoxParola.TabIndex = 4;
             // 
             // labelParola
@@ -118,9 +119,10 @@ namespace ProiectIP
             this.labelParola.AutoSize = true;
             this.labelParola.BackColor = System.Drawing.Color.White;
             this.labelParola.Font = new System.Drawing.Font("Constantia", 20F);
-            this.labelParola.Location = new System.Drawing.Point(148, 371);
+            this.labelParola.Location = new System.Drawing.Point(99, 241);
+            this.labelParola.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelParola.Name = "labelParola";
-            this.labelParola.Size = new System.Drawing.Size(130, 49);
+            this.labelParola.Size = new System.Drawing.Size(90, 33);
             this.labelParola.TabIndex = 3;
             this.labelParola.Text = "Parolă";
             this.labelParola.Click += new System.EventHandler(this.labelParola_Click);
@@ -131,9 +133,10 @@ namespace ProiectIP
             this.labelTitlu.BackColor = System.Drawing.Color.Transparent;
             this.labelTitlu.Font = new System.Drawing.Font("Constantia", 22F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitlu.ForeColor = System.Drawing.Color.Black;
-            this.labelTitlu.Location = new System.Drawing.Point(32, 31);
+            this.labelTitlu.Location = new System.Drawing.Point(21, 20);
+            this.labelTitlu.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTitlu.Name = "labelTitlu";
-            this.labelTitlu.Size = new System.Drawing.Size(714, 162);
+            this.labelTitlu.Size = new System.Drawing.Size(490, 111);
             this.labelTitlu.TabIndex = 9;
             this.labelTitlu.Text = "Rezervare online bilete la cinema \r\n\r\nLogin\r\n";
             this.labelTitlu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -142,10 +145,10 @@ namespace ProiectIP
             // 
             this.buttonInregistrare.BackColor = System.Drawing.Color.White;
             this.buttonInregistrare.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonInregistrare.Location = new System.Drawing.Point(72, 382);
-            this.buttonInregistrare.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonInregistrare.Location = new System.Drawing.Point(48, 248);
+            this.buttonInregistrare.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.buttonInregistrare.Name = "buttonInregistrare";
-            this.buttonInregistrare.Size = new System.Drawing.Size(199, 62);
+            this.buttonInregistrare.Size = new System.Drawing.Size(133, 40);
             this.buttonInregistrare.TabIndex = 10;
             this.buttonInregistrare.Text = "Înregistrare";
             this.buttonInregistrare.UseVisualStyleBackColor = false;
@@ -169,18 +172,17 @@ namespace ProiectIP
             this.panelMenu.Controls.Add(this.pictureBoxUser);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
-            this.panelMenu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(336, 898);
+            this.panelMenu.Size = new System.Drawing.Size(224, 584);
             this.panelMenu.TabIndex = 13;
             // 
             // buttonHelp
             // 
             this.buttonHelp.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonHelp.Location = new System.Drawing.Point(72, 751);
-            this.buttonHelp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonHelp.Location = new System.Drawing.Point(48, 488);
+            this.buttonHelp.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.buttonHelp.Name = "buttonHelp";
-            this.buttonHelp.Size = new System.Drawing.Size(199, 61);
+            this.buttonHelp.Size = new System.Drawing.Size(133, 40);
             this.buttonHelp.TabIndex = 15;
             this.buttonHelp.Text = "Help";
             this.buttonHelp.UseMnemonic = false;
@@ -191,19 +193,18 @@ namespace ProiectIP
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = global::ProiectIP.Properties.Resources.help;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel1.Location = new System.Drawing.Point(126, 645);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel1.Location = new System.Drawing.Point(84, 419);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(89, 99);
+            this.panel1.Size = new System.Drawing.Size(59, 64);
             this.panel1.TabIndex = 14;
             // 
             // buttonAbout
             // 
             this.buttonAbout.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAbout.Location = new System.Drawing.Point(72, 571);
-            this.buttonAbout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonAbout.Location = new System.Drawing.Point(48, 371);
+            this.buttonAbout.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.buttonAbout.Name = "buttonAbout";
-            this.buttonAbout.Size = new System.Drawing.Size(199, 61);
+            this.buttonAbout.Size = new System.Drawing.Size(133, 40);
             this.buttonAbout.TabIndex = 13;
             this.buttonAbout.Text = "About";
             this.buttonAbout.UseMnemonic = false;
@@ -213,10 +214,9 @@ namespace ProiectIP
             // 
             this.panelLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelLogo.BackgroundImage")));
             this.panelLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panelLogo.Location = new System.Drawing.Point(0, 72);
-            this.panelLogo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panelLogo.Location = new System.Drawing.Point(0, 47);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(332, 186);
+            this.panelLogo.Size = new System.Drawing.Size(221, 121);
             this.panelLogo.TabIndex = 0;
             // 
             // pictureBoxUser
@@ -224,10 +224,9 @@ namespace ProiectIP
             this.pictureBoxUser.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxUser.BackgroundImage = global::ProiectIP.Properties.Resources.user;
             this.pictureBoxUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxUser.Location = new System.Drawing.Point(96, 297);
-            this.pictureBoxUser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBoxUser.Location = new System.Drawing.Point(64, 193);
             this.pictureBoxUser.Name = "pictureBoxUser";
-            this.pictureBoxUser.Size = new System.Drawing.Size(150, 78);
+            this.pictureBoxUser.Size = new System.Drawing.Size(100, 51);
             this.pictureBoxUser.TabIndex = 11;
             this.pictureBoxUser.TabStop = false;
             // 
@@ -238,10 +237,9 @@ namespace ProiectIP
             this.panelNavigation.Controls.Add(this.buttonResize);
             this.panelNavigation.Controls.Add(this.buttonClose);
             this.panelNavigation.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelNavigation.Location = new System.Drawing.Point(336, 0);
-            this.panelNavigation.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panelNavigation.Location = new System.Drawing.Point(224, 0);
             this.panelNavigation.Name = "panelNavigation";
-            this.panelNavigation.Size = new System.Drawing.Size(1128, 90);
+            this.panelNavigation.Size = new System.Drawing.Size(752, 58);
             this.panelNavigation.TabIndex = 14;
             this.panelNavigation.Paint += new System.Windows.Forms.PaintEventHandler(this.panelNavigation_Paint);
             // 
@@ -253,10 +251,10 @@ namespace ProiectIP
             this.buttonMini.BackColor = System.Drawing.Color.Maroon;
             this.buttonMini.Font = new System.Drawing.Font("Microsoft Tai Le", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMini.ForeColor = System.Drawing.Color.White;
-            this.buttonMini.Location = new System.Drawing.Point(971, 14);
+            this.buttonMini.Location = new System.Drawing.Point(647, 9);
             this.buttonMini.Margin = new System.Windows.Forms.Padding(0);
             this.buttonMini.Name = "buttonMini";
-            this.buttonMini.Size = new System.Drawing.Size(0, 46);
+            this.buttonMini.Size = new System.Drawing.Size(0, 30);
             this.buttonMini.TabIndex = 2;
             this.buttonMini.Text = "-";
             this.buttonMini.UseVisualStyleBackColor = false;
@@ -269,10 +267,10 @@ namespace ProiectIP
             this.buttonResize.BackColor = System.Drawing.Color.Maroon;
             this.buttonResize.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonResize.ForeColor = System.Drawing.Color.White;
-            this.buttonResize.Location = new System.Drawing.Point(1020, 14);
+            this.buttonResize.Location = new System.Drawing.Point(680, 9);
             this.buttonResize.Margin = new System.Windows.Forms.Padding(0);
             this.buttonResize.Name = "buttonResize";
-            this.buttonResize.Size = new System.Drawing.Size(0, 46);
+            this.buttonResize.Size = new System.Drawing.Size(0, 30);
             this.buttonResize.TabIndex = 1;
             this.buttonResize.Text = "O";
             this.buttonResize.UseVisualStyleBackColor = false;
@@ -285,10 +283,10 @@ namespace ProiectIP
             this.buttonClose.BackColor = System.Drawing.Color.Maroon;
             this.buttonClose.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonClose.ForeColor = System.Drawing.Color.White;
-            this.buttonClose.Location = new System.Drawing.Point(1070, 14);
+            this.buttonClose.Location = new System.Drawing.Point(713, 9);
             this.buttonClose.Margin = new System.Windows.Forms.Padding(0);
             this.buttonClose.Name = "buttonClose";
-            this.buttonClose.Size = new System.Drawing.Size(0, 46);
+            this.buttonClose.Size = new System.Drawing.Size(0, 30);
             this.buttonClose.TabIndex = 0;
             this.buttonClose.Text = "X";
             this.buttonClose.UseVisualStyleBackColor = false;
@@ -304,24 +302,23 @@ namespace ProiectIP
             this.panelDate.Controls.Add(this.labelParola);
             this.panelDate.Font = new System.Drawing.Font("Bell MT", 8.25F);
             this.panelDate.ForeColor = System.Drawing.Color.Black;
-            this.panelDate.Location = new System.Drawing.Point(516, 148);
-            this.panelDate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panelDate.Location = new System.Drawing.Point(344, 96);
             this.panelDate.Name = "panelDate";
-            this.panelDate.Size = new System.Drawing.Size(760, 614);
+            this.panelDate.Size = new System.Drawing.Size(507, 399);
             this.panelDate.TabIndex = 15;
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProiectIP.Properties.Resources.cinema;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1464, 898);
+            this.ClientSize = new System.Drawing.Size(976, 584);
             this.Controls.Add(this.panelDate);
             this.Controls.Add(this.panelNavigation);
             this.Controls.Add(this.panelMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Name = "Login";
             this.Text = "Sistem de rezervari bilete cinema";
             this.TransparencyKey = this.BackColor;
