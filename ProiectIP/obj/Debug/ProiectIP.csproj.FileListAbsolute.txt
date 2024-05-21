@@ -1,0 +1,12 @@
+D:\IPproiect\ProiectIP\bin\Debug\ProiectIP.exe.config
+D:\IPproiect\ProiectIP\bin\Debug\ProiectIP.exe
+D:\IPproiect\ProiectIP\bin\Debug\ProiectIP.pdb
+D:\IPproiect\ProiectIP\obj\Debug\ProiectIP.csproj.AssemblyReference.cache
+D:\IPproiect\ProiectIP\obj\Debug\ProiectIP.csproj.SuggestedBindingRedirects.cache
+D:\IPproiect\ProiectIP\obj\Debug\ProiectIP.Login.resources
+D:\IPproiect\ProiectIP\obj\Debug\ProiectIP.Properties.Resources.resources
+D:\IPproiect\ProiectIP\obj\Debug\ProiectIP.csproj.GenerateResource.cache
+D:\IPproiect\ProiectIP\obj\Debug\ProiectIP.csproj.CoreCompileInputs.cache
+D:\IPproiect\ProiectIP\obj\Debug\ProiectIP.exe
+D:\IPproiect\ProiectIP\obj\Debug\ProiectIP.pdb
+D:\IPproiect\ProiectIP\obj\Debug\ProiectIP.Inregistrare.resources
