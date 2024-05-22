@@ -38,7 +38,7 @@ namespace ProiectIP
         {
             try
             {
-                SqlConnection con = ConexiuneBazaDeDate.Conexiune.GetConexiune();
+                SqlConnection con = Conexiune.GetConexiune();
                 con.Open();
 
                 SqlCommand cmd = new SqlCommand("select Admin from Users where Email = '" + textBoxEmail.Text + "' and Parola = '" + textBoxParola.Text + "'", con);

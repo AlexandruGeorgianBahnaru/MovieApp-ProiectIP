@@ -44,5 +44,11 @@
     <Compile Include="Conexiune.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProiectIP\ProiectIP.csproj">
+      <Project>{1599c0a3-b57a-470d-93d6-c389bc9b6c83}</Project>
+      <Name>ProiectIP</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

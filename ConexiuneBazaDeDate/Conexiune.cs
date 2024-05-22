@@ -11,13 +11,8 @@ namespace ConexiuneBazaDeDate
     {
         #region Fields
         private static SqlConnection _connection;
-        /* public static string connectionString =
-             "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=" +
-             "C:\\Users\\Iulia\\Desktop\\project\\Proiect_IP\\Database1.mdf;Integrated Security=True";*/
-        /* public static string connectionString =
-              "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=" +
-              "C:\\Users\\Mari\\PROIECT_IP_2023\\Proiect-IP-2023\\Proiect_IP\\Database1.mdf;Integrated Security=True";*/
-        public static string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Facultate\\ProiectIP\\ProiectIP\\MovieDatabase.mdf;Integrated Security=True";
+     
+        public static string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\IPproiectCopie\\ProiectIP\\ProiectIP\\MovieDatabase.mdf;Integrated Security = True";
         #endregion
 
         #region Methods

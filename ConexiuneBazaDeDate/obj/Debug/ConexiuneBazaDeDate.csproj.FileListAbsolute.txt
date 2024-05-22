@@ -1,0 +1,8 @@
+D:\IPproiectCopie\ProiectIP\ConexiuneBazaDeDate\bin\Debug\MovieDatabase.mdf
+D:\IPproiectCopie\ProiectIP\ConexiuneBazaDeDate\bin\Debug\MovieDatabase_log.ldf
+D:\IPproiectCopie\ProiectIP\ConexiuneBazaDeDate\obj\Debug\ConexiuneBazaDeDate.csproj.AssemblyReference.cache
+D:\IPproiectCopie\ProiectIP\ConexiuneBazaDeDate\obj\Debug\ConexiuneBazaDeDate.csproj.CoreCompileInputs.cache
+D:\IPproiectCopie\ProiectIP\ConexiuneBazaDeDate\obj\Debug\ConexiuneBazaDeDate.dll
+D:\IPproiectCopie\ProiectIP\ConexiuneBazaDeDate\obj\Debug\ConexiuneBazaDeDate.pdb
+D:\IPproiectCopie\ProiectIP\ConexiuneBazaDeDate\bin\Debug\ConexiuneBazaDeDate.dll
+D:\IPproiectCopie\ProiectIP\ConexiuneBazaDeDate\bin\Debug\ConexiuneBazaDeDate.pdb

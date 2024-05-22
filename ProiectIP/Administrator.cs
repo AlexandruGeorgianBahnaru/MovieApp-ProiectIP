@@ -16,5 +16,10 @@ namespace ProiectIP
         {
             InitializeComponent();
         }
+
+        private void buttonDelogareAdmin_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
