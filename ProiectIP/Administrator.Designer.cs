@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace ProiectIP
 {
     partial class Administrator
@@ -58,6 +60,7 @@ namespace ProiectIP
             this.buttonEditeazaFilm.TabIndex = 0;
             this.buttonEditeazaFilm.Text = "Editează film";
             this.buttonEditeazaFilm.UseVisualStyleBackColor = true;
+            this.buttonEditeazaFilm.Click += new System.EventHandler(this.buttonEditeazaFilm_Click);
             // 
             // buttonFilmeAdmin
             // 
@@ -69,6 +72,7 @@ namespace ProiectIP
             this.buttonFilmeAdmin.TabIndex = 1;
             this.buttonFilmeAdmin.Text = "Vezi filme";
             this.buttonFilmeAdmin.UseVisualStyleBackColor = true;
+            this.buttonFilmeAdmin.Click += new System.EventHandler(this.buttonFilmeAdmin_Click_1);
             // 
             // buttonStergeFilm
             // 
@@ -80,6 +84,7 @@ namespace ProiectIP
             this.buttonStergeFilm.TabIndex = 2;
             this.buttonStergeFilm.Text = "Șterge film";
             this.buttonStergeFilm.UseVisualStyleBackColor = true;
+            this.buttonStergeFilm.Click += new System.EventHandler(this.buttonStergeFilm_Click);
             // 
             // buttonAdaugaFilmAdmin
             // 
@@ -91,6 +96,7 @@ namespace ProiectIP
             this.buttonAdaugaFilmAdmin.TabIndex = 3;
             this.buttonAdaugaFilmAdmin.Text = "Adaugă film";
             this.buttonAdaugaFilmAdmin.UseVisualStyleBackColor = true;
+            this.buttonAdaugaFilmAdmin.Click += new System.EventHandler(this.buttonAdaugaFilmAdmin_Click);
             // 
             // dataGridViewAdmin
             // 
@@ -104,6 +110,7 @@ namespace ProiectIP
             this.dataGridViewAdmin.RowTemplate.Height = 28;
             this.dataGridViewAdmin.Size = new System.Drawing.Size(836, 438);
             this.dataGridViewAdmin.TabIndex = 4;
+            this.dataGridViewAdmin.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewAdmin_CellContentClick);
             // 
             // panelMenu
             // 
@@ -232,6 +239,7 @@ namespace ProiectIP
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Administrator";
             this.Text = "Administrator";
+            this.Load += new System.EventHandler(this.Administrator_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAdmin)).EndInit();
             this.panelMenu.ResumeLayout(false);
             this.panelDate.ResumeLayout(false);
@@ -241,6 +249,14 @@ namespace ProiectIP
             this.PerformLayout();
 
         }
+
+        private void buttonDelogareAdmin_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+   
+
 
         #endregion
 

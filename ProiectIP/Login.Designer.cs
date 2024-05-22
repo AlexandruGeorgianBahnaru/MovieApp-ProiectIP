@@ -65,7 +65,7 @@ namespace ProiectIP
             this.panelAbout.BackColor = System.Drawing.Color.Wheat;
             this.panelAbout.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelAbout.BackgroundImage")));
             this.panelAbout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panelAbout.Location = new System.Drawing.Point(1008, 119);
+            this.panelAbout.Location = new System.Drawing.Point(859, 148);
             this.panelAbout.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelAbout.Name = "panelAbout";
             this.panelAbout.Size = new System.Drawing.Size(145, 95);
@@ -79,7 +79,7 @@ namespace ProiectIP
             this.buttonLogin.Location = new System.Drawing.Point(248, 444);
             this.buttonLogin.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.Size = new System.Drawing.Size(256, 72);
+            this.buttonLogin.Size = new System.Drawing.Size(256, 62);
             this.buttonLogin.TabIndex = 0;
             this.buttonLogin.Text = "Login";
             this.buttonLogin.UseVisualStyleBackColor = false;
@@ -116,6 +116,7 @@ namespace ProiectIP
             this.textBoxParola.PasswordChar = '*';
             this.textBoxParola.Size = new System.Drawing.Size(324, 41);
             this.textBoxParola.TabIndex = 4;
+            this.textBoxParola.TextChanged += new System.EventHandler(this.textBoxParola_TextChanged);
             // 
             // labelParola
             // 
@@ -144,8 +145,9 @@ namespace ProiectIP
             // 
             // buttonInregistrare
             // 
-            this.buttonInregistrare.BackColor = System.Drawing.Color.White;
-            this.buttonInregistrare.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonInregistrare.BackColor = System.Drawing.Color.Maroon;
+            this.buttonInregistrare.Font = new System.Drawing.Font("Constantia", 14F);
+            this.buttonInregistrare.ForeColor = System.Drawing.Color.Transparent;
             this.buttonInregistrare.Location = new System.Drawing.Point(248, 519);
             this.buttonInregistrare.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.buttonInregistrare.Name = "buttonInregistrare";
@@ -153,6 +155,7 @@ namespace ProiectIP
             this.buttonInregistrare.TabIndex = 10;
             this.buttonInregistrare.Text = "Înregistrare";
             this.buttonInregistrare.UseVisualStyleBackColor = false;
+            this.buttonInregistrare.Click += new System.EventHandler(this.buttonInregistrare_Click);
             // 
             // contextMenuStrip1
             // 
@@ -195,7 +198,7 @@ namespace ProiectIP
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-           this.pictureBox1.BackgroundImage = global::ProiectIP.Properties.Resources.cheie;
+            this.pictureBox1.BackgroundImage = global::ProiectIP.Properties.Resources.cheie;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Location = new System.Drawing.Point(26, 371);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -219,7 +222,7 @@ namespace ProiectIP
             // buttonHelp
             // 
             this.buttonHelp.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonHelp.Location = new System.Drawing.Point(1008, 771);
+            this.buttonHelp.Location = new System.Drawing.Point(859, 785);
             this.buttonHelp.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.buttonHelp.Name = "buttonHelp";
             this.buttonHelp.Size = new System.Drawing.Size(145, 61);
@@ -227,13 +230,14 @@ namespace ProiectIP
             this.buttonHelp.Text = "Help";
             this.buttonHelp.UseMnemonic = false;
             this.buttonHelp.UseVisualStyleBackColor = true;
+            this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Wheat;
             this.panel1.BackgroundImage = global::ProiectIP.Properties.Resources.help;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel1.Location = new System.Drawing.Point(1008, 666);
+            this.panel1.Location = new System.Drawing.Point(859, 648);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(145, 99);
@@ -242,7 +246,7 @@ namespace ProiectIP
             // buttonAbout
             // 
             this.buttonAbout.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAbout.Location = new System.Drawing.Point(1008, 226);
+            this.buttonAbout.Location = new System.Drawing.Point(859, 263);
             this.buttonAbout.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.buttonAbout.Name = "buttonAbout";
             this.buttonAbout.Size = new System.Drawing.Size(145, 61);
@@ -250,6 +254,7 @@ namespace ProiectIP
             this.buttonAbout.Text = "About";
             this.buttonAbout.UseMnemonic = false;
             this.buttonAbout.UseVisualStyleBackColor = true;
+            this.buttonAbout.Click += new System.EventHandler(this.buttonAbout_Click);
             // 
             // panelNavigation
             // 
@@ -268,8 +273,8 @@ namespace ProiectIP
             // 
             // buttonMini
             // 
-            this.buttonMini.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.buttonMini.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonMini.BackColor = System.Drawing.Color.Wheat;
             this.buttonMini.Font = new System.Drawing.Font("Microsoft Tai Le", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -281,11 +286,12 @@ namespace ProiectIP
             this.buttonMini.TabIndex = 2;
             this.buttonMini.Text = "-";
             this.buttonMini.UseVisualStyleBackColor = false;
+            this.buttonMini.Click += new System.EventHandler(this.buttonMini_Click);
             // 
             // buttonResize
             // 
-            this.buttonResize.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.buttonResize.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonResize.BackColor = System.Drawing.Color.Wheat;
             this.buttonResize.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -297,11 +303,12 @@ namespace ProiectIP
             this.buttonResize.TabIndex = 1;
             this.buttonResize.Text = "O";
             this.buttonResize.UseVisualStyleBackColor = false;
+            this.buttonResize.Click += new System.EventHandler(this.buttonResize_Click);
             // 
             // buttonClose
             // 
-            this.buttonClose.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.buttonClose.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonClose.BackColor = System.Drawing.Color.Wheat;
             this.buttonClose.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -313,6 +320,7 @@ namespace ProiectIP
             this.buttonClose.TabIndex = 0;
             this.buttonClose.Text = "X";
             this.buttonClose.UseVisualStyleBackColor = false;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // Login
             // 

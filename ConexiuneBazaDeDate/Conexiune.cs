@@ -12,7 +12,7 @@ namespace ConexiuneBazaDeDate
         #region Fields
         private static SqlConnection _connection;
      
-        public static string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\IPproiectCopie\\ProiectIP\\ProiectIP\\MovieDatabase.mdf;Integrated Security = True";
+        public static string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\FINAL\\ProiectIP\\ProiectIP\\MovieDatabase.mdf;Integrated Security = True";
         #endregion
 
         #region Methods

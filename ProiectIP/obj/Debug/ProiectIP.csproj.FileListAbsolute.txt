@@ -54,11 +54,11 @@ D:\IPproiectCopie\ProiectIP\ProiectIP\bin\Debug\ProiectIP.exe.config
 D:\IPproiectCopie\ProiectIP\ProiectIP\bin\Debug\ProiectIP.exe
 D:\IPproiectCopie\ProiectIP\ProiectIP\bin\Debug\ProiectIP.pdb
 D:\FINAL\ProiectIP\ProiectIP\bin\Debug\MovieDatabase.mdf
-D:\FINAL\ProiectIP\ProiectIP\bin\Debug\MovieDatabase_log.ldf
-D:\FINAL\ProiectIP\ProiectIP\bin\Debug\ProiectIP.exe.config
 D:\FINAL\ProiectIP\ProiectIP\bin\Debug\ProiectIP.exe
 D:\FINAL\ProiectIP\ProiectIP\bin\Debug\ProiectIP.pdb
 D:\FINAL\ProiectIP\ProiectIP\bin\Debug\ConexiuneBazaDeDate.dll
+D:\FINAL\ProiectIP\ProiectIP\bin\Debug\MovieDatabase_log.ldf
+D:\FINAL\ProiectIP\ProiectIP\bin\Debug\ProiectIP.exe.config
 D:\FINAL\ProiectIP\ProiectIP\bin\Debug\ConexiuneBazaDeDate.pdb
 D:\FINAL\ProiectIP\ProiectIP\obj\Debug\ProiectIP.csproj.AssemblyReference.cache
 D:\FINAL\ProiectIP\ProiectIP\obj\Debug\ProiectIP.csproj.SuggestedBindingRedirects.cache

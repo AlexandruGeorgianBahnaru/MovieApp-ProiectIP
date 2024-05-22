@@ -6,3 +6,11 @@ D:\IPproiectCopie\ProiectIP\ConexiuneBazaDeDate\obj\Debug\ConexiuneBazaDeDate.dl
 D:\IPproiectCopie\ProiectIP\ConexiuneBazaDeDate\obj\Debug\ConexiuneBazaDeDate.pdb
 D:\IPproiectCopie\ProiectIP\ConexiuneBazaDeDate\bin\Debug\ConexiuneBazaDeDate.dll
 D:\IPproiectCopie\ProiectIP\ConexiuneBazaDeDate\bin\Debug\ConexiuneBazaDeDate.pdb
+D:\FINAL\ProiectIP\ConexiuneBazaDeDate\bin\Debug\MovieDatabase.mdf
+D:\FINAL\ProiectIP\ConexiuneBazaDeDate\bin\Debug\MovieDatabase_log.ldf
+D:\FINAL\ProiectIP\ConexiuneBazaDeDate\bin\Debug\ConexiuneBazaDeDate.dll
+D:\FINAL\ProiectIP\ConexiuneBazaDeDate\bin\Debug\ConexiuneBazaDeDate.pdb
+D:\FINAL\ProiectIP\ConexiuneBazaDeDate\obj\Debug\ConexiuneBazaDeDate.csproj.AssemblyReference.cache
+D:\FINAL\ProiectIP\ConexiuneBazaDeDate\obj\Debug\ConexiuneBazaDeDate.csproj.CoreCompileInputs.cache
+D:\FINAL\ProiectIP\ConexiuneBazaDeDate\obj\Debug\ConexiuneBazaDeDate.dll
+D:\FINAL\ProiectIP\ConexiuneBazaDeDate\obj\Debug\ConexiuneBazaDeDate.pdb
