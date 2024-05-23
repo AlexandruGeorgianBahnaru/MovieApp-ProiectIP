@@ -90,8 +90,7 @@ namespace ProiectIP
 
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Utilizatorul a fost adaugat cu succes!");
-                    this.Close();
-                    
+                    this.Hide();                    
                 }
             }
             catch (Exception ex)
