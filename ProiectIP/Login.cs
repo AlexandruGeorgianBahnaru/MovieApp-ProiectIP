@@ -169,7 +169,8 @@ namespace ProiectIP
 
         private void buttonInregistrare_Click(object sender, EventArgs e)
         {
-
+            Inregistrare reg1 = new Inregistrare();
+            reg1.Show();
         }
     }
 }
