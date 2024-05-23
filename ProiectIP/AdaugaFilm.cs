@@ -39,22 +39,22 @@ namespace ProiectIP
                InitializeComponent();
            }
 
-    /// <summary>
-    /// La apasarea butonului Close se inchide interfata curenta
-    /// </summary>
-    /// <param name="sender"></param>
-    /// <param name="e"></param>
-    private void buttonClose_Click(object sender, EventArgs e)
-            {
-                this.Close();
-            }
+            /// <summary>
+            /// La apasarea butonului Close se inchide interfata curenta
+            /// </summary>
+            /// <param name="sender"></param>
+            /// <param name="e"></param>
+            private void buttonClose_Click_1(object sender, EventArgs e)
+                    {
+                        this.Close();
+                    }
 
             /// <summary>
             /// Butonul Resize este utilizat pentru a schimba dimensiunea ferestrei
             /// </summary>
             /// <param name="sender"></param>
             /// <param name="e"></param>
-            private void buttonResize_Click(object sender, EventArgs e)
+            private void buttonResize_Click_1(object sender, EventArgs e)
             {
                 if (WindowState == FormWindowState.Normal)
                     this.WindowState = FormWindowState.Maximized;
@@ -67,7 +67,7 @@ namespace ProiectIP
             /// </summary>
             /// <param name="sender"></param>
             /// <param name="e"></param>
-            private void buttonMini_Click(object sender, EventArgs e)
+            private void buttonMini_Click_1(object sender, EventArgs e)
             {
                 this.WindowState = FormWindowState.Minimized;
             }
@@ -78,7 +78,7 @@ namespace ProiectIP
             /// <param name="sender"></param>
             /// <param name="e"></param>
             /// 
-            private void buttonAbout_Click(object sender, EventArgs e)
+            private void buttonAbout_Click_1(object sender, EventArgs e)
             {
                 string title = "Despre";
                 MessageBox.Show("Proiect IP 2024 - Rezervare Online bilete la cinema. \nBahnaru George\nButu Alexandra\nChelea Diana \nSpiridon Bianca ", title);
@@ -89,7 +89,7 @@ namespace ProiectIP
             /// </summary>
             /// <param name="sender"></param>
             /// <param name="e"></param>
-            private void buttonHelp_Click(object sender, EventArgs e)
+            private void buttonHelp_Click_1(object sender, EventArgs e)
             {
                 System.Diagnostics.Process.Start("RezervareOnlineCinema.chm");
             }
@@ -187,5 +187,7 @@ namespace ProiectIP
             }
 
         }
+
+        
     }
     }
