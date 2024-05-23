@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "D:\\AN3_SEM2\\proiect_ip\\ProiectIP\\ProiectIP\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\bianc\\AppData\\Local\\Temp\\kaegx4dk..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__AN3_SEM2_PROIECT_IP_PROIECTIP_PROIECTIP_MOVIEDATABASE.MDF/True/SqlTable/dbo.Reservation.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__AN3_SEM2_PROIECT_IP_PROIECTIP_PROIECTIP_MOVIEDATABASE.MDF/True/SqlTable/dbo.UsersTemp.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BFD5FFF-2117-4FCB-ACB7-7173A4C9B84F}|..\\ConexiuneBazaDeDate\\ConexiuneBazaDeDate.csproj|d:\\an3_sem2\\proiect_ip\\proiectip\\conexiunebazadedate\\conexiune.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1599C0A3-B57A-470D-93D6-C389BC9B6C83}|ProiectIP.csproj|d:\\an3_sem2\\proiect_ip\\proiectip\\proiectip\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1599C0A3-B57A-470D-93D6-C389BC9B6C83}|ProiectIP.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,7 +27,7 @@
       "RelativeMoniker": "D:0:0:{1599C0A3-B57A-470D-93D6-C389BC9B6C83}|ProiectIP.csproj|solutionrelative:administrator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1599C0A3-B57A-470D-93D6-C389BC9B6C83}|ProiectIP.csproj|d:\\an3_sem2\\proiect_ip\\proiectip\\proiectip\\adaugafilm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1599C0A3-B57A-470D-93D6-C389BC9B6C83}|ProiectIP.csproj|D:\\AN3_SEM2\\proiect_ip\\ProiectIP\\ProiectIP\\adaugafilm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1599C0A3-B57A-470D-93D6-C389BC9B6C83}|ProiectIP.csproj|solutionrelative:adaugafilm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -37,7 +49,7 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__AN3_SEM2_PROIECT_IP_PROIECTIP_PROIECTIP_MOVIEDATABASE.MDF/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1599C0A3-B57A-470D-93D6-C389BC9B6C83}|ProiectIP.csproj|d:\\an3_sem2\\proiect_ip\\proiectip\\proiectip\\adaugafilm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{1599C0A3-B57A-470D-93D6-C389BC9B6C83}|ProiectIP.csproj|D:\\AN3_SEM2\\proiect_ip\\ProiectIP\\ProiectIP\\adaugafilm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1599C0A3-B57A-470D-93D6-C389BC9B6C83}|ProiectIP.csproj|solutionrelative:adaugafilm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -61,7 +73,10 @@
       "RelativeMoniker": "D:0:0:{1599C0A3-B57A-470D-93D6-C389BC9B6C83}|ProiectIP.csproj|solutionrelative:editeazafilm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3BFD5FFF-2117-4FCB-ACB7-7173A4C9B84F}|..\\ConexiuneBazaDeDate\\ConexiuneBazaDeDate.csproj|d:\\an3_sem2\\proiect_ip\\proiectip\\conexiunebazadedate\\conexiune.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\bianc\\AppData\\Local\\Temp\\kaegx4dk..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\bianc\\AppData\\Local\\Temp\\kaegx4dk..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|ResultFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -71,21 +86,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "dbo.Movies [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__AN3_SEM2_PROIECT_IP_PROIECTIP_PROIECTIP_MOVIEDATABASE.MDF/True/SqlTable/dbo.Movies.sql",
-              "ToolTip": "dbo.Movies [Data]",
+              "DocumentIndex": 1,
+              "Title": "dbo.Reservation [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__AN3_SEM2_PROIECT_IP_PROIECTIP_PROIECTIP_MOVIEDATABASE.MDF/True/SqlTable/dbo.Reservation.sql",
+              "ToolTip": "dbo.Reservation [Data]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-05-23T11:54:48.384Z",
+              "WhenOpened": "2024-05-23T13:08:25.344Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "dbo.UsersTemp [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__AN3_SEM2_PROIECT_IP_PROIECTIP_PROIECTIP_MOVIEDATABASE.MDF/True/SqlTable/dbo.UsersTemp.sql",
+              "ToolTip": "dbo.UsersTemp [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-05-23T13:07:39.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SQLQuery1.sql ",
+              "DocumentMoniker": "C:\\Users\\bianc\\AppData\\Local\\Temp\\kaegx4dk..sql",
+              "ToolTip": "SQLQuery1.sql *",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-05-23T13:00:05.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "dbo.Movies [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__AN3_SEM2_PROIECT_IP_PROIECTIP_PROIECTIP_MOVIEDATABASE.MDF/True/SqlTable/dbo.Movies.sql",
+              "ToolTip": "dbo.Movies [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-05-23T11:54:48.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "AdaugaFilm.cs",
               "DocumentMoniker": "D:\\AN3_SEM2\\proiect_ip\\ProiectIP\\ProiectIP\\AdaugaFilm.cs",
               "RelativeDocumentMoniker": "AdaugaFilm.cs",
@@ -93,37 +137,35 @@
               "RelativeToolTip": "AdaugaFilm.cs",
               "ViewState": "AQIAABIAAAAAAAAAAAAAABYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T11:24:52.082Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-23T11:24:52.082Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "AdaugaFilm.cs [Design]",
               "DocumentMoniker": "D:\\AN3_SEM2\\proiect_ip\\ProiectIP\\ProiectIP\\AdaugaFilm.cs",
               "RelativeDocumentMoniker": "AdaugaFilm.cs",
               "ToolTip": "D:\\AN3_SEM2\\proiect_ip\\ProiectIP\\ProiectIP\\AdaugaFilm.cs [Design]",
               "RelativeToolTip": "AdaugaFilm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T11:24:47.014Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-23T11:24:47.014Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Login.cs",
               "DocumentMoniker": "D:\\AN3_SEM2\\proiect_ip\\ProiectIP\\ProiectIP\\Login.cs",
               "RelativeDocumentMoniker": "Login.cs",
               "ToolTip": "D:\\AN3_SEM2\\proiect_ip\\ProiectIP\\ProiectIP\\Login.cs",
               "RelativeToolTip": "Login.cs",
-              "ViewState": "AQIAAIwAAAAAAAAAAAAwwJMAAAApAAAA",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAmwJMAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-23T11:10:55.986Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "Utilizator.cs",
               "DocumentMoniker": "D:\\AN3_SEM2\\proiect_ip\\ProiectIP\\ProiectIP\\Utilizator.cs",
               "RelativeDocumentMoniker": "Utilizator.cs",
@@ -131,24 +173,22 @@
               "RelativeToolTip": "Utilizator.cs",
               "ViewState": "AQIAAGMAAAAAAAAAAAAwwG0AAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T11:08:02.847Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-23T11:08:02.847Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "Utilizator.cs [Design]",
               "DocumentMoniker": "D:\\AN3_SEM2\\proiect_ip\\ProiectIP\\ProiectIP\\Utilizator.cs",
               "RelativeDocumentMoniker": "Utilizator.cs",
               "ToolTip": "D:\\AN3_SEM2\\proiect_ip\\ProiectIP\\ProiectIP\\Utilizator.cs [Design]",
               "RelativeToolTip": "Utilizator.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T11:07:57.484Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-23T11:07:57.484Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "Administrator.Designer.cs",
               "DocumentMoniker": "D:\\AN3_SEM2\\proiect_ip\\ProiectIP\\ProiectIP\\Administrator.Designer.cs",
               "RelativeDocumentMoniker": "Administrator.Designer.cs",
@@ -156,24 +196,22 @@
               "RelativeToolTip": "Administrator.Designer.cs",
               "ViewState": "AQIAAPAAAAAAAAAAAAAQwAABAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T11:05:45.247Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-23T11:05:45.247Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Inregistrare.cs [Design]",
               "DocumentMoniker": "D:\\AN3_SEM2\\proiect_ip\\ProiectIP\\ProiectIP\\Inregistrare.cs",
               "RelativeDocumentMoniker": "Inregistrare.cs",
               "ToolTip": "D:\\AN3_SEM2\\proiect_ip\\ProiectIP\\ProiectIP\\Inregistrare.cs [Design]",
               "RelativeToolTip": "Inregistrare.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T11:05:11.523Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-23T11:05:11.523Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Inregistrare.cs",
               "DocumentMoniker": "D:\\AN3_SEM2\\proiect_ip\\ProiectIP\\ProiectIP\\Inregistrare.cs",
               "RelativeDocumentMoniker": "Inregistrare.cs",
@@ -181,12 +219,11 @@
               "RelativeToolTip": "Inregistrare.cs",
               "ViewState": "AQIAABQAAAAAAAAAAAAAABYAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T11:04:58.469Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-23T11:04:58.469Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "Filme.cs",
               "DocumentMoniker": "D:\\AN3_SEM2\\proiect_ip\\ProiectIP\\ProiectIP\\Filme.cs",
               "RelativeDocumentMoniker": "Filme.cs",
@@ -194,12 +231,11 @@
               "RelativeToolTip": "Filme.cs",
               "ViewState": "AQIAAFgAAAAAAAAAAAAgwGIAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T11:04:46.874Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-23T11:04:46.874Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "EditeazaFilm.cs",
               "DocumentMoniker": "D:\\AN3_SEM2\\proiect_ip\\ProiectIP\\ProiectIP\\EditeazaFilm.cs",
               "RelativeDocumentMoniker": "EditeazaFilm.cs",
@@ -207,12 +243,11 @@
               "RelativeToolTip": "EditeazaFilm.cs",
               "ViewState": "AQIAAO0AAAAAAAAAAAAQwK0AAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T11:04:29.847Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-23T11:04:29.847Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Administrator.cs",
               "DocumentMoniker": "D:\\AN3_SEM2\\proiect_ip\\ProiectIP\\ProiectIP\\Administrator.cs",
               "RelativeDocumentMoniker": "Administrator.cs",
@@ -220,55 +255,51 @@
               "RelativeToolTip": "Administrator.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAC8AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T11:04:12.313Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-23T11:04:12.313Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "EditeazaFilm.cs [Design]",
               "DocumentMoniker": "D:\\AN3_SEM2\\proiect_ip\\ProiectIP\\ProiectIP\\EditeazaFilm.cs",
               "RelativeDocumentMoniker": "EditeazaFilm.cs",
               "ToolTip": "D:\\AN3_SEM2\\proiect_ip\\ProiectIP\\ProiectIP\\EditeazaFilm.cs [Design]",
               "RelativeToolTip": "EditeazaFilm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T08:02:39.805Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-23T08:02:39.805Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "dbo.Users [Data]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__AN3_SEM2_PROIECT_IP_PROIECTIP_PROIECTIP_MOVIEDATABASE.MDF/True/SqlTable/dbo.Users.sql",
               "ToolTip": "dbo.Users [Data]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-05-23T08:01:54.282Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-23T08:01:54.282Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 3,
               "Title": "Conexiune.cs",
               "DocumentMoniker": "D:\\AN3_SEM2\\proiect_ip\\ProiectIP\\ConexiuneBazaDeDate\\Conexiune.cs",
               "RelativeDocumentMoniker": "..\\ConexiuneBazaDeDate\\Conexiune.cs",
               "ToolTip": "D:\\AN3_SEM2\\proiect_ip\\ProiectIP\\ConexiuneBazaDeDate\\Conexiune.cs",
               "RelativeToolTip": "..\\ConexiuneBazaDeDate\\Conexiune.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAACnAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-23T08:00:37.098Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "Login.cs [Design]",
               "DocumentMoniker": "D:\\AN3_SEM2\\proiect_ip\\ProiectIP\\ProiectIP\\Login.cs",
               "RelativeDocumentMoniker": "Login.cs",
               "ToolTip": "D:\\AN3_SEM2\\proiect_ip\\ProiectIP\\ProiectIP\\Login.cs [Design]",
               "RelativeToolTip": "Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T07:59:39.473Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-23T07:59:39.473Z"
             }
           ]
         }
