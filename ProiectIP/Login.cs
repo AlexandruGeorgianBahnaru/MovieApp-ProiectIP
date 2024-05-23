@@ -45,50 +45,63 @@ namespace ProiectIP
 
         }
 
+        
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            try
-            {
-                SqlConnection con = Conexiune.GetConexiune();
-                con.Open();
-
-                SqlCommand cmd = new SqlCommand("select Admin from Users where Email = '" + textBoxEmail.Text + "' and Parola = '" + textBoxParola.Text + "'", con);
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                if (dt.Rows.Count == 1)
+                SqlConnection con = null;
+                try
                 {
+                    con = ConexiuneBazaDeDate.Conexiune.GetConexiune();
+                    con.Open();
 
-                    if (dt.Rows[0][0].ToString() == "False") // FALSE = UTILIZATOR
+                    string query = "select count(*) from Users where Email = '" + textBoxEmail.Text + "'";
+                    SqlCommand cmdEmail = new SqlCommand(query, con);
+                    int emailCount = (int)cmdEmail.ExecuteScalar();
+
+                    if (emailCount == 0)
                     {
-                        //    this.Hide();
-                        //    string userId = dt.Rows[0][0].ToString();
-                        Utilizator user = new Utilizator();
-                        IsUserAuthenticated = true;
-                        user.Show();
-                        Console.WriteLine("UTILIZATOR");
+                        MessageBox.Show("Email inexistent!");
                     }
-                    else if (dt.Rows[0][0].ToString() == "True") // TRUE = ADMINISTRATOR 
+                    else
                     {
-                        //this.Hide();
-                        //string adminId = dt.Rows[0][0].ToString();
-                        Administrator admin = new Administrator();
-                        IsUserAuthenticated = true;
-                        admin.Show();
-                        Console.WriteLine("ADMINISTRATOR");
+                        string querySelect = "select Admin from Users where Email = '" + textBoxEmail.Text + "' and Parola = '" + textBoxParola.Text + "'";
+                        SqlCommand cmd = new SqlCommand(querySelect, con);
+                        SqlDataAdapter da = new SqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        if (dt.Rows.Count == 1)
+                        {
+                            if (dt.Rows[0][0].ToString() == "True")
+                            {
+                                Administrator admin = new Administrator();
+                                admin.Show();
+                                this.Hide();
+                            }
+                            else
+                            {
+                                Utilizator user = new Utilizator();
+                                user.Show();
+                                this.Hide();
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Parola greșită!");
+                        }
                     }
                 }
-
-                else
+                catch (Exception ex)
                 {
-                    MessageBox.Show("E-mail sau parolă greșite!");
+                    MessageBox.Show("Nu s-a putut efectua conexiunea la baza de date: " + ex.Message);
                 }
-                con.Close();
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Nu s-a putut efectua conexiunea la baza de date.");
-            }
+                finally
+                {
+                    if (con != null && con.State == ConnectionState.Open)
+                    {
+                        con.Close();
+                    }
+                }
         }
 
         /// <summary>

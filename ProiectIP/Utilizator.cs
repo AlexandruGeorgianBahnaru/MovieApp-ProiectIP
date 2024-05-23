@@ -110,5 +110,12 @@ namespace ProiectIP
             //_facade.Mini();
         }
         #endregion
+
+        private void buttonDelogareUser_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
+        }
     }
 }

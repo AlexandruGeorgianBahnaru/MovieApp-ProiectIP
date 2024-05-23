@@ -252,7 +252,9 @@ namespace ProiectIP
 
         private void buttonDelogareAdmin_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            Login loginForm = new Login();
+            loginForm.Show();
+            this.Hide();
         }
 
    
