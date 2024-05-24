@@ -78,6 +78,8 @@ namespace ProiectIP
             {
                 using (SqlConnection con = Conexiune.GetConexiune())
                 {
+                    con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\AN3_SEM2\\proiect_ip_24.05\\ProiectIP\\ProiectIP\\MovieDatabase.mdf;Integrated Security = True";
+
                     con.Open();
                     SqlCommand cmd = new SqlCommand("INSERT INTO Users (Nume, Prenume, Email, Parola, Admin) VALUES (@Nume, @Prenume, @Email, @Parola, @Admin)", con);
                     cmd.Parameters.AddWithValue("@Nume", nume);

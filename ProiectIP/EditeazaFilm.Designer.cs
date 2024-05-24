@@ -96,7 +96,7 @@ namespace ProiectIP
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(777, 899);
             this.panelMenu.TabIndex = 49;
-            this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
+           // this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
             // 
             // panelDate
             // 

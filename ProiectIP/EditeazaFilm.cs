@@ -66,6 +66,8 @@
 
                 using (SqlConnection con = Conexiune.GetConexiune())
                 {
+                    con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\AN3_SEM2\\proiect_ip_24.05\\ProiectIP\\ProiectIP\\MovieDatabase.mdf;Integrated Security = True";
+
                     con.Open();
 
                     SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM Movies WHERE Id = @Id", con);
@@ -220,6 +222,7 @@
                         List<string> lista_id = _admin.GetId();
                         using (SqlConnection con = Conexiune.GetConexiune())
                         {
+                            con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\AN3_SEM2\\proiect_ip_24.05\\ProiectIP\\ProiectIP\\MovieDatabase.mdf;Integrated Security = True";
                             con.Open();
                             SqlCommand cmd = new SqlCommand("UPDATE Movies SET Name = @Name, Gen = @Gen, Durata = @Durata, Data = @Data, Time = @Time WHERE Id = @Id", con);
                             cmd.Parameters.AddWithValue("@Id", lista_id[0]);

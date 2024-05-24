@@ -149,6 +149,8 @@ namespace ProiectIP
                 int id = Convert.ToInt32(dataGridViewAdmin.SelectedRows[0].Cells[0].Value);
                 cmd.CommandText = "Delete from Movies where id='" + id + "'";
                 dataGridViewAdmin.Rows.RemoveAt(this.dataGridViewAdmin.SelectedRows[0].Index);
+                con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\AN3_SEM2\\proiect_ip_24.05\\ProiectIP\\ProiectIP\\MovieDatabase.mdf;Integrated Security = True";
+
                 con.Open();
                 cmd.ExecuteNonQuery();
                 con.Close();

@@ -53,10 +53,10 @@ namespace ProiectIP
             // buttonEditeazaFilm
             // 
             this.buttonEditeazaFilm.Font = new System.Drawing.Font("Constantia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEditeazaFilm.Location = new System.Drawing.Point(1338, 288);
+            this.buttonEditeazaFilm.Location = new System.Drawing.Point(1189, 230);
             this.buttonEditeazaFilm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonEditeazaFilm.Name = "buttonEditeazaFilm";
-            this.buttonEditeazaFilm.Size = new System.Drawing.Size(199, 62);
+            this.buttonEditeazaFilm.Size = new System.Drawing.Size(177, 50);
             this.buttonEditeazaFilm.TabIndex = 0;
             this.buttonEditeazaFilm.Text = "Editează film";
             this.buttonEditeazaFilm.UseVisualStyleBackColor = true;
@@ -65,10 +65,10 @@ namespace ProiectIP
             // buttonFilmeAdmin
             // 
             this.buttonFilmeAdmin.Font = new System.Drawing.Font("Constantia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonFilmeAdmin.Location = new System.Drawing.Point(1338, 531);
+            this.buttonFilmeAdmin.Location = new System.Drawing.Point(1189, 425);
             this.buttonFilmeAdmin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonFilmeAdmin.Name = "buttonFilmeAdmin";
-            this.buttonFilmeAdmin.Size = new System.Drawing.Size(199, 62);
+            this.buttonFilmeAdmin.Size = new System.Drawing.Size(177, 50);
             this.buttonFilmeAdmin.TabIndex = 1;
             this.buttonFilmeAdmin.Text = "Vezi filme";
             this.buttonFilmeAdmin.UseVisualStyleBackColor = true;
@@ -77,10 +77,10 @@ namespace ProiectIP
             // buttonStergeFilm
             // 
             this.buttonStergeFilm.Font = new System.Drawing.Font("Constantia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonStergeFilm.Location = new System.Drawing.Point(1338, 410);
+            this.buttonStergeFilm.Location = new System.Drawing.Point(1189, 328);
             this.buttonStergeFilm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonStergeFilm.Name = "buttonStergeFilm";
-            this.buttonStergeFilm.Size = new System.Drawing.Size(199, 62);
+            this.buttonStergeFilm.Size = new System.Drawing.Size(177, 50);
             this.buttonStergeFilm.TabIndex = 2;
             this.buttonStergeFilm.Text = "Șterge film";
             this.buttonStergeFilm.UseVisualStyleBackColor = true;
@@ -89,10 +89,10 @@ namespace ProiectIP
             // buttonAdaugaFilmAdmin
             // 
             this.buttonAdaugaFilmAdmin.Font = new System.Drawing.Font("Constantia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAdaugaFilmAdmin.Location = new System.Drawing.Point(1338, 172);
+            this.buttonAdaugaFilmAdmin.Location = new System.Drawing.Point(1189, 138);
             this.buttonAdaugaFilmAdmin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonAdaugaFilmAdmin.Name = "buttonAdaugaFilmAdmin";
-            this.buttonAdaugaFilmAdmin.Size = new System.Drawing.Size(199, 62);
+            this.buttonAdaugaFilmAdmin.Size = new System.Drawing.Size(177, 50);
             this.buttonAdaugaFilmAdmin.TabIndex = 3;
             this.buttonAdaugaFilmAdmin.Text = "Adaugă film";
             this.buttonAdaugaFilmAdmin.UseVisualStyleBackColor = true;
@@ -102,13 +102,14 @@ namespace ProiectIP
             // 
             this.dataGridViewAdmin.BackgroundColor = System.Drawing.Color.Wheat;
             this.dataGridViewAdmin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewAdmin.Location = new System.Drawing.Point(39, 115);
+            this.dataGridViewAdmin.Location = new System.Drawing.Point(35, 92);
             this.dataGridViewAdmin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridViewAdmin.Name = "dataGridViewAdmin";
             this.dataGridViewAdmin.RowHeadersVisible = false;
             this.dataGridViewAdmin.RowHeadersWidth = 62;
             this.dataGridViewAdmin.RowTemplate.Height = 28;
-            this.dataGridViewAdmin.Size = new System.Drawing.Size(836, 438);
+            this.dataGridViewAdmin.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewAdmin.Size = new System.Drawing.Size(743, 350);
             this.dataGridViewAdmin.TabIndex = 4;
             this.dataGridViewAdmin.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewAdmin_CellContentClick);
             // 
@@ -119,9 +120,9 @@ namespace ProiectIP
             this.panelMenu.Controls.Add(this.panelDate);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
-            this.panelMenu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panelMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(934, 898);
+            this.panelMenu.Size = new System.Drawing.Size(831, 718);
             this.panelMenu.TabIndex = 14;
             // 
             // panelDate
@@ -130,10 +131,10 @@ namespace ProiectIP
             this.panelDate.Controls.Add(this.labelAdmin);
             this.panelDate.Controls.Add(this.dataGridViewAdmin);
             this.panelDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.panelDate.Location = new System.Drawing.Point(29, 172);
-            this.panelDate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panelDate.Location = new System.Drawing.Point(26, 138);
+            this.panelDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelDate.Name = "panelDate";
-            this.panelDate.Size = new System.Drawing.Size(901, 590);
+            this.panelDate.Size = new System.Drawing.Size(801, 472);
             this.panelDate.TabIndex = 16;
             // 
             // labelAdmin
@@ -142,9 +143,9 @@ namespace ProiectIP
             this.labelAdmin.BackColor = System.Drawing.Color.Wheat;
             this.labelAdmin.Font = new System.Drawing.Font("Constantia", 22F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAdmin.ForeColor = System.Drawing.Color.Black;
-            this.labelAdmin.Location = new System.Drawing.Point(299, 32);
+            this.labelAdmin.Location = new System.Drawing.Point(266, 26);
             this.labelAdmin.Name = "labelAdmin";
-            this.labelAdmin.Size = new System.Drawing.Size(316, 54);
+            this.labelAdmin.Size = new System.Drawing.Size(270, 45);
             this.labelAdmin.TabIndex = 9;
             this.labelAdmin.Text = "Administrator";
             this.labelAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -152,10 +153,9 @@ namespace ProiectIP
             // buttonDelogareAdmin
             // 
             this.buttonDelogareAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDelogareAdmin.Location = new System.Drawing.Point(1338, 666);
-            this.buttonDelogareAdmin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.buttonDelogareAdmin.Location = new System.Drawing.Point(1189, 533);
             this.buttonDelogareAdmin.Name = "buttonDelogareAdmin";
-            this.buttonDelogareAdmin.Size = new System.Drawing.Size(199, 59);
+            this.buttonDelogareAdmin.Size = new System.Drawing.Size(177, 47);
             this.buttonDelogareAdmin.TabIndex = 4;
             this.buttonDelogareAdmin.Text = "Delogare";
             this.buttonDelogareAdmin.UseVisualStyleBackColor = true;
@@ -168,10 +168,10 @@ namespace ProiectIP
             this.panelNavigation.Controls.Add(this.buttonMini);
             this.panelNavigation.Controls.Add(this.buttonClose);
             this.panelNavigation.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelNavigation.Location = new System.Drawing.Point(934, 0);
-            this.panelNavigation.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panelNavigation.Location = new System.Drawing.Point(831, 0);
+            this.panelNavigation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelNavigation.Name = "panelNavigation";
-            this.panelNavigation.Size = new System.Drawing.Size(644, 68);
+            this.panelNavigation.Size = new System.Drawing.Size(572, 54);
             this.panelNavigation.TabIndex = 15;
             // 
             // buttonResize
@@ -182,10 +182,10 @@ namespace ProiectIP
             this.buttonResize.BackColor = System.Drawing.Color.Wheat;
             this.buttonResize.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonResize.ForeColor = System.Drawing.Color.Maroon;
-            this.buttonResize.Location = new System.Drawing.Point(510, 11);
+            this.buttonResize.Location = new System.Drawing.Point(453, 9);
             this.buttonResize.Margin = new System.Windows.Forms.Padding(0);
             this.buttonResize.Name = "buttonResize";
-            this.buttonResize.Size = new System.Drawing.Size(48, 39);
+            this.buttonResize.Size = new System.Drawing.Size(43, 31);
             this.buttonResize.TabIndex = 1;
             this.buttonResize.Text = "O";
             this.buttonResize.UseVisualStyleBackColor = false;
@@ -198,10 +198,10 @@ namespace ProiectIP
             this.buttonMini.BackColor = System.Drawing.Color.Wheat;
             this.buttonMini.Font = new System.Drawing.Font("Microsoft Tai Le", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMini.ForeColor = System.Drawing.Color.Maroon;
-            this.buttonMini.Location = new System.Drawing.Point(461, 11);
+            this.buttonMini.Location = new System.Drawing.Point(410, 9);
             this.buttonMini.Margin = new System.Windows.Forms.Padding(0);
             this.buttonMini.Name = "buttonMini";
-            this.buttonMini.Size = new System.Drawing.Size(48, 39);
+            this.buttonMini.Size = new System.Drawing.Size(43, 31);
             this.buttonMini.TabIndex = 2;
             this.buttonMini.Text = "-";
             this.buttonMini.UseVisualStyleBackColor = false;
@@ -214,21 +214,21 @@ namespace ProiectIP
             this.buttonClose.BackColor = System.Drawing.Color.Wheat;
             this.buttonClose.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonClose.ForeColor = System.Drawing.Color.Maroon;
-            this.buttonClose.Location = new System.Drawing.Point(554, 11);
+            this.buttonClose.Location = new System.Drawing.Point(492, 9);
             this.buttonClose.Margin = new System.Windows.Forms.Padding(0);
             this.buttonClose.Name = "buttonClose";
-            this.buttonClose.Size = new System.Drawing.Size(48, 39);
+            this.buttonClose.Size = new System.Drawing.Size(43, 31);
             this.buttonClose.TabIndex = 0;
             this.buttonClose.Text = "X";
             this.buttonClose.UseVisualStyleBackColor = false;
             // 
             // Administrator
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProiectIP.Properties.Resources.cinema;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1578, 898);
+            this.ClientSize = new System.Drawing.Size(1403, 718);
             this.Controls.Add(this.buttonDelogareAdmin);
             this.Controls.Add(this.panelNavigation);
             this.Controls.Add(this.buttonAdaugaFilmAdmin);

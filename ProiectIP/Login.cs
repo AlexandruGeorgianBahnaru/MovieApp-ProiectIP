@@ -52,7 +52,9 @@ namespace ProiectIP
                 try
                 {
                     con = ConexiuneBazaDeDate.Conexiune.GetConexiune();
-                    con.Open();
+                con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\AN3_SEM2\\proiect_ip_24.05\\ProiectIP\\ProiectIP\\MovieDatabase.mdf;Integrated Security = True";
+
+                con.Open();
 
                     string query = "select count(*) from Users where Email = '" + textBoxEmail.Text + "'";
                     SqlCommand cmdEmail = new SqlCommand(query, con);
