@@ -25,10 +25,11 @@ using ConexiuneBazaDeDate;
 namespace ProiectIP
 {
     public partial class Filme : Form
-    { private DataTable _dataTable;
-        public bool IsHelpWindowOpened { get; private set; }
-        public bool IsAboutWindowOpened { get; private set; }
-       
+    {
+        #region Fields
+        private DataTable _dataTable;
+
+        #endregion
 
         #region Methods
         /// <summary>
@@ -39,52 +40,71 @@ namespace ProiectIP
             InitializeComponent();
             this.ControlBox = false;
         }
-        /// <summary>
-        /// Metoda pentru afisarea rutelor existente la incarcarea interfetei pentru Rute
-        /// </summary>
-        private void Filme_Load_1(object sender, EventArgs e)
-        {
-            SqlConnection con = Conexiune.GetConexiune();
-            con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=Z:\\proiect_mai_tb_codu_mod\\ProiectIP\\ProiectIP\\MovieDatabase.mdf;Integrated Security = True";
-            string query = "SELECT * FROM Movies";
-            SqlCommand command = new SqlCommand(query, con);
-            SqlDataAdapter da = new SqlDataAdapter(command);
-            _dataTable = new DataTable();
-            da.Fill(_dataTable);
-            dataGridViewFilme.DataSource = _dataTable;
-            con.Close();
 
-            labelFilme.ForeColor = Color.White;
-            panelDate.BackColor = Color.FromArgb(150, 0, 0, 0);
+
+        private void Filme_Load(object sender, EventArgs e)
+        {
+            SqlConnection con = null;
+            try
+            {
+                con = Conexiune.GetConexiune();
+                con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\AN3_SEM2\\proiec_ip_25.05\\ProiectIP\\ProiectIP\\MovieDatabase.mdf;Integrated Security=True";
+                con.Open();
+
+                string query = "SELECT * FROM Movies";
+
+                SqlCommand cmd = new SqlCommand(query, con);
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                dataGridViewFilme.Rows.Clear();
+                //ne asiguram ca nu e nimic in spatiul respectiv si formam mai intai coloanele
+                if (dataGridViewFilme.Columns.Count == 0)
+                {
+                    for (int i = 0; i < reader.FieldCount; i++)
+                    {
+                        //functie Add are 2 parametri , primul parametru e valoarea , al 2 lea numele coloanei
+                        dataGridViewFilme.Columns.Add(reader.GetName(i), reader.GetName(i));
+                    }
+                }
+
+                while (reader.Read())
+                {
+                    //punem in linie valorile din fiecare coloana pe rand
+                    object[] linie = new object[reader.FieldCount];
+                    reader.GetValues(linie);
+                    dataGridViewFilme.Rows.Add(linie);
+                }
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show("Nu s-a putut incarca lista de filme: " + exception.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
         }
 
-     
-        #endregion
-
-        private void buttonAbout_Click_1(object sender, EventArgs e)
-        {
-            string title = "Despre";
-            MessageBox.Show("Proiect IP 2024 - Rezervare Online bilete la cinema. \nBahnaru George\nButu Alexandra\nChelea Diana \nSpiridon Bianca ", title);
-            IsAboutWindowOpened = true;
-        }
 
         private void buttonHelp_Click(object sender, EventArgs e)
         {
-            IsHelpWindowOpened = true;
             System.Diagnostics.Process.Start("RezervareOnlineCinema.chm");
         }
 
-        private void dataGridViewFilme_CellContentClick(object sender, DataGridViewCellEventArgs e)
+
+        private void buttonAbout_Click(object sender, EventArgs e)
         {
+
+            MessageBox.Show("Proiect IP 2024 - Rezervare Online bilete la cinema. \nBahnaru George\nButu Alexandra\nChelea Diana \nSpiridon Bianca ", "About");
 
         }
 
-        private void buttonMini_Click_1(object sender, EventArgs e)
+        private void buttonMini_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void buttonResize_Click_1(object sender, EventArgs e)
+        private void buttonResize_Click(object sender, EventArgs e)
         {
             if (WindowState == FormWindowState.Normal)
                 this.WindowState = FormWindowState.Maximized;
@@ -92,9 +112,13 @@ namespace ProiectIP
                 this.WindowState = FormWindowState.Normal;
         }
 
-        private void buttonClose_Click_1(object sender, EventArgs e)
+        private void buttonClose_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
+        #endregion
+
+
     }
 }

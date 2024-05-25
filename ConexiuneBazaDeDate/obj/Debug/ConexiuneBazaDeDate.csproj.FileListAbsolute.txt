@@ -14,3 +14,11 @@ D:\FINAL\ProiectIP\ConexiuneBazaDeDate\obj\Debug\ConexiuneBazaDeDate.csproj.Asse
 D:\FINAL\ProiectIP\ConexiuneBazaDeDate\obj\Debug\ConexiuneBazaDeDate.csproj.CoreCompileInputs.cache
 D:\FINAL\ProiectIP\ConexiuneBazaDeDate\obj\Debug\ConexiuneBazaDeDate.dll
 D:\FINAL\ProiectIP\ConexiuneBazaDeDate\obj\Debug\ConexiuneBazaDeDate.pdb
+D:\AN3_SEM2\proiec_ip_25.05\ProiectIP\ConexiuneBazaDeDate\bin\Debug\MovieDatabase.mdf
+D:\AN3_SEM2\proiec_ip_25.05\ProiectIP\ConexiuneBazaDeDate\bin\Debug\MovieDatabase_log.ldf
+D:\AN3_SEM2\proiec_ip_25.05\ProiectIP\ConexiuneBazaDeDate\bin\Debug\ConexiuneBazaDeDate.dll
+D:\AN3_SEM2\proiec_ip_25.05\ProiectIP\ConexiuneBazaDeDate\bin\Debug\ConexiuneBazaDeDate.pdb
+D:\AN3_SEM2\proiec_ip_25.05\ProiectIP\ConexiuneBazaDeDate\obj\Debug\ConexiuneBazaDeDate.csproj.AssemblyReference.cache
+D:\AN3_SEM2\proiec_ip_25.05\ProiectIP\ConexiuneBazaDeDate\obj\Debug\ConexiuneBazaDeDate.csproj.CoreCompileInputs.cache
+D:\AN3_SEM2\proiec_ip_25.05\ProiectIP\ConexiuneBazaDeDate\obj\Debug\ConexiuneBazaDeDate.dll
+D:\AN3_SEM2\proiec_ip_25.05\ProiectIP\ConexiuneBazaDeDate\obj\Debug\ConexiuneBazaDeDate.pdb

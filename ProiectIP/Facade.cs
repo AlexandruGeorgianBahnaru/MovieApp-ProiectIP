@@ -33,16 +33,15 @@ namespace ProiectIP
         #region Fields
         private Filme _filme;
         private Utilizator _utilizator;
-        public bool IsAboutWindowOpened { get; private set; }
-        public bool IsHelpWindowOpened { get; private set; }
+
         #endregion
 
         #region Methods
 
         public Facade(Utilizator utilizator)
         {
-            _filme=new Filme(); 
-            _utilizator=utilizator;
+            _filme = new Filme();
+            _utilizator = utilizator;
         }
         public void VeziFilme()
         {
@@ -56,13 +55,10 @@ namespace ProiectIP
 
         public void About()
         {
-            string title = "Despre";
-            MessageBox.Show("Proiect IP 2024 - Rezervare Online bilete la cinema. \nBahnaru George\nButu Alexandra\nChelea Diana \nSpiridon Bianca ", title);
-            IsAboutWindowOpened = true;
+            MessageBox.Show("Proiect IP 2024 - Rezervare Online bilete la cinema. \nBahnaru George\nButu Alexandra\nChelea Diana \nSpiridon Bianca ", "About");
         }
         public void Help()
         {
-            IsHelpWindowOpened = true;
             System.Diagnostics.Process.Start("RezervareOnlineCinema.chm");
         }
         public void Close()
@@ -81,7 +77,7 @@ namespace ProiectIP
             else
                 _utilizator.WindowState = FormWindowState.Normal;
         }
-      
+
         #endregion
     }
 }

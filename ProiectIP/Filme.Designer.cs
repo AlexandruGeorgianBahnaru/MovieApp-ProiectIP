@@ -73,7 +73,7 @@ namespace ProiectIP
             this.dataGridViewFilme.RowTemplate.Height = 28;
             this.dataGridViewFilme.Size = new System.Drawing.Size(739, 399);
             this.dataGridViewFilme.TabIndex = 6;
-            this.dataGridViewFilme.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewFilme_CellContentClick);
+           
             // 
             // panelMenu
             // 
@@ -147,7 +147,7 @@ namespace ProiectIP
             this.buttonAbout.Text = "About";
             this.buttonAbout.UseMnemonic = false;
             this.buttonAbout.UseVisualStyleBackColor = true;
-            this.buttonAbout.Click += new System.EventHandler(this.buttonAbout_Click_1);
+            this.buttonAbout.Click += new System.EventHandler(this.buttonAbout_Click);
             // 
             // panelNavigation
             // 
@@ -177,7 +177,7 @@ namespace ProiectIP
             this.buttonClose.TabIndex = 0;
             this.buttonClose.Text = "X";
             this.buttonClose.UseVisualStyleBackColor = false;
-            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click_1);
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // buttonResize
             // 
@@ -194,7 +194,7 @@ namespace ProiectIP
             this.buttonResize.TabIndex = 1;
             this.buttonResize.Text = "O";
             this.buttonResize.UseVisualStyleBackColor = false;
-            this.buttonResize.Click += new System.EventHandler(this.buttonResize_Click_1);
+            this.buttonResize.Click += new System.EventHandler(this.buttonResize_Click);
             // 
             // buttonMini
             // 
@@ -211,7 +211,7 @@ namespace ProiectIP
             this.buttonMini.TabIndex = 2;
             this.buttonMini.Text = "-";
             this.buttonMini.UseVisualStyleBackColor = false;
-            this.buttonMini.Click += new System.EventHandler(this.buttonMini_Click_1);
+            this.buttonMini.Click += new System.EventHandler(this.buttonMini_Click);
             // 
             // contextMenuStrip1
             // 
@@ -235,7 +235,7 @@ namespace ProiectIP
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Filme";
             this.Text = "Filme";
-            this.Load += new System.EventHandler(this.Filme_Load_1);
+            this.Load += new System.EventHandler(this.Filme_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFilme)).EndInit();
             this.panelMenu.ResumeLayout(false);
             this.panelDate.ResumeLayout(false);

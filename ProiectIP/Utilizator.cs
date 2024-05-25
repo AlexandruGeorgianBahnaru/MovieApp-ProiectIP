@@ -24,7 +24,7 @@ using ConexiuneBazaDeDate;
 
 namespace ProiectIP
 {
- 
+
     public partial class Utilizator : Form
     {
         #region Fields
@@ -33,15 +33,16 @@ namespace ProiectIP
 
 
         #region Methods
-        
+
         public Utilizator()
         {
             InitializeComponent();
             _facade = new Facade(this);
-
         }
-      
-        #endregion
+        private void buttonVeziFilme_Click(object sender, EventArgs e)
+        {
+            _facade.VeziFilme();
+        }
 
         private void buttonDelogareUser_Click(object sender, EventArgs e)
         {
@@ -50,34 +51,58 @@ namespace ProiectIP
             this.Hide();
         }
 
-        private void buttonAbout_Click_1(object sender, EventArgs e)
-        {
-            _facade.About();
-        }
-
-        private void buttonHelp_Click_1(object sender, EventArgs e)
-        {
-            _facade.Help();
-        }
-
-        private void buttonMini_Click_1(object sender, EventArgs e)
-        {
-            _facade.Mini();
-        }
-
-        private void buttonResize_Click_1(object sender, EventArgs e)
+        private void buttonResize_Click(object sender, EventArgs e)
         {
             _facade.Resize();
         }
 
-        private void buttonClose_Click_1(object sender, EventArgs e)
+        private void buttonMini_Click(object sender, EventArgs e)
+        {
+            _facade.Mini();
+        }
+
+        private void buttonClose_Click(object sender, EventArgs e)
         {
             _facade.Close();
         }
 
-        private void buttonVeziFilme_Click(object sender, EventArgs e)
+
+        private void buttonAbout_Click(object sender, EventArgs e)
         {
-            _facade.VeziFilme();
+            _facade.About();
         }
+
+        private void buttonHelp_Click(object sender, EventArgs e)
+        {
+            _facade.Help();
+        }
+
+
+        #endregion
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

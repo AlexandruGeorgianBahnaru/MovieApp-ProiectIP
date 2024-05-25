@@ -49,7 +49,8 @@ namespace ProiectIP
                 try
                 {
                     con = Conexiune.GetConexiune();
-                                    con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=Z:\\proiect_mai_tb_codu_mod\\ProiectIP\\ProiectIP\\MovieDatabase.mdf;Integrated Security = True";
+                    con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\AN3_SEM2\\proiec_ip_25.05\\ProiectIP\\ProiectIP\\MovieDatabase.mdf;Integrated Security = True";
+
                     con.Open();
 
                     string email = textBoxEmail.Text;

@@ -76,7 +76,7 @@ namespace ProiectIP
             this.buttonFilmeAdmin.TabIndex = 1;
             this.buttonFilmeAdmin.Text = "Vezi filme";
             this.buttonFilmeAdmin.UseVisualStyleBackColor = true;
-            this.buttonFilmeAdmin.Click += new System.EventHandler(this.buttonFilmeAdmin_Click_1);
+            this.buttonFilmeAdmin.Click += new System.EventHandler(this.buttonFilmeAdmin_Click);
             // 
             // buttonStergeFilm
             // 
@@ -115,7 +115,7 @@ namespace ProiectIP
             this.dataGridViewAdmin.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewAdmin.Size = new System.Drawing.Size(743, 350);
             this.dataGridViewAdmin.TabIndex = 4;
-            this.dataGridViewAdmin.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewAdmin_CellContentClick);
+            
             // 
             // panelMenu
             // 
@@ -193,6 +193,7 @@ namespace ProiectIP
             this.buttonResize.TabIndex = 1;
             this.buttonResize.Text = "O";
             this.buttonResize.UseVisualStyleBackColor = false;
+            this.buttonResize.Click += new System.EventHandler(this.buttonResize_Click);
             // 
             // buttonMini
             // 
@@ -209,6 +210,7 @@ namespace ProiectIP
             this.buttonMini.TabIndex = 2;
             this.buttonMini.Text = "-";
             this.buttonMini.UseVisualStyleBackColor = false;
+            this.buttonMini.Click += new System.EventHandler(this.buttonMini_Click);
             // 
             // buttonClose
             // 
@@ -225,6 +227,7 @@ namespace ProiectIP
             this.buttonClose.TabIndex = 0;
             this.buttonClose.Text = "X";
             this.buttonClose.UseVisualStyleBackColor = false;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // buttonHelp
             // 
@@ -297,7 +300,7 @@ namespace ProiectIP
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Administrator";
             this.Text = "Administrator";
-            this.Load += new System.EventHandler(this.Administrator_Load_1);
+            this.Load += new System.EventHandler(this.Administrator_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAdmin)).EndInit();
             this.panelMenu.ResumeLayout(false);
             this.panelDate.ResumeLayout(false);

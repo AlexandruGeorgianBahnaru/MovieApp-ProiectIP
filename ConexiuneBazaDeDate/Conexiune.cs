@@ -10,9 +10,8 @@ namespace ConexiuneBazaDeDate
     public class Conexiune
     {
         #region Fields
-        private static SqlConnection _connection;
-     
-        public static string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\FINAL\\ProiectIP\\ProiectIP\\MovieDatabase.mdf;Integrated Security = True";
+        private static SqlConnection _conexiune;     
+        public static string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\AN3_SEM2\\proiec_ip_25.05\\ProiectIP\\ProiectIP\\MovieDatabase.mdf;Integrated Security = True";
         #endregion
 
         #region Methods
@@ -30,11 +29,11 @@ namespace ConexiuneBazaDeDate
         /// <returns>Connection</returns>
         public static SqlConnection GetConexiune()
         {
-            if (_connection == null)
+            if (_conexiune == null)
             {
-                _connection = new SqlConnection(connectionString);
+                _conexiune = new SqlConnection(connectionString);
             }
-            return _connection;
+            return _conexiune;
         }
         #endregion
     }

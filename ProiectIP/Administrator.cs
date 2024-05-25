@@ -27,7 +27,7 @@ namespace ProiectIP
     public partial class Administrator : Form
     {
         #region Fields
-        private List<string> _lista_id;
+
         private DataTable _dataTable;
         public AdaugaFilm _adaugaFilm;
         #endregion
@@ -40,7 +40,7 @@ namespace ProiectIP
         public Administrator()
         {
             InitializeComponent();
-            _lista_id = new List<string>();
+            
         }
 
         /// <summary>
@@ -52,42 +52,49 @@ namespace ProiectIP
             _adaugaFilm.Show();
         }
 
-       
-        /// <summary>
-        /// Metoda care permite sa fie vizibila orice actualizare facuta pentru bilete: adaugarea/stergere/editarea
-        /// </summary>
-        public void ReloadTable()
-        {
-            SqlConnection con = Conexiune.GetConexiune();
-            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM Movies", con);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            dataGridViewAdmin.DataSource = dt;
-            con.Close();
-        }
 
         
-
-        /// <summary>
-        /// Metoda care prelueaza id-ul biletului din coloana selectata
-        /// </summary>
-        /// <returns>List of ids</returns>
-        public List<string> GetId()
+       public void Actualizare()
         {
-           foreach (DataGridViewRow row in dataGridViewAdmin.SelectedRows)
+            // Interogare SQL pentru a selecta toate filmele din baza de date
+            string query = "SELECT * FROM Movies";
+
+            try
             {
-                _lista_id.Add(row.Cells["Id"].Value.ToString());
+                // Crează o conexiune și un obiect SqlCommand
+                using (SqlConnection con = Conexiune.GetConexiune())
+                using (SqlCommand cmd = new SqlCommand(query, con))
+                {
+                    // Deschide conexiunea
+                    
+
+                    // Creează un adaptor de date pentru a umple un DataSet
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                    {
+                        // Creează un DataSet
+                        DataSet dataSet = new DataSet();
+
+                        // Umple DataSet-ul cu datele din baza de date
+                        adapter.Fill(dataSet);
+
+                        // Verifică dacă există cel puțin o tabelă în DataSet
+                        if (dataSet.Tables.Count > 0)
+                        {
+                            // Atribuie sursa de date pentru dataGridViewAdmin la prima tabelă din DataSet
+                            dataGridViewAdmin.DataSource = dataSet.Tables[0];
+                        }
+                    }
+                }
             }
-            return _lista_id;
+            catch (Exception ex)
+            {
+                // Gestionează orice excepție și afișează un mesaj de eroare
+                MessageBox.Show("A apărut o eroare în încărcarea datelor: " + ex.Message);
+            }
+
         }
 
-        /// <summary>
-        /// Stergere id-uri din lista - la terminarea editarii unui bilet eliberez lista de id-uri
-        /// </summary>
-        public void ClearIds()
-        {
-            _lista_id.Clear();
-        }
+
 
         /// <summary>
         /// La apasarea butonului Close se inchide interfata curenta
@@ -122,61 +129,100 @@ namespace ProiectIP
             this.WindowState = FormWindowState.Minimized;
         }
 
-        public AdaugaFilm GetFilm()
-        {
-            return _adaugaFilm;
-        }
-
-
-        #endregion
-
-        private void buttonFilmeAdmin_Click_1(object sender, EventArgs e)
-        {
-
-            Filme filme = new Filme();
-            filme.Show();
-        }
+        
 
         private void buttonEditeazaFilm_Click(object sender, EventArgs e)
         {
-            EditeazaFilm editeaza = new EditeazaFilm(this);
-           editeaza.Show();
+            if (dataGridViewAdmin.SelectedRows.Count == 1)
+            {
+                DataGridViewRow filmSelectat = dataGridViewAdmin.SelectedRows[0];
+                int idFilmSelectat = Convert.ToInt32(filmSelectat.Cells["Id"].Value);
+
+                DataRow filmData = ((DataRowView)filmSelectat.DataBoundItem).Row;
+
+                EditeazaFilm editeaza = new EditeazaFilm(this, idFilmSelectat, filmData);
+                editeaza.Show();
+            }
+            else
+            {
+                MessageBox.Show("Selectează un singur film pentru a-l edita!");
+            }
         }
+
 
         private void buttonStergeFilm_Click(object sender, EventArgs e)
         {
-            foreach (DataGridViewRow item in this.dataGridViewAdmin.SelectedRows)
+            if (dataGridViewAdmin.SelectedRows.Count == 1) 
             {
-                SqlConnection con = Conexiune.GetConexiune();
-                SqlCommand cmd = con.CreateCommand();
-                int id = Convert.ToInt32(dataGridViewAdmin.SelectedRows[0].Cells[0].Value);
-                cmd.CommandText = "Delete from Movies where id='" + id + "'";
-                dataGridViewAdmin.Rows.RemoveAt(this.dataGridViewAdmin.SelectedRows[0].Index);
-                con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=Z:\\proiect_mai_tb_codu_mod\\ProiectIP\\ProiectIP\\MovieDatabase.mdf;Integrated Security = True";
+                DataGridViewRow filmSelectat = dataGridViewAdmin.SelectedRows[0];
+                int idFilmSelectat = Convert.ToInt32(filmSelectat.Cells["Id"].Value);
+                string deleteQuery = "DELETE FROM Movies WHERE id=@id";
 
-                con.Open();
-                cmd.ExecuteNonQuery();
-                con.Close();
+                try
+                {
+                    using (SqlConnection con = Conexiune.GetConexiune())
+                    {
+                        SqlCommand cmd = new SqlCommand(deleteQuery, con);
+                        cmd.Parameters.AddWithValue("@id", idFilmSelectat);
+                        con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\AN3_SEM2\\proiec_ip_25.05\\ProiectIP\\ProiectIP\\MovieDatabase.mdf;Integrated Security=True";
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+                    }
+
+                    dataGridViewAdmin.Rows.Remove(filmSelectat);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("A apărut o eroare: " + ex.Message);
+                }
             }
-            
+            else
+            {
+                MessageBox.Show("Selectează un singur film pentru a-l șterge!");
+            }
         }
 
-        private void Administrator_Load_1(object sender, EventArgs e)
+
+
+        private void Administrator_Load(object sender, EventArgs e)
         {
-            SqlConnection con = Conexiune.GetConexiune();
+            // Interogare SQL pentru a selecta toate filmele din baza de date
             string query = "SELECT * FROM Movies";
-            SqlCommand command = new SqlCommand(query, con);
-            SqlDataAdapter da = new SqlDataAdapter(command);
-            _dataTable = new DataTable();
-            da.Fill(_dataTable);
-            dataGridViewAdmin.DataSource = _dataTable;
-            con.Close();
+
+            try
+            {
+                // Crează o conexiune și un obiect SqlCommand
+                using (SqlConnection con = Conexiune.GetConexiune())
+                using (SqlCommand cmd = new SqlCommand(query, con))
+                {
+                    // Deschide conexiunea
+                 
+
+                    // Creează un adaptor de date pentru a umple un DataSet
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                    {
+                        // Creează un DataSet
+                        DataSet dataSet = new DataSet();
+
+                        // Umple DataSet-ul cu datele din baza de date
+                        adapter.Fill(dataSet);
+
+                        // Verifică dacă există cel puțin o tabelă în DataSet
+                        if (dataSet.Tables.Count > 0)
+                        {
+                            // Atribuie sursa de date pentru dataGridViewAdmin la prima tabelă din DataSet
+                            dataGridViewAdmin.DataSource = dataSet.Tables[0];
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Gestionează orice excepție și afișează un mesaj de eroare
+                MessageBox.Show("A apărut o eroare în încărcarea datelor: " + ex.Message);
+            }
         }
 
-        private void dataGridViewAdmin_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
 
         private void buttonHelp_Click(object sender, EventArgs e)
         {
@@ -185,9 +231,14 @@ namespace ProiectIP
 
         private void buttonAbout_Click(object sender, EventArgs e)
         {
-            string title = "Despre";
-            MessageBox.Show("Proiect IP 2024 - Rezervare Online bilete la cinema. \nBahnaru George\nButu Alexandra\nChelea Diana \nSpiridon Bianca ", title);
+            MessageBox.Show("Proiect IP 2024 - Rezervare Online bilete la cinema. \nBahnaru George\nButu Alexandra\nChelea Diana \nSpiridon Bianca ", "About");
+        }
 
+        private void buttonFilmeAdmin_Click(object sender, EventArgs e)
+        {
+            Filme filme = new Filme();
+            filme.Show();
         }
     }
+    #endregion
 }

@@ -64,7 +64,7 @@ namespace ProiectIP
             this.panelAbout.BackgroundImage = global::ProiectIP.Properties.Resources.about;
             this.panelAbout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panelAbout.Location = new System.Drawing.Point(864, 62);
-            this.panelAbout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelAbout.Margin = new System.Windows.Forms.Padding(4);
             this.panelAbout.Name = "panelAbout";
             this.panelAbout.Size = new System.Drawing.Size(129, 76);
             this.panelAbout.TabIndex = 12;
@@ -92,7 +92,7 @@ namespace ProiectIP
             this.buttonAdauga.TabIndex = 16;
             this.buttonAdauga.Text = "Adauga";
             this.buttonAdauga.UseVisualStyleBackColor = false;
-            this.buttonAdauga.Click += new System.EventHandler(this.buttonAdauga_Click_1);
+            this.buttonAdauga.Click += new System.EventHandler(this.buttonAdauga_Click);
             // 
             // labelOraFilm
             // 
@@ -196,7 +196,7 @@ namespace ProiectIP
             this.panelMenu.Controls.Add(this.panel2);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
-            this.panelMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelMenu.Margin = new System.Windows.Forms.Padding(4);
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(750, 675);
             this.panelMenu.TabIndex = 29;
@@ -219,7 +219,7 @@ namespace ProiectIP
             this.panel2.Font = new System.Drawing.Font("Bell MT", 8.25F);
             this.panel2.ForeColor = System.Drawing.Color.Black;
             this.panel2.Location = new System.Drawing.Point(123, 77);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(623, 470);
             this.panel2.TabIndex = 32;
@@ -252,7 +252,7 @@ namespace ProiectIP
             this.buttonMini.TabIndex = 2;
             this.buttonMini.Text = "-";
             this.buttonMini.UseVisualStyleBackColor = false;
-            this.buttonMini.Click += new System.EventHandler(this.buttonMini_Click_1);
+            this.buttonMini.Click += new System.EventHandler(this.buttonMini_Click);
             // 
             // buttonClose
             // 
@@ -269,7 +269,7 @@ namespace ProiectIP
             this.buttonClose.TabIndex = 0;
             this.buttonClose.Text = "X";
             this.buttonClose.UseVisualStyleBackColor = false;
-            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click_1);
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // buttonResize
             // 
@@ -286,7 +286,7 @@ namespace ProiectIP
             this.buttonResize.TabIndex = 1;
             this.buttonResize.Text = "O";
             this.buttonResize.UseVisualStyleBackColor = false;
-            this.buttonResize.Click += new System.EventHandler(this.buttonResize_Click_1);
+            this.buttonResize.Click += new System.EventHandler(this.buttonResize_Click);
             // 
             // buttonHelp
             // 
@@ -300,7 +300,7 @@ namespace ProiectIP
             this.buttonHelp.Text = "Help";
             this.buttonHelp.UseMnemonic = false;
             this.buttonHelp.UseVisualStyleBackColor = false;
-            this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click_1);
+            this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
             // 
             // panel1
             // 
@@ -308,7 +308,7 @@ namespace ProiectIP
             this.panel1.BackgroundImage = global::ProiectIP.Properties.Resources.help;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel1.Location = new System.Drawing.Point(864, 506);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(129, 76);
             this.panel1.TabIndex = 14;
@@ -325,7 +325,7 @@ namespace ProiectIP
             this.buttonAbout.Text = "About";
             this.buttonAbout.UseMnemonic = false;
             this.buttonAbout.UseVisualStyleBackColor = false;
-            this.buttonAbout.Click += new System.EventHandler(this.buttonAbout_Click_1);
+            this.buttonAbout.Click += new System.EventHandler(this.buttonAbout_Click);
             // 
             // panelNavigation
             // 
@@ -335,7 +335,7 @@ namespace ProiectIP
             this.panelNavigation.Controls.Add(this.buttonResize);
             this.panelNavigation.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelNavigation.Location = new System.Drawing.Point(750, 0);
-            this.panelNavigation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelNavigation.Margin = new System.Windows.Forms.Padding(4);
             this.panelNavigation.Name = "panelNavigation";
             this.panelNavigation.Size = new System.Drawing.Size(297, 54);
             this.panelNavigation.TabIndex = 30;
@@ -356,7 +356,6 @@ namespace ProiectIP
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AdaugaFilm";
             this.Text = "AdaugaFilm";
-            this.Load += new System.EventHandler(this.AdaugaFilm_Load);
             this.panelMenu.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
