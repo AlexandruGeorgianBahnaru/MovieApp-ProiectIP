@@ -167,7 +167,7 @@ namespace ProiectIP
             {
                 using (SqlConnection con = Conexiune.GetConexiune())
                 {
-                    con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\AN3_SEM2\\proiect_ip_24.05\\ProiectIP\\ProiectIP\\MovieDatabase.mdf;Integrated Security = True";
+                    con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=Z:\\proiect_mai_tb_codu_mod\\ProiectIP\\ProiectIP\\MovieDatabase.mdf;Integrated Security = True";
                     con.Open();
                     SqlCommand cmd = new SqlCommand("INSERT INTO Movies (Name, Gen, Durata, Data, Time) VALUES (@Name, @Gen, @Durata, @Data, @Time)", con);
                     cmd.Parameters.AddWithValue("@Name", name);

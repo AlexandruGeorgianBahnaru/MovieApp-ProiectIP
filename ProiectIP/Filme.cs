@@ -45,7 +45,7 @@ namespace ProiectIP
         private void Filme_Load_1(object sender, EventArgs e)
         {
             SqlConnection con = Conexiune.GetConexiune();
-            con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\AN3_SEM2\\proiect_ip_24.05\\ProiectIP\\ProiectIP\\MovieDatabase.mdf;Integrated Security = True";
+            con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=Z:\\proiect_mai_tb_codu_mod\\ProiectIP\\ProiectIP\\MovieDatabase.mdf;Integrated Security = True";
             string query = "SELECT * FROM Movies";
             SqlCommand command = new SqlCommand(query, con);
             SqlDataAdapter da = new SqlDataAdapter(command);
