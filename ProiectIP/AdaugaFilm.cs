@@ -1,8 +1,9 @@
 ﻿/**************************************************************************
  *                                                                        *
- *  File:        AdaugaBilet.cs                                           *
- *  Copyright:   (c) 2024, Butu Alexandra-Gabriela                        *
- *  Description: Class for creating a movie                                *
+ *  File:        AdaugaFilm.cs                                            *
+ *  Copyright:   (c) 2024, Bahnaru, Butu, Chelea, Spiridon                *
+ *  Description: Implementează adăugarea înregistrărilor în tabela Movies *
+ *  de către admin.                                                       *
  *                                                                        *
  *  This program is free software; you can redistribute it and/or modify  *
  *  it under the terms of the GNU General Public License as published by  *
@@ -12,6 +13,7 @@
  *  PURPOSE. See the GNU General Public License for more details.         *
  *                                                                        *
  **************************************************************************/
+
 
 using ProiectIP;
 using System;
@@ -163,7 +165,6 @@ namespace ProiectIP
             // Inserarea în baza de date
             try
             {
-
                 using (SqlConnection con = Conexiune.GetConexiune())
                 {
                     con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\AN3_SEM2\\proiect_ip_24.05\\ProiectIP\\ProiectIP\\MovieDatabase.mdf;Integrated Security = True";
@@ -186,7 +187,6 @@ namespace ProiectIP
             {
                 MessageBox.Show("Eroare la conectarea la baza de date: " + ex.Message);
             }
-
         }
 
         

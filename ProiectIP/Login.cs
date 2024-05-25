@@ -1,4 +1,21 @@
-﻿using System;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        Login.cs                                                 *
+ *  Copyright:   (c) 2024, Bahnaru, Butu, Chelea, Spiridon                *
+ *  Description: Implementarea opțiunii de logare a utilizatorilor deja   *
+ *  existenți în tabelul Users.                                           *
+ *                                                                        *
+ *  This program is free software; you can redistribute it and/or modify  *
+ *  it under the terms of the GNU General Public License as published by  *
+ *  the Free Software Foundation. This program is distributed in the      *
+ *  hope that it will be useful, but WITHOUT ANY WARRANTY; without even   *
+ *  the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR   *
+ *  PURPOSE. See the GNU General Public License for more details.         *
+ *                                                                        *
+ **************************************************************************/
+
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,10 +31,7 @@ namespace ProiectIP
     public partial class Login : Form
     {
         #region Fields
-        public bool IsAboutWindowOpened { get; private set; }
-        public bool IsHelpWindowOpened { get; private set; }
-        public bool IsInregistrareWindowOpened { get; private set; }
-        public bool IsUserAuthenticated { get; private set; }
+       
         #endregion
 
         #region Methods
@@ -28,74 +42,57 @@ namespace ProiectIP
         {
             InitializeComponent();
         }
-
-        private void Login_Load(object sender, EventArgs e)
-        {
-
-            
-        }
-
-        private void labelParola_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panelNavigation_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         
         private void buttonLogin_Click(object sender, EventArgs e)
         {
                 SqlConnection con = null;
                 try
                 {
-                    con = ConexiuneBazaDeDate.Conexiune.GetConexiune();
-                con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\AN3_SEM2\\proiect_ip_24.05\\ProiectIP\\ProiectIP\\MovieDatabase.mdf;Integrated Security = True";
+                    con = Conexiune.GetConexiune();
+                    con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\AN3_SEM2\\proiect_ip_24.05\\ProiectIP\\ProiectIP\\MovieDatabase.mdf;Integrated Security = True";
+                    con.Open();
 
-                con.Open();
+                    string email = textBoxEmail.Text;
+                    string query = "SELECT COUNT(*) FROM Users WHERE Email = '" + email + "'";
 
-                    string query = "select count(*) from Users where Email = '" + textBoxEmail.Text + "'";
                     SqlCommand cmdEmail = new SqlCommand(query, con);
-                    int emailCount = (int)cmdEmail.ExecuteScalar();
+                    int contorEmail = (int)cmdEmail.ExecuteScalar();
 
-                    if (emailCount == 0)
+                    if (contorEmail == 0)
                     {
-                        MessageBox.Show("Email inexistent!");
+                        MessageBox.Show("Email sau parola incorecte!");
                     }
-                    else
+                    else if (contorEmail == 1)
                     {
-                        string querySelect = "select Admin from Users where Email = '" + textBoxEmail.Text + "' and Parola = '" + textBoxParola.Text + "'";
-                        SqlCommand cmd = new SqlCommand(querySelect, con);
-                        SqlDataAdapter da = new SqlDataAdapter(cmd);
-                        DataTable dt = new DataTable();
-                        da.Fill(dt);
+                        string parola = textBoxParola.Text;
+                        string querySelect = "SELECT Admin FROM Users WHERE Email = '" + email + "' and Parola = '" + parola + "'";
 
-                        if (dt.Rows.Count == 1)
+                        SqlCommand cmd = new SqlCommand(querySelect, con);
+                        object rezultat = cmd.ExecuteScalar();
+
+                        if (rezultat != null && (bool)rezultat)
                         {
-                            if (dt.Rows[0][0].ToString() == "True")
-                            {
-                                Administrator admin = new Administrator();
-                                admin.Show();
-                                this.Hide();
-                            }
-                            else
-                            {
-                                Utilizator user = new Utilizator();
-                                user.Show();
-                                this.Hide();
-                            }
+                            Administrator admin = new Administrator();
+                            admin.Show();
+                            this.Hide();
+                        }
+                        else if (rezultat != null && !(bool)rezultat)
+                        {
+                            Utilizator user = new Utilizator();
+                            user.Show();
+                            this.Hide();
                         }
                         else
                         {
-                            MessageBox.Show("Parola greșită!");
+                            MessageBox.Show("Parola incorectă!");
                         }
+
+
                     }
                 }
-                catch (Exception ex)
+                catch (Exception exception)
                 {
-                    MessageBox.Show("Nu s-a putut efectua conexiunea la baza de date: " + ex.Message);
+                    MessageBox.Show("Nu s-a putut efectua conexiunea la baza de date: " + exception.Message);
                 }
                 finally
                 {
@@ -104,6 +101,7 @@ namespace ProiectIP
                         con.Close();
                     }
                 }
+            
         }
 
         /// <summary>
@@ -113,13 +111,9 @@ namespace ProiectIP
         /// <param name="e"></param>
         private void buttonAbout_Click(object sender, EventArgs e)
         {
-            string title = "Despre";
-            MessageBox.Show("Proiect IP 2024 - Rezervare Online bilete la cinema. \nBahnaru George\nButu Alexandra\nChelea Diana \nSpiridon Bianca ", title);
-            IsAboutWindowOpened = true;
+            MessageBox.Show("Proiect IP 2024 - Rezervare Online bilete la cinema. \nBahnaru George\nButu Alexandra\nChelea Diana \nSpiridon Bianca ", "Despre");
         }
-
-
-        
+                
         /// <summary>
         /// La apasarea 'Help' se deschide un fisier .chm
         /// </summary>
@@ -127,8 +121,7 @@ namespace ProiectIP
         /// <param name="e"></param>
         private void buttonHelp_Click(object sender, EventArgs e)
         {
-            IsHelpWindowOpened = true;
-            System.Diagnostics.Process.Start("RezervareOnlineCinema.chm");
+           System.Diagnostics.Process.Start("RezervareOnlineCinema.chm");
         }
 
         /// <summary>
@@ -162,17 +155,15 @@ namespace ProiectIP
         private void buttonMini_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
-        }
-        #endregion
-        private void textBoxParola_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        }        
 
         private void buttonInregistrare_Click(object sender, EventArgs e)
         {
             Inregistrare reg1 = new Inregistrare();
             reg1.Show();
         }
+
+
+        #endregion
     }
 }

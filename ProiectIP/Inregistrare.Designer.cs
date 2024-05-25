@@ -242,6 +242,7 @@ namespace ProiectIP
             this.buttonMini.TabIndex = 2;
             this.buttonMini.Text = "-";
             this.buttonMini.UseVisualStyleBackColor = false;
+            this.buttonMini.Click += new System.EventHandler(this.buttonMini_Click);
             // 
             // buttonClose
             // 
@@ -258,6 +259,7 @@ namespace ProiectIP
             this.buttonClose.TabIndex = 0;
             this.buttonClose.Text = "X";
             this.buttonClose.UseVisualStyleBackColor = false;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // buttonResize
             // 
@@ -274,6 +276,7 @@ namespace ProiectIP
             this.buttonResize.TabIndex = 1;
             this.buttonResize.Text = "O";
             this.buttonResize.UseVisualStyleBackColor = false;
+            this.buttonResize.Click += new System.EventHandler(this.buttonResize_Click);
             // 
             // panelAbout
             // 
@@ -297,6 +300,7 @@ namespace ProiectIP
             this.buttonHelp.Text = "Help";
             this.buttonHelp.UseMnemonic = false;
             this.buttonHelp.UseVisualStyleBackColor = true;
+            this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
             // 
             // panel1
             // 
@@ -320,6 +324,7 @@ namespace ProiectIP
             this.buttonAbout.Text = "About";
             this.buttonAbout.UseMnemonic = false;
             this.buttonAbout.UseVisualStyleBackColor = true;
+            this.buttonAbout.Click += new System.EventHandler(this.buttonAbout_Click);
             // 
             // Inregistrare
             // 

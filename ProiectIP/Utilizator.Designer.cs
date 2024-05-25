@@ -36,8 +36,10 @@ namespace ProiectIP
             this.dataGridViewUtilizator = new System.Windows.Forms.DataGridView();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panelDate = new System.Windows.Forms.Panel();
+            this.pictureBoxFilme = new System.Windows.Forms.PictureBox();
+            this.labelDescriereFilme = new System.Windows.Forms.Label();
             this.labelFilme = new System.Windows.Forms.Label();
-            this.buttonVeziRute = new System.Windows.Forms.Button();
+            this.buttonVeziFilme = new System.Windows.Forms.Button();
             this.buttonDelogareUser = new System.Windows.Forms.Button();
             this.buttonHelp = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -49,6 +51,7 @@ namespace ProiectIP
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUtilizator)).BeginInit();
             this.panelMenu.SuspendLayout();
             this.panelDate.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFilme)).BeginInit();
             this.panelNavigation.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,7 +61,7 @@ namespace ProiectIP
             this.panelAbout.BackgroundImage = global::ProiectIP.Properties.Resources.about;
             this.panelAbout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panelAbout.Location = new System.Drawing.Point(1140, 83);
-            this.panelAbout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelAbout.Margin = new System.Windows.Forms.Padding(4);
             this.panelAbout.Name = "panelAbout";
             this.panelAbout.Size = new System.Drawing.Size(129, 76);
             this.panelAbout.TabIndex = 12;
@@ -83,7 +86,7 @@ namespace ProiectIP
             this.panelMenu.Controls.Add(this.panelDate);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
-            this.panelMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelMenu.Margin = new System.Windows.Forms.Padding(4);
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(862, 718);
             this.panelMenu.TabIndex = 30;
@@ -91,15 +94,39 @@ namespace ProiectIP
             // panelDate
             // 
             this.panelDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.panelDate.Controls.Add(this.pictureBoxFilme);
+            this.panelDate.Controls.Add(this.labelDescriereFilme);
             this.panelDate.Controls.Add(this.labelFilme);
-            this.panelDate.Controls.Add(this.buttonVeziRute);
+            this.panelDate.Controls.Add(this.buttonVeziFilme);
             this.panelDate.Controls.Add(this.dataGridViewUtilizator);
             this.panelDate.Font = new System.Drawing.Font("Bell MT", 8.25F);
             this.panelDate.Location = new System.Drawing.Point(68, 87);
-            this.panelDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelDate.Margin = new System.Windows.Forms.Padding(4);
             this.panelDate.Name = "panelDate";
             this.panelDate.Size = new System.Drawing.Size(790, 547);
             this.panelDate.TabIndex = 32;
+            // 
+            // pictureBoxFilme
+            // 
+            this.pictureBoxFilme.BackgroundImage = global::ProiectIP.Properties.Resources.movieCharacters3;
+            this.pictureBoxFilme.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxFilme.Location = new System.Drawing.Point(168, 253);
+            this.pictureBoxFilme.Name = "pictureBoxFilme";
+            this.pictureBoxFilme.Size = new System.Drawing.Size(528, 193);
+            this.pictureBoxFilme.TabIndex = 12;
+            this.pictureBoxFilme.TabStop = false;
+            // 
+            // labelDescriereFilme
+            // 
+            this.labelDescriereFilme.AutoSize = true;
+            this.labelDescriereFilme.BackColor = System.Drawing.Color.Wheat;
+            this.labelDescriereFilme.Font = new System.Drawing.Font("Constantia", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.labelDescriereFilme.Location = new System.Drawing.Point(174, 116);
+            this.labelDescriereFilme.Name = "labelDescriereFilme";
+            this.labelDescriereFilme.Size = new System.Drawing.Size(511, 124);
+            this.labelDescriereFilme.TabIndex = 11;
+            this.labelDescriereFilme.Text = "Bine ai venit pe platforma noastră! \r\n\r\nApăsând butonul de mai jos, poți vizualiz" +
+    "a\r\n filmele disponibilie în program acum!";
             // 
             // labelFilme
             // 
@@ -114,20 +141,20 @@ namespace ProiectIP
             this.labelFilme.Text = "Filme";
             this.labelFilme.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // buttonVeziRute
+            // buttonVeziFilme
             // 
-            this.buttonVeziRute.BackColor = System.Drawing.Color.Maroon;
-            this.buttonVeziRute.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonVeziRute.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonVeziRute.ForeColor = System.Drawing.Color.White;
-            this.buttonVeziRute.Location = new System.Drawing.Point(301, 482);
-            this.buttonVeziRute.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonVeziRute.Name = "buttonVeziRute";
-            this.buttonVeziRute.Size = new System.Drawing.Size(228, 46);
-            this.buttonVeziRute.TabIndex = 6;
-            this.buttonVeziRute.Text = "Vezi filme";
-            this.buttonVeziRute.UseVisualStyleBackColor = false;
-            this.buttonVeziRute.Click += new System.EventHandler(this.buttonVeziRute_Click);
+            this.buttonVeziFilme.BackColor = System.Drawing.Color.Maroon;
+            this.buttonVeziFilme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonVeziFilme.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonVeziFilme.ForeColor = System.Drawing.Color.White;
+            this.buttonVeziFilme.Location = new System.Drawing.Point(301, 482);
+            this.buttonVeziFilme.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonVeziFilme.Name = "buttonVeziFilme";
+            this.buttonVeziFilme.Size = new System.Drawing.Size(228, 46);
+            this.buttonVeziFilme.TabIndex = 6;
+            this.buttonVeziFilme.Text = "Vezi filme";
+            this.buttonVeziFilme.UseVisualStyleBackColor = false;
+            this.buttonVeziFilme.Click += new System.EventHandler(this.buttonVeziFilme_Click);
             // 
             // buttonDelogareUser
             // 
@@ -151,6 +178,7 @@ namespace ProiectIP
             this.buttonHelp.Text = "Help";
             this.buttonHelp.UseMnemonic = false;
             this.buttonHelp.UseVisualStyleBackColor = true;
+            this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click_1);
             // 
             // panel1
             // 
@@ -158,7 +186,7 @@ namespace ProiectIP
             this.panel1.BackgroundImage = global::ProiectIP.Properties.Resources.help;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel1.Location = new System.Drawing.Point(1140, 515);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(129, 76);
             this.panel1.TabIndex = 14;
@@ -174,6 +202,7 @@ namespace ProiectIP
             this.buttonAbout.Text = "About";
             this.buttonAbout.UseMnemonic = false;
             this.buttonAbout.UseVisualStyleBackColor = true;
+            this.buttonAbout.Click += new System.EventHandler(this.buttonAbout_Click_1);
             // 
             // panelNavigation
             // 
@@ -183,7 +212,7 @@ namespace ProiectIP
             this.panelNavigation.Controls.Add(this.buttonResize);
             this.panelNavigation.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelNavigation.Location = new System.Drawing.Point(862, 0);
-            this.panelNavigation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelNavigation.Margin = new System.Windows.Forms.Padding(4);
             this.panelNavigation.Name = "panelNavigation";
             this.panelNavigation.Size = new System.Drawing.Size(439, 54);
             this.panelNavigation.TabIndex = 31;
@@ -203,6 +232,7 @@ namespace ProiectIP
             this.buttonMini.TabIndex = 2;
             this.buttonMini.Text = "-";
             this.buttonMini.UseVisualStyleBackColor = false;
+            this.buttonMini.Click += new System.EventHandler(this.buttonMini_Click_1);
             // 
             // buttonClose
             // 
@@ -219,6 +249,7 @@ namespace ProiectIP
             this.buttonClose.TabIndex = 0;
             this.buttonClose.Text = "X";
             this.buttonClose.UseVisualStyleBackColor = false;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click_1);
             // 
             // buttonResize
             // 
@@ -235,6 +266,7 @@ namespace ProiectIP
             this.buttonResize.TabIndex = 1;
             this.buttonResize.Text = "O";
             this.buttonResize.UseVisualStyleBackColor = false;
+            this.buttonResize.Click += new System.EventHandler(this.buttonResize_Click_1);
             // 
             // Utilizator
             // 
@@ -257,6 +289,7 @@ namespace ProiectIP
             this.panelMenu.ResumeLayout(false);
             this.panelDate.ResumeLayout(false);
             this.panelDate.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFilme)).EndInit();
             this.panelNavigation.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -274,10 +307,12 @@ namespace ProiectIP
         public System.Windows.Forms.Panel panelDate;
         public System.Windows.Forms.Label labelFilme;
         private System.Windows.Forms.Panel panelAbout;
-        private System.Windows.Forms.Button buttonVeziRute;
+        private System.Windows.Forms.Button buttonVeziFilme;
         private System.Windows.Forms.Button buttonDelogareUser;
         private System.Windows.Forms.Button buttonMini;
         private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.Button buttonResize;
+        private System.Windows.Forms.Label labelDescriereFilme;
+        private System.Windows.Forms.PictureBox pictureBoxFilme;
     }
 }

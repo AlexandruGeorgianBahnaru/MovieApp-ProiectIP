@@ -1,19 +1,20 @@
-﻿    /**************************************************************************
-     *                                                                        *
-     *  File:        EditeazaBilet.cs                                         *
-     *  Copyright:   (c) 2023, Butu Alexandra-Gabriela                        *
-     *  Description: Class for movie editing                                 *           
-     *                                                                        *
-     *  This program is free software; you can redistribute it and/or modify  *
-     *  it under the terms of the GNU General Public License as published by  *
-     *  the Free Software Foundation. This program is distributed in the      *
-     *  hope that it will be useful, but WITHOUT ANY WARRANTY; without even   *
-     *  the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR   *
-     *  PURPOSE. See the GNU General Public License for more details.         *
-     *                                                                        *
-     **************************************************************************/
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        EditeazaFilm.cs                                          *
+ *  Copyright:   (c) 2024, Bahnaru, Butu, Chelea, Spiridon                *
+ *  Description: Implementarea editării unei înregistrări deja existente  *
+ *  în tabela Movies de către admin.                                      *
+ *                                                                        *
+ *  This program is free software; you can redistribute it and/or modify  *
+ *  it under the terms of the GNU General Public License as published by  *
+ *  the Free Software Foundation. This program is distributed in the      *
+ *  hope that it will be useful, but WITHOUT ANY WARRANTY; without even   *
+ *  the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR   *
+ *  PURPOSE. See the GNU General Public License for more details.         *
+ *                                                                        *
+ **************************************************************************/
 
-    using ConexiuneBazaDeDate;
+using ConexiuneBazaDeDate;
     using ProiectIP;
     using System;
     using System.Collections.Generic;
@@ -29,11 +30,13 @@
         {
             #region Fields
             private Administrator _admin;
-            #endregion
+        public bool IsAboutWindowOpened { get; private set; }
+        public bool IsHelpWindowOpened { get; private set; }
+        #endregion
 
-            #region Methods
-        
-            public EditeazaFilm()
+        #region Methods
+
+        public EditeazaFilm()
             {
                 InitializeComponent();
             }
@@ -97,58 +100,11 @@
             _admin.ClearIds();
         }
 
-        /// <summary>
-        /// Butonul About permite afisarea unor informatii despre proiect 
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void buttonAbout_Click(object sender, EventArgs e)
-            {
-                string title = "Despre";
-       MessageBox.Show("Proiect IP 2024 - Rezervare Online bilete la cinema. \nBahnaru George\nButu Alexandra\nChelea Diana \nSpiridon Bianca ", title);        }
 
-            /// <summary>
-            /// La apasarea 'Help' se deschide un fisier .chm
-            /// </summary>
-            /// <param name="sender"></param>
-            /// <param name="e"></param>
-            private void buttonHelp_Click(object sender, EventArgs e)
-            {
-                System.Diagnostics.Process.Start("Gestionarea biletelor de autobuz.chm");
-            }
 
-            /// <summary>
-            /// La apasarea butonului Close se inchide interfata curenta
-            /// </summary>
-            /// <param name="sender"></param>
-            /// <param name="e"></param>
-            private void buttonClose_Click(object sender, EventArgs e)
-            {
-                this.Close();
-            }
 
-            /// <summary>
-            ///  Butonul Resize este utilizat pentru a schimba dimensiunea ferestrei
-            /// </summary>
-            /// <param name="sender"></param>
-            /// <param name="e"></param>
-            private void buttonResize_Click(object sender, EventArgs e)
-            {
-                if (WindowState == FormWindowState.Normal)
-                    this.WindowState = FormWindowState.Maximized;
-                else
-                    this.WindowState = FormWindowState.Normal;
-            }
 
-            /// <summary>
-            ///  Butonul 'Mini' este folosit pentru minimizarea ferestrei
-            /// </summary>
-            /// <param name="sender"></param>
-            /// <param name="e"></param>
-            private void buttonMini_Click(object sender, EventArgs e)
-            {
-                this.WindowState = FormWindowState.Minimized;
-            }
+
 
             /// <summary>
             /// Metoda utilizata pentru design-ul EditeazaBilet
@@ -244,6 +200,36 @@
                     }
                 }
 
-            }
+        private void buttonMini_Click_1(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void buttonResize_Click_1(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+                this.WindowState = FormWindowState.Maximized;
+            else
+                this.WindowState = FormWindowState.Normal;
+        }
+
+        private void buttonClose_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void buttonAbout_Click_1(object sender, EventArgs e)
+        {
+            string title = "Despre";
+            MessageBox.Show("Proiect IP 2024 - Rezervare Online bilete la cinema. \nBahnaru George\nButu Alexandra\nChelea Diana \nSpiridon Bianca ", title);
+            IsAboutWindowOpened = true;
+        }
+
+        private void buttonHelp_Click_1(object sender, EventArgs e)
+        {
+            IsHelpWindowOpened = true;
+            System.Diagnostics.Process.Start("RezervareOnlineCinema.chm");
+        }
+    }
         }
 

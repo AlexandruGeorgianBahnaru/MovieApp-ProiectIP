@@ -1,8 +1,9 @@
 ﻿/**************************************************************************
  *                                                                        *
- *  File:        Rute.cs                                                  *
- *  Copyright:   (c) 2023, Butu Alexandra-Gabriela                          *
- *  Description: Class used for view   available routes                   *
+ *  File:        Filme.cs                                                 *
+ *  Copyright:   (c) 2024, Bahnaru, Butu, Chelea, Spiridon                *
+ *  Description: Implementarea secțiunii de vizualizare a filmelor        *
+ *  disponibile în acel moment în baza de date.                           *
  *                                                                        *
  *  This program is free software; you can redistribute it and/or modify  *
  *  it under the terms of the GNU General Public License as published by  *
@@ -12,6 +13,7 @@
  *  PURPOSE. See the GNU General Public License for more details.         *
  *                                                                        *
  **************************************************************************/
+
 
 using System;
 using System.Data;
@@ -42,45 +44,21 @@ namespace ProiectIP
         /// </summary>
         private void Filme_Load_1(object sender, EventArgs e)
         {
-            SqlConnection con = ConexiuneBazaDeDate.Conexiune.GetConexiune();
-            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM Movies", con);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            dataGridViewFilme.DataSource = dt;
+            SqlConnection con = Conexiune.GetConexiune();
+            con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\AN3_SEM2\\proiect_ip_24.05\\ProiectIP\\ProiectIP\\MovieDatabase.mdf;Integrated Security = True";
+            string query = "SELECT * FROM Movies";
+            SqlCommand command = new SqlCommand(query, con);
+            SqlDataAdapter da = new SqlDataAdapter(command);
+            _dataTable = new DataTable();
+            da.Fill(_dataTable);
+            dataGridViewFilme.DataSource = _dataTable;
             con.Close();
 
             labelFilme.ForeColor = Color.White;
             panelDate.BackColor = Color.FromArgb(150, 0, 0, 0);
         }
 
-
-        private void buttonClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        /// <summary>
-        ///  Butonul Resize este utilizat pentru a schimba dimensiunea ferestrei
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void buttonResize_Click(object sender, EventArgs e)
-        {
-            if (WindowState == FormWindowState.Normal)
-                this.WindowState = FormWindowState.Maximized;
-            else
-                this.WindowState = FormWindowState.Normal;
-        }
-
-        /// <summary>
-        ///  Butonul 'Mini' este folosit pentru minimizarea ferestrei
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void buttonMini_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
+     
         #endregion
 
         private void buttonAbout_Click_1(object sender, EventArgs e)
@@ -99,6 +77,24 @@ namespace ProiectIP
         private void dataGridViewFilme_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void buttonMini_Click_1(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void buttonResize_Click_1(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+                this.WindowState = FormWindowState.Maximized;
+            else
+                this.WindowState = FormWindowState.Normal;
+        }
+
+        private void buttonClose_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -1,8 +1,10 @@
 ﻿/**************************************************************************
  *                                                                        *
  *  File:        Administrator.cs                                         *
- *  Copyright:   (c) 2023, Butu Alexandra-Gabriela                        *
- *  Description: Admin class with its functionalities                  	  *
+ *  Copyright:   (c) 2024, Bahnaru, Butu, Chelea, Spiridon                *
+ *  Description: Implementarea interfeței cu opțiunile disponibile pentru *
+ *  admin: adăugare filme, ștergere filme, editare filme și vizualizare   *
+ *  filme.                                                                *
  *                                                                        *
  *  This program is free software; you can redistribute it and/or modify  *
  *  it under the terms of the GNU General Public License as published by  *
@@ -12,6 +14,7 @@
  *  PURPOSE. See the GNU General Public License for more details.         *
  *                                                                        *
  **************************************************************************/
+
 
 using System;
 using System.Collections.Generic;
@@ -172,6 +175,18 @@ namespace ProiectIP
 
         private void dataGridViewAdmin_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
+        }
+
+        private void buttonHelp_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("RezervareOnlineCinema.chm");
+        }
+
+        private void buttonAbout_Click(object sender, EventArgs e)
+        {
+            string title = "Despre";
+            MessageBox.Show("Proiect IP 2024 - Rezervare Online bilete la cinema. \nBahnaru George\nButu Alexandra\nChelea Diana \nSpiridon Bianca ", title);
 
         }
     }

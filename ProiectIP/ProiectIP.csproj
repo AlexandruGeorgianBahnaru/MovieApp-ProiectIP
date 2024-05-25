@@ -82,6 +82,7 @@
     <Compile Include="EditeazaFilm.Designer.cs">
       <DependentUpon>EditeazaFilm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Facade.cs" />
     <Compile Include="Filme.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +181,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="movieCharacters.png" />
     <Content Include="MovieDatabase.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

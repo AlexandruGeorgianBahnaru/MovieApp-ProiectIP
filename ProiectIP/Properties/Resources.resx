@@ -124,6 +124,12 @@
   <data name="cheie" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cheie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="movieCharacters2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\movieCharacters.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="movieCharacters1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\movieCharacters.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="cinema" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cinema.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -133,7 +139,13 @@
   <data name="movie" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\movie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="movieCharacters" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\movieCharacters.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="movieCharacters3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\movieCharacters.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
