@@ -32,7 +32,7 @@ using ConexiuneBazaDeDate;
             private Administrator _admin;
             private int _filmId;
             private DataRow _filmData;
-
+            public static bool dateGresite = false;
 
         #endregion
 
@@ -68,7 +68,7 @@ using ConexiuneBazaDeDate;
             durata = 0;
             data = DateTime.MinValue;
             time = DateTime.MinValue;
-
+            dateGresite = false;
 
             var fields = new[] { name, gen, durataText, dataText, timeText };
             var fieldNames = new[] { "denumirea filmului", "genul filmului", "durata filmului", "data filmului", "ora filmului" };
@@ -78,6 +78,7 @@ using ConexiuneBazaDeDate;
             {
                 if (string.IsNullOrEmpty(fields[i]))
                 {
+                    dateGresite = true;
                     MessageBox.Show($"Câmpul pentru {fieldNames[i]} este obligatoriu!");
                     return false;
                 }
@@ -85,6 +86,7 @@ using ConexiuneBazaDeDate;
 
             if (!int.TryParse(durataText, out durata) || durata <= 0)
             {
+                dateGresite = true;
                 MessageBox.Show("Durata introdusă nu este validă. Introduceți o durată validă, în minute!");
                 return false;
             }
@@ -95,6 +97,7 @@ using ConexiuneBazaDeDate;
             }
             catch (FormatException)
             {
+                dateGresite = true;
                 MessageBox.Show("Data introdusă nu este validă! Introduceți o dată în formatul dd.MM.yyyy, unde dd = ziua, MM = luna, yyyy = anul");
                 return false;
             }
@@ -105,6 +108,7 @@ using ConexiuneBazaDeDate;
             }
             catch (FormatException)
             {
+                dateGresite = true;
                 MessageBox.Show("Ora introdusă este invalidă! Introduceți o oră în formatul HH:mm, unde HH = ora, mm = minutele");
                 return false;
             }
@@ -154,7 +158,7 @@ using ConexiuneBazaDeDate;
                     string timeText = textBoxOraFilm.Text;
                     using (SqlConnection con = Conexiune.GetConexiune())
                     {
-                        con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\AN3_SEM2\\proiec_ip_25.05\\ProiectIP\\ProiectIP\\MovieDatabase.mdf;Integrated Security = True";
+                        con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Facultate\\IP\\ProiectIP\\ProiectIP\\ProiectIP\\MovieDatabase.mdf;Integrated Security=True";
                         con.Open();
                         SqlCommand cmd = new SqlCommand("UPDATE Movies SET Name = @Name, Gen = @Gen, Durata = @Durata, Data = @Data, Time = @Time WHERE Id = @Id", con);
                         cmd.Parameters.AddWithValue("@Id", _filmId);

@@ -28,15 +28,16 @@ namespace ProiectIP
     {
         #region Fields
         private Administrator _admin;
+        public static bool dateGresite = false;
         #endregion
 
         #region Methods
-            /// <summary>
-            /// Constructor prin care se trimit datele de la formul Administratorului la formul din AdaugaBilet
-            /// </summary>
-            /// <param name="admin">instanta administrator </param>
-            /// 
-            public AdaugaFilm(Administrator admin)
+        /// <summary>
+        /// Constructor prin care se trimit datele de la formul Administratorului la formul din AdaugaBilet
+        /// </summary>
+        /// <param name="admin">instanta administrator </param>
+        /// 
+        public AdaugaFilm(Administrator admin)
             {
                 _admin = admin;
                 InitializeComponent();
@@ -44,37 +45,40 @@ namespace ProiectIP
 
             private void buttonAdauga_Click(object sender, EventArgs e)
             {
-                if (verificaFormularComplet(textBoxDenumireFilm.Text, textBoxGenFilm.Text, textBoxDurataFilm.Text, textBoxDataFilm.Text, textBoxOraFilm.Text, out int durata, out DateTime data, out DateTime time))
+            dateGresite = false;
+            if (verificaFormularComplet(textBoxDenumireFilm.Text, textBoxGenFilm.Text, textBoxDurataFilm.Text, textBoxDataFilm.Text, textBoxOraFilm.Text, out int durata, out DateTime data, out DateTime time))
+            {
+                try
                 {
-                    try
+                    string name = textBoxDenumireFilm.Text;
+                    string gen = textBoxGenFilm.Text;
+                    string durataText = textBoxDurataFilm.Text;
+                    string dataText = textBoxDataFilm.Text;
+                    string timeText = textBoxOraFilm.Text;
+                    using (SqlConnection con = Conexiune.GetConexiune())
                     {
-                        string name = textBoxDenumireFilm.Text;
-                        string gen = textBoxGenFilm.Text;
-                        string durataText = textBoxDurataFilm.Text;
-                        string dataText = textBoxDataFilm.Text;
-                        string timeText = textBoxOraFilm.Text;
-                        using (SqlConnection con = Conexiune.GetConexiune())
-                        {
-                            con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\AN3_SEM2\\proiec_ip_25.05\\ProiectIP\\ProiectIP\\MovieDatabase.mdf;Integrated Security = True";
-                            con.Open();
-                            SqlCommand cmd = new SqlCommand("INSERT INTO Movies (Name, Gen, Durata, Data, Time) VALUES (@Name, @Gen, @Durata, @Data, @Time)", con);
-                            cmd.Parameters.AddWithValue("@Name", name);
-                            cmd.Parameters.AddWithValue("@Gen", gen);
-                            cmd.Parameters.AddWithValue("@Durata", durata);
-                            cmd.Parameters.AddWithValue("@Data", data.ToString("yyyy-MM-dd"));
-                            cmd.Parameters.AddWithValue("@Time", time.ToString("HH:mm"));
+                        con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Facultate\\IP\\ProiectIP\\ProiectIP\\ProiectIP\\MovieDatabase.mdf;Integrated Security=True";
+                        con.Open();
+                        SqlCommand cmd = new SqlCommand("INSERT INTO Movies (Name, Gen, Durata, Data, Time) VALUES (@Name, @Gen, @Durata, @Data, @Time)", con);
+                        cmd.Parameters.AddWithValue("@Name", name);
+                        cmd.Parameters.AddWithValue("@Gen", gen);
+                        cmd.Parameters.AddWithValue("@Durata", durata);
+                        cmd.Parameters.AddWithValue("@Data", data.ToString("yyyy-MM-dd"));
+                        cmd.Parameters.AddWithValue("@Time", time.ToString("HH:mm"));
 
-                            cmd.ExecuteNonQuery();
-                            MessageBox.Show("Filmul " + name + " a fost adăugat cu succes!");
-                            this.Close();
-                            _admin.Actualizare();
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Eroare la conectarea la baza de date: " + ex.Message);
+                        cmd.ExecuteNonQuery();
+                        MessageBox.Show("Filmul " + name + " a fost adăugat cu succes!");
+                        this.Close();
+                        _admin.Actualizare();
                     }
                 }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Eroare la conectarea la baza de date: " + ex.Message);
+                }
+            }
+            else
+                dateGresite = true;
             }
 
             private bool verificaFormularComplet(string name, string gen, string durataText, string dataText, string timeText, out int durata, out DateTime data, out DateTime time)

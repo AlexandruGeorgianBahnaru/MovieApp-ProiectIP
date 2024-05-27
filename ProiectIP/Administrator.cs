@@ -31,7 +31,7 @@ namespace ProiectIP
         private DataTable _dataTable;
         public AdaugaFilm _adaugaFilm;
         #endregion
-
+        public static bool dateGresite = false;
 
         #region Methods
         /// <summary>
@@ -152,6 +152,7 @@ namespace ProiectIP
 
         private void buttonStergeFilm_Click(object sender, EventArgs e)
         {
+            dateGresite = false;
             if (dataGridViewAdmin.SelectedRows.Count == 1) 
             {
                 DataGridViewRow filmSelectat = dataGridViewAdmin.SelectedRows[0];
@@ -164,7 +165,7 @@ namespace ProiectIP
                     {
                         SqlCommand cmd = new SqlCommand(deleteQuery, con);
                         cmd.Parameters.AddWithValue("@id", idFilmSelectat);
-                        con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\AN3_SEM2\\proiec_ip_25.05\\ProiectIP\\ProiectIP\\MovieDatabase.mdf;Integrated Security=True";
+                        con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Facultate\\IP\\ProiectIP\\ProiectIP\\ProiectIP\\MovieDatabase.mdf;Integrated Security=True";
                         con.Open();
                         cmd.ExecuteNonQuery();
                     }
@@ -178,6 +179,7 @@ namespace ProiectIP
             }
             else
             {
+                dateGresite = true;
                 MessageBox.Show("Selectează un singur film pentru a-l șterge!");
             }
         }

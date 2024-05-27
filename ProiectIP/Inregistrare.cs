@@ -36,6 +36,7 @@ namespace ProiectIP
     {
         #region Fields
         private Administrator _admin;
+        public static bool dateGresite = false;
         #endregion
         #region Methods
         public Inregistrare()
@@ -46,7 +47,7 @@ namespace ProiectIP
 
         private void buttonInregistrare_Click(object sender, EventArgs e)
         {
-
+            dateGresite = false;
             if (verificaFormularInregistrare(textBoxNume.Text, textBoxPrenume.Text, textBoxEmail.Text, textBoxParola.Text))
             {
                 try
@@ -57,7 +58,7 @@ namespace ProiectIP
                     string parola = textBoxParola.Text;
                     using (SqlConnection con = Conexiune.GetConexiune())
                     {
-                        con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\AN3_SEM2\\proiec_ip_25.05\\ProiectIP\\ProiectIP\\MovieDatabase.mdf;Integrated Security=True";
+                        con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Facultate\\IP\\ProiectIP\\ProiectIP\\ProiectIP\\MovieDatabase.mdf;Integrated Security=True";
                         con.Open();
 
                         SqlCommand verificaEmail = new SqlCommand("SELECT COUNT(*) FROM Users WHERE Email = @Email", con);
@@ -66,6 +67,7 @@ namespace ProiectIP
 
                         if (existaEmail > 0)
                         {
+                            dateGresite = true;
                             MessageBox.Show("Utilizatorul există deja! Folosiți alt email!");
                             return;
                         }
@@ -89,9 +91,9 @@ namespace ProiectIP
             }
         }
 
-
         private bool verificaFormularInregistrare(string nume, string prenume, string email, string parola)
         {
+            dateGresite = true;
             if (string.IsNullOrEmpty(nume) || string.IsNullOrEmpty(prenume) || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(parola))
             {
                 MessageBox.Show("Completati toate campurile");
@@ -134,7 +136,7 @@ namespace ProiectIP
             }
 
 
-
+            dateGresite = false;
             return true;
         }
 

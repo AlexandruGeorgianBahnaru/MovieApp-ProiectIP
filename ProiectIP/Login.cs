@@ -31,7 +31,7 @@ namespace ProiectIP
     public partial class Login : Form
     {
         #region Fields
-       
+        public static bool dateGresite = false;
         #endregion
 
         #region Methods
@@ -45,11 +45,12 @@ namespace ProiectIP
         
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-                SqlConnection con = null;
+            dateGresite = false;
+            SqlConnection con = null;
                 try
                 {
                     con = Conexiune.GetConexiune();
-                    con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\AN3_SEM2\\proiec_ip_25.05\\ProiectIP\\ProiectIP\\MovieDatabase.mdf;Integrated Security = True";
+                    con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Facultate\\IP\\ProiectIP\\ProiectIP\\ProiectIP\\MovieDatabase.mdf;Integrated Security=True";
 
                     con.Open();
 
@@ -61,6 +62,7 @@ namespace ProiectIP
 
                     if (contorEmail == 0)
                     {
+                        dateGresite = true;
                         MessageBox.Show("Email sau parola incorecte!");
                     }
                     else if (contorEmail == 1)
@@ -85,7 +87,8 @@ namespace ProiectIP
                         }
                         else
                         {
-                            MessageBox.Show("Parola incorectă!");
+                        dateGresite = true;
+                        MessageBox.Show("Parola incorectă!");
                         }
 
 
