@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30621.155
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34916.146
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProiectIP", "ProiectIP.csproj", "{1599C0A3-B57A-470D-93D6-C389BC9B6C83}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConexiuneBazaDeDate", "..\ConexiuneBazaDeDate\ConexiuneBazaDeDate.csproj", "{3BFD5FFF-2117-4FCB-ACB7-7173A4C9B84F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieUnitTestProject", "..\MovieUnitTestProject\MovieUnitTestProject.csproj", "{37AE04BE-9399-4CF6-B94E-B10C243269B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{3BFD5FFF-2117-4FCB-ACB7-7173A4C9B84F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BFD5FFF-2117-4FCB-ACB7-7173A4C9B84F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BFD5FFF-2117-4FCB-ACB7-7173A4C9B84F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37AE04BE-9399-4CF6-B94E-B10C243269B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37AE04BE-9399-4CF6-B94E-B10C243269B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37AE04BE-9399-4CF6-B94E-B10C243269B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37AE04BE-9399-4CF6-B94E-B10C243269B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
