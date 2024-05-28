@@ -1,0 +1,79 @@
+\doxysection{Conexiune\+Baza\+De\+Date.\+Conexiune Class Reference}
+\hypertarget{class_conexiune_baza_de_date_1_1_conexiune}{}\label{class_conexiune_baza_de_date_1_1_conexiune}\index{ConexiuneBazaDeDate.Conexiune@{ConexiuneBazaDeDate.Conexiune}}
+
+
+Clasa pentru gestionarea conexiunii la baza de date.  
+
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Sql\+Connection \mbox{\hyperlink{class_conexiune_baza_de_date_1_1_conexiune_a238abc53e5b4ea9f05c60d2cc14d3dbf}{Get\+Conexiune}} ()
+\begin{DoxyCompactList}\small\item\em Metoda pentru obtinerea conexiunii la baza de date. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_conexiune_baza_de_date_1_1_conexiune_aec8c2e1817b8761610e94ed511c15b91}{connection\+String}} = "{}Data Source=(Local\+DB)\textbackslash{}\textbackslash{}MSSQLLocal\+DB;Attach\+Db\+Filename=D\+:\textbackslash{}\textbackslash{}\+Ip\+Comentat\textbackslash{}\textbackslash{}\+Proiect\+IP\textbackslash{}\textbackslash{}\+Proiect\+IP\textbackslash{}\textbackslash{}\+Movie\+Database.\+mdf;Integrated Security=True"{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_conexiune_baza_de_date_1_1_conexiune_ac76d6c663157f4d5674baaaed75969f2}{Conexiune}} ()
+\begin{DoxyCompactList}\small\item\em Constructor privat pentru implementarea sablonului Singleton. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static Sql\+Connection \mbox{\hyperlink{class_conexiune_baza_de_date_1_1_conexiune_a252b4dc4642a834947059dbf8fff865e}{\+\_\+conexiune}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clasa pentru gestionarea conexiunii la baza de date. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_conexiune_baza_de_date_1_1_conexiune_ac76d6c663157f4d5674baaaed75969f2}\label{class_conexiune_baza_de_date_1_1_conexiune_ac76d6c663157f4d5674baaaed75969f2} 
+\index{ConexiuneBazaDeDate.Conexiune@{ConexiuneBazaDeDate.Conexiune}!Conexiune@{Conexiune}}
+\index{Conexiune@{Conexiune}!ConexiuneBazaDeDate.Conexiune@{ConexiuneBazaDeDate.Conexiune}}
+\doxysubsubsection{\texorpdfstring{Conexiune()}{Conexiune()}}
+{\footnotesize\ttfamily Conexiune\+Baza\+De\+Date.\+Conexiune.\+Conexiune (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Constructor privat pentru implementarea sablonului Singleton. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_conexiune_baza_de_date_1_1_conexiune_a238abc53e5b4ea9f05c60d2cc14d3dbf}\label{class_conexiune_baza_de_date_1_1_conexiune_a238abc53e5b4ea9f05c60d2cc14d3dbf} 
+\index{ConexiuneBazaDeDate.Conexiune@{ConexiuneBazaDeDate.Conexiune}!GetConexiune@{GetConexiune}}
+\index{GetConexiune@{GetConexiune}!ConexiuneBazaDeDate.Conexiune@{ConexiuneBazaDeDate.Conexiune}}
+\doxysubsubsection{\texorpdfstring{GetConexiune()}{GetConexiune()}}
+{\footnotesize\ttfamily static Sql\+Connection Conexiune\+Baza\+De\+Date.\+Conexiune.\+Get\+Conexiune (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Metoda pentru obtinerea conexiunii la baza de date. 
+
+\begin{DoxyReturn}{Returns}
+Obiectul de conexiune la baza de date
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_conexiune_baza_de_date_1_1_conexiune_a252b4dc4642a834947059dbf8fff865e}\label{class_conexiune_baza_de_date_1_1_conexiune_a252b4dc4642a834947059dbf8fff865e} 
+\index{ConexiuneBazaDeDate.Conexiune@{ConexiuneBazaDeDate.Conexiune}!\_conexiune@{\_conexiune}}
+\index{\_conexiune@{\_conexiune}!ConexiuneBazaDeDate.Conexiune@{ConexiuneBazaDeDate.Conexiune}}
+\doxysubsubsection{\texorpdfstring{\_conexiune}{\_conexiune}}
+{\footnotesize\ttfamily Sql\+Connection Conexiune\+Baza\+De\+Date.\+Conexiune.\+\_\+conexiune\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\Hypertarget{class_conexiune_baza_de_date_1_1_conexiune_aec8c2e1817b8761610e94ed511c15b91}\label{class_conexiune_baza_de_date_1_1_conexiune_aec8c2e1817b8761610e94ed511c15b91} 
+\index{ConexiuneBazaDeDate.Conexiune@{ConexiuneBazaDeDate.Conexiune}!connectionString@{connectionString}}
+\index{connectionString@{connectionString}!ConexiuneBazaDeDate.Conexiune@{ConexiuneBazaDeDate.Conexiune}}
+\doxysubsubsection{\texorpdfstring{connectionString}{connectionString}}
+{\footnotesize\ttfamily string Conexiune\+Baza\+De\+Date.\+Conexiune.\+connection\+String = "{}Data Source=(Local\+DB)\textbackslash{}\textbackslash{}MSSQLLocal\+DB;Attach\+Db\+Filename=D\+:\textbackslash{}\textbackslash{}\+Ip\+Comentat\textbackslash{}\textbackslash{}\+Proiect\+IP\textbackslash{}\textbackslash{}\+Proiect\+IP\textbackslash{}\textbackslash{}\+Movie\+Database.\+mdf;Integrated Security=True"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Ip\+Comentat/\+Proiect\+IP/\+Conexiune\+Baza\+De\+Date/\mbox{\hyperlink{_conexiune_8cs}{Conexiune.\+cs}}\end{DoxyCompactItemize}

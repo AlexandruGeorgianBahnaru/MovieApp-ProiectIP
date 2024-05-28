@@ -1,0 +1,472 @@
+\doxysection{Proiect\+IP.\+Administrator Class Reference}
+\hypertarget{class_proiect_i_p_1_1_administrator}{}\label{class_proiect_i_p_1_1_administrator}\index{ProiectIP.Administrator@{ProiectIP.Administrator}}
+
+
+Clasa care implementeaza functionalitatea interfetei pentru administrator, oferind optiuni pentru adaugarea, stergerea, editarea si vizualizarea filmelor.  
+
+
+Inheritance diagram for Proiect\+IP.\+Administrator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_proiect_i_p_1_1_administrator}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_proiect_i_p_1_1_administrator_a7bd27d3643f6ee9cc31c0718ddeeb6cd}{Administrator}} ()
+\begin{DoxyCompactList}\small\item\em Constructorul clasei Administrator. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_proiect_i_p_1_1_administrator_a0c0027ddc5f297921724fa55694a03db}{Actualizare}} ()
+\begin{DoxyCompactList}\small\item\em Metoda pentru actualizarea datelor din Data\+Grid\+View-\/ul administratorului. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_proiect_i_p_1_1_adauga_film}{Adauga\+Film}} \mbox{\hyperlink{class_proiect_i_p_1_1_administrator_a0be7dd98814a15928c2d5f630bb83f67}{\+\_\+adauga\+Film}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_proiect_i_p_1_1_administrator_a307a1c42e2605612aaa62ed662785bd9}{date\+Gresite}} = false
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_proiect_i_p_1_1_administrator_a13ad576c043e88c4027b26974c855402}{Dispose}} (bool disposing)
+\begin{DoxyCompactList}\small\item\em Clean up any resources being used. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_proiect_i_p_1_1_administrator_a49c4851df31d3faa1c620ac2ae5bad7d}{button\+Adauga\+Film\+Admin\+\_\+\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Metoda pentru afisarea interfetei de adaugare a unui nou film la apasarea butonului \textquotesingle{}Adauga Film\textquotesingle{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_proiect_i_p_1_1_administrator_a40abccb1215235878fe1f786196552ff}{button\+Close\+\_\+\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Inchiderea aplicatiei. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_proiect_i_p_1_1_administrator_aa00c87b0d0e220753288f6e66c19f4f1}{button\+Resize\+\_\+\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Schimbarea dimensiunii ferestrei aplicatiei intre normal si maximizat. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_proiect_i_p_1_1_administrator_a8252362df92bc15c21d4862bddcc23a3}{button\+Mini\+\_\+\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Minimizarea aplicatiei. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_proiect_i_p_1_1_administrator_aea68a55f11a98c7582340df8987a9847}{button\+Editeaza\+Film\+\_\+\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Metoda pentru editarea unui film selectat la apasarea butonului \textquotesingle{}Editeaza Film\textquotesingle{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_proiect_i_p_1_1_administrator_a8660b5ee6827ee99c825ab7417c183f9}{button\+Sterge\+Film\+\_\+\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Metoda pentru stergerea unui film selectat la apasarea butonului \textquotesingle{}Sterge Film\textquotesingle{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_proiect_i_p_1_1_administrator_ad07250ca13dcfa69906aa7211f7bbf7e}{Administrator\+\_\+\+Load}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Metoda apelata la incarcarea formularului Administrator pentru a incarca datele filmelor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_proiect_i_p_1_1_administrator_a3a3f890b88b6a76a17bd7b5005dcf478}{button\+Help\+\_\+\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Metoda care se executa la apasarea butonului Help. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_proiect_i_p_1_1_administrator_a0074010918324098fd391f4d67241287}{button\+About\+\_\+\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Afisarea informatiilor despre proiect. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_proiect_i_p_1_1_administrator_a302ed05adbc940baa82c905f7cd49a4e}{button\+Filme\+Admin\+\_\+\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Metoda apelata la apasarea butonului \textquotesingle{}Filme Admin\textquotesingle{} pentru a deschide interfata de vizualizare a filmelor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_proiect_i_p_1_1_administrator_a2211968394a88b090433a12160c9bd77}{Initialize\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Required method for Designer support -\/ do not modify the contents of this method with the code editor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_proiect_i_p_1_1_administrator_aff5d07cf5acb19ad1064270d2eb2d9b3}{button\+Delogare\+Admin\+\_\+\+Click}} (object sender, Event\+Args e)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Data\+Table \mbox{\hyperlink{class_proiect_i_p_1_1_administrator_a20b14b1b9c7b5742944e5b79a8b52a7a}{\+\_\+data\+Table}}
+\item 
+System.\+Component\+Model.\+IContainer \mbox{\hyperlink{class_proiect_i_p_1_1_administrator_ad17291875bdfec2c7d92c69ed880cf94}{components}} = null
+\begin{DoxyCompactList}\small\item\em Required designer variable. \end{DoxyCompactList}\item 
+System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_proiect_i_p_1_1_administrator_a001b0e114081aaa3d37ce46e29e4cdbc}{button\+Editeaza\+Film}}
+\item 
+System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_proiect_i_p_1_1_administrator_a442e8014ea0816adbb366e2c516908ee}{button\+Filme\+Admin}}
+\item 
+System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_proiect_i_p_1_1_administrator_a0de4eb8289b5cebef266f2effb60ca9b}{button\+Sterge\+Film}}
+\item 
+System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_proiect_i_p_1_1_administrator_a23f9f59b2ab2c139d35efbfdc11d7ef3}{button\+Adauga\+Film\+Admin}}
+\item 
+System.\+Windows.\+Forms.\+Data\+Grid\+View \mbox{\hyperlink{class_proiect_i_p_1_1_administrator_a4bf5323bd29d97ae388f9639b6ecd999}{data\+Grid\+View\+Admin}}
+\item 
+System.\+Windows.\+Forms.\+Panel \mbox{\hyperlink{class_proiect_i_p_1_1_administrator_a399950b253270bbe1ba036527a09a4a6}{panel\+Menu}}
+\item 
+System.\+Windows.\+Forms.\+Panel \mbox{\hyperlink{class_proiect_i_p_1_1_administrator_ac20d69fe46446423bc009254069900a1}{panel\+Navigation}}
+\item 
+System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_proiect_i_p_1_1_administrator_a9f5df4c4fd745f56d06ce6f8f0ae2fdd}{button\+Mini}}
+\item 
+System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_proiect_i_p_1_1_administrator_a8291c85f2cfa43641965432424440e0a}{button\+Resize}}
+\item 
+System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_proiect_i_p_1_1_administrator_a281db9b6a44b2f10ef9e04dac729877e}{button\+Close}}
+\item 
+System.\+Windows.\+Forms.\+Panel \mbox{\hyperlink{class_proiect_i_p_1_1_administrator_a6c366d2d3f1eef04c431c07eaf981b54}{panel\+Date}}
+\item 
+System.\+Windows.\+Forms.\+Label \mbox{\hyperlink{class_proiect_i_p_1_1_administrator_ae3ae2b636c7156ab35130c6ce459e67a}{label\+Admin}}
+\item 
+System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_proiect_i_p_1_1_administrator_a7ac880409d015461242939215330db40}{button\+Delogare\+Admin}}
+\item 
+System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_proiect_i_p_1_1_administrator_aa96d7331a1c4a428f56ab1624e1781d0}{button\+Help}}
+\item 
+System.\+Windows.\+Forms.\+Panel \mbox{\hyperlink{class_proiect_i_p_1_1_administrator_aae42985f2e1fc98e69e4e2e328be6cfe}{panel1}}
+\item 
+System.\+Windows.\+Forms.\+Panel \mbox{\hyperlink{class_proiect_i_p_1_1_administrator_a55e864c983a392b25176b971539a667e}{panel\+About}}
+\item 
+System.\+Windows.\+Forms.\+Button \mbox{\hyperlink{class_proiect_i_p_1_1_administrator_a315234d71af914a71abbcc3a42907b14}{button\+About}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clasa care implementeaza functionalitatea interfetei pentru administrator, oferind optiuni pentru adaugarea, stergerea, editarea si vizualizarea filmelor. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_proiect_i_p_1_1_administrator_a7bd27d3643f6ee9cc31c0718ddeeb6cd}\label{class_proiect_i_p_1_1_administrator_a7bd27d3643f6ee9cc31c0718ddeeb6cd} 
+\index{ProiectIP.Administrator@{ProiectIP.Administrator}!Administrator@{Administrator}}
+\index{Administrator@{Administrator}!ProiectIP.Administrator@{ProiectIP.Administrator}}
+\doxysubsubsection{\texorpdfstring{Administrator()}{Administrator()}}
+{\footnotesize\ttfamily Proiect\+IP.\+Administrator.\+Administrator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructorul clasei Administrator. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_proiect_i_p_1_1_administrator_a0c0027ddc5f297921724fa55694a03db}\label{class_proiect_i_p_1_1_administrator_a0c0027ddc5f297921724fa55694a03db} 
+\index{ProiectIP.Administrator@{ProiectIP.Administrator}!Actualizare@{Actualizare}}
+\index{Actualizare@{Actualizare}!ProiectIP.Administrator@{ProiectIP.Administrator}}
+\doxysubsubsection{\texorpdfstring{Actualizare()}{Actualizare()}}
+{\footnotesize\ttfamily void Proiect\+IP.\+Administrator.\+Actualizare (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda pentru actualizarea datelor din Data\+Grid\+View-\/ul administratorului. 
+
+\Hypertarget{class_proiect_i_p_1_1_administrator_ad07250ca13dcfa69906aa7211f7bbf7e}\label{class_proiect_i_p_1_1_administrator_ad07250ca13dcfa69906aa7211f7bbf7e} 
+\index{ProiectIP.Administrator@{ProiectIP.Administrator}!Administrator\_Load@{Administrator\_Load}}
+\index{Administrator\_Load@{Administrator\_Load}!ProiectIP.Administrator@{ProiectIP.Administrator}}
+\doxysubsubsection{\texorpdfstring{Administrator\_Load()}{Administrator\_Load()}}
+{\footnotesize\ttfamily void Proiect\+IP.\+Administrator.\+Administrator\+\_\+\+Load (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Metoda apelata la incarcarea formularului Administrator pentru a incarca datele filmelor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & Obiectul care a generat evenimentul \\
+\hline
+{\em e} & Argumentele asociate evenimentului de click\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_proiect_i_p_1_1_administrator_a0074010918324098fd391f4d67241287}\label{class_proiect_i_p_1_1_administrator_a0074010918324098fd391f4d67241287} 
+\index{ProiectIP.Administrator@{ProiectIP.Administrator}!buttonAbout\_Click@{buttonAbout\_Click}}
+\index{buttonAbout\_Click@{buttonAbout\_Click}!ProiectIP.Administrator@{ProiectIP.Administrator}}
+\doxysubsubsection{\texorpdfstring{buttonAbout\_Click()}{buttonAbout\_Click()}}
+{\footnotesize\ttfamily void Proiect\+IP.\+Administrator.\+button\+About\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Afisarea informatiilor despre proiect. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & Obiectul care a generat evenimentul, aici butonul "{}\+About"{}\\
+\hline
+{\em e} & Argumentele asociate evenimentului de click\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_proiect_i_p_1_1_administrator_a49c4851df31d3faa1c620ac2ae5bad7d}\label{class_proiect_i_p_1_1_administrator_a49c4851df31d3faa1c620ac2ae5bad7d} 
+\index{ProiectIP.Administrator@{ProiectIP.Administrator}!buttonAdaugaFilmAdmin\_Click@{buttonAdaugaFilmAdmin\_Click}}
+\index{buttonAdaugaFilmAdmin\_Click@{buttonAdaugaFilmAdmin\_Click}!ProiectIP.Administrator@{ProiectIP.Administrator}}
+\doxysubsubsection{\texorpdfstring{buttonAdaugaFilmAdmin\_Click()}{buttonAdaugaFilmAdmin\_Click()}}
+{\footnotesize\ttfamily void Proiect\+IP.\+Administrator.\+button\+Adauga\+Film\+Admin\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Metoda pentru afisarea interfetei de adaugare a unui nou film la apasarea butonului \textquotesingle{}Adauga Film\textquotesingle{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & Obiectul care a generat evenimentul, aici butonul "{}\+Adauga\+Film"{}\\
+\hline
+{\em e} & Argumentele asociate evenimentului de click\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_proiect_i_p_1_1_administrator_a40abccb1215235878fe1f786196552ff}\label{class_proiect_i_p_1_1_administrator_a40abccb1215235878fe1f786196552ff} 
+\index{ProiectIP.Administrator@{ProiectIP.Administrator}!buttonClose\_Click@{buttonClose\_Click}}
+\index{buttonClose\_Click@{buttonClose\_Click}!ProiectIP.Administrator@{ProiectIP.Administrator}}
+\doxysubsubsection{\texorpdfstring{buttonClose\_Click()}{buttonClose\_Click()}}
+{\footnotesize\ttfamily void Proiect\+IP.\+Administrator.\+button\+Close\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Inchiderea aplicatiei. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & Obiectul care a generat evenimentul, aici butonul "{}\+Close"{}\\
+\hline
+{\em e} & Argumentele asociate evenimentului de click\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_proiect_i_p_1_1_administrator_aff5d07cf5acb19ad1064270d2eb2d9b3}\label{class_proiect_i_p_1_1_administrator_aff5d07cf5acb19ad1064270d2eb2d9b3} 
+\index{ProiectIP.Administrator@{ProiectIP.Administrator}!buttonDelogareAdmin\_Click@{buttonDelogareAdmin\_Click}}
+\index{buttonDelogareAdmin\_Click@{buttonDelogareAdmin\_Click}!ProiectIP.Administrator@{ProiectIP.Administrator}}
+\doxysubsubsection{\texorpdfstring{buttonDelogareAdmin\_Click()}{buttonDelogareAdmin\_Click()}}
+{\footnotesize\ttfamily void Proiect\+IP.\+Administrator.\+button\+Delogare\+Admin\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_proiect_i_p_1_1_administrator_aea68a55f11a98c7582340df8987a9847}\label{class_proiect_i_p_1_1_administrator_aea68a55f11a98c7582340df8987a9847} 
+\index{ProiectIP.Administrator@{ProiectIP.Administrator}!buttonEditeazaFilm\_Click@{buttonEditeazaFilm\_Click}}
+\index{buttonEditeazaFilm\_Click@{buttonEditeazaFilm\_Click}!ProiectIP.Administrator@{ProiectIP.Administrator}}
+\doxysubsubsection{\texorpdfstring{buttonEditeazaFilm\_Click()}{buttonEditeazaFilm\_Click()}}
+{\footnotesize\ttfamily void Proiect\+IP.\+Administrator.\+button\+Editeaza\+Film\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Metoda pentru editarea unui film selectat la apasarea butonului \textquotesingle{}Editeaza Film\textquotesingle{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & Obiectul care a generat evenimentul, aici butonul "{}\+Editeaza Film"{}\\
+\hline
+{\em e} & Argumentele asociate evenimentului de click\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_proiect_i_p_1_1_administrator_a302ed05adbc940baa82c905f7cd49a4e}\label{class_proiect_i_p_1_1_administrator_a302ed05adbc940baa82c905f7cd49a4e} 
+\index{ProiectIP.Administrator@{ProiectIP.Administrator}!buttonFilmeAdmin\_Click@{buttonFilmeAdmin\_Click}}
+\index{buttonFilmeAdmin\_Click@{buttonFilmeAdmin\_Click}!ProiectIP.Administrator@{ProiectIP.Administrator}}
+\doxysubsubsection{\texorpdfstring{buttonFilmeAdmin\_Click()}{buttonFilmeAdmin\_Click()}}
+{\footnotesize\ttfamily void Proiect\+IP.\+Administrator.\+button\+Filme\+Admin\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Metoda apelata la apasarea butonului \textquotesingle{}Filme Admin\textquotesingle{} pentru a deschide interfata de vizualizare a filmelor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & Obiectul care a declansat evenimentul\\
+\hline
+{\em e} & Datele evenimentului\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_proiect_i_p_1_1_administrator_a3a3f890b88b6a76a17bd7b5005dcf478}\label{class_proiect_i_p_1_1_administrator_a3a3f890b88b6a76a17bd7b5005dcf478} 
+\index{ProiectIP.Administrator@{ProiectIP.Administrator}!buttonHelp\_Click@{buttonHelp\_Click}}
+\index{buttonHelp\_Click@{buttonHelp\_Click}!ProiectIP.Administrator@{ProiectIP.Administrator}}
+\doxysubsubsection{\texorpdfstring{buttonHelp\_Click()}{buttonHelp\_Click()}}
+{\footnotesize\ttfamily void Proiect\+IP.\+Administrator.\+button\+Help\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Metoda care se executa la apasarea butonului Help. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & Obiectul care a generat evenimentul, aici butonul "{}\+Help"{}\\
+\hline
+{\em e} & Argumentele asociate evenimentului de click\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_proiect_i_p_1_1_administrator_a8252362df92bc15c21d4862bddcc23a3}\label{class_proiect_i_p_1_1_administrator_a8252362df92bc15c21d4862bddcc23a3} 
+\index{ProiectIP.Administrator@{ProiectIP.Administrator}!buttonMini\_Click@{buttonMini\_Click}}
+\index{buttonMini\_Click@{buttonMini\_Click}!ProiectIP.Administrator@{ProiectIP.Administrator}}
+\doxysubsubsection{\texorpdfstring{buttonMini\_Click()}{buttonMini\_Click()}}
+{\footnotesize\ttfamily void Proiect\+IP.\+Administrator.\+button\+Mini\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Minimizarea aplicatiei. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & Obiectul care a generat evenimentul, aici butonul "{}\+Mini"{}\\
+\hline
+{\em e} & Argumentele asociate evenimentului de click\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_proiect_i_p_1_1_administrator_aa00c87b0d0e220753288f6e66c19f4f1}\label{class_proiect_i_p_1_1_administrator_aa00c87b0d0e220753288f6e66c19f4f1} 
+\index{ProiectIP.Administrator@{ProiectIP.Administrator}!buttonResize\_Click@{buttonResize\_Click}}
+\index{buttonResize\_Click@{buttonResize\_Click}!ProiectIP.Administrator@{ProiectIP.Administrator}}
+\doxysubsubsection{\texorpdfstring{buttonResize\_Click()}{buttonResize\_Click()}}
+{\footnotesize\ttfamily void Proiect\+IP.\+Administrator.\+button\+Resize\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Schimbarea dimensiunii ferestrei aplicatiei intre normal si maximizat. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & Obiectul care a generat evenimentul, aici butonul "{}\+Resize"{}\\
+\hline
+{\em e} & Argumentele asociate evenimentului de click\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_proiect_i_p_1_1_administrator_a8660b5ee6827ee99c825ab7417c183f9}\label{class_proiect_i_p_1_1_administrator_a8660b5ee6827ee99c825ab7417c183f9} 
+\index{ProiectIP.Administrator@{ProiectIP.Administrator}!buttonStergeFilm\_Click@{buttonStergeFilm\_Click}}
+\index{buttonStergeFilm\_Click@{buttonStergeFilm\_Click}!ProiectIP.Administrator@{ProiectIP.Administrator}}
+\doxysubsubsection{\texorpdfstring{buttonStergeFilm\_Click()}{buttonStergeFilm\_Click()}}
+{\footnotesize\ttfamily void Proiect\+IP.\+Administrator.\+button\+Sterge\+Film\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Metoda pentru stergerea unui film selectat la apasarea butonului \textquotesingle{}Sterge Film\textquotesingle{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & Obiectul care a generat evenimentul, aici butonul \textquotesingle{}Sterge Film\textquotesingle{}.\\
+\hline
+{\em e} & Argumentele asociate evenimentului de click.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_proiect_i_p_1_1_administrator_a13ad576c043e88c4027b26974c855402}\label{class_proiect_i_p_1_1_administrator_a13ad576c043e88c4027b26974c855402} 
+\index{ProiectIP.Administrator@{ProiectIP.Administrator}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!ProiectIP.Administrator@{ProiectIP.Administrator}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily override void Proiect\+IP.\+Administrator.\+Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Clean up any resources being used. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em disposing} & true if managed resources should be disposed; otherwise, false.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_proiect_i_p_1_1_administrator_a2211968394a88b090433a12160c9bd77}\label{class_proiect_i_p_1_1_administrator_a2211968394a88b090433a12160c9bd77} 
+\index{ProiectIP.Administrator@{ProiectIP.Administrator}!InitializeComponent@{InitializeComponent}}
+\index{InitializeComponent@{InitializeComponent}!ProiectIP.Administrator@{ProiectIP.Administrator}}
+\doxysubsubsection{\texorpdfstring{InitializeComponent()}{InitializeComponent()}}
+{\footnotesize\ttfamily void Proiect\+IP.\+Administrator.\+Initialize\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Required method for Designer support -\/ do not modify the contents of this method with the code editor. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_proiect_i_p_1_1_administrator_a0be7dd98814a15928c2d5f630bb83f67}\label{class_proiect_i_p_1_1_administrator_a0be7dd98814a15928c2d5f630bb83f67} 
+\index{ProiectIP.Administrator@{ProiectIP.Administrator}!\_adaugaFilm@{\_adaugaFilm}}
+\index{\_adaugaFilm@{\_adaugaFilm}!ProiectIP.Administrator@{ProiectIP.Administrator}}
+\doxysubsubsection{\texorpdfstring{\_adaugaFilm}{\_adaugaFilm}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_proiect_i_p_1_1_adauga_film}{Adauga\+Film}} Proiect\+IP.\+Administrator.\+\_\+adauga\+Film}
+
+\Hypertarget{class_proiect_i_p_1_1_administrator_a20b14b1b9c7b5742944e5b79a8b52a7a}\label{class_proiect_i_p_1_1_administrator_a20b14b1b9c7b5742944e5b79a8b52a7a} 
+\index{ProiectIP.Administrator@{ProiectIP.Administrator}!\_dataTable@{\_dataTable}}
+\index{\_dataTable@{\_dataTable}!ProiectIP.Administrator@{ProiectIP.Administrator}}
+\doxysubsubsection{\texorpdfstring{\_dataTable}{\_dataTable}}
+{\footnotesize\ttfamily Data\+Table Proiect\+IP.\+Administrator.\+\_\+data\+Table\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_proiect_i_p_1_1_administrator_a315234d71af914a71abbcc3a42907b14}\label{class_proiect_i_p_1_1_administrator_a315234d71af914a71abbcc3a42907b14} 
+\index{ProiectIP.Administrator@{ProiectIP.Administrator}!buttonAbout@{buttonAbout}}
+\index{buttonAbout@{buttonAbout}!ProiectIP.Administrator@{ProiectIP.Administrator}}
+\doxysubsubsection{\texorpdfstring{buttonAbout}{buttonAbout}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Proiect\+IP.\+Administrator.\+button\+About\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_proiect_i_p_1_1_administrator_a23f9f59b2ab2c139d35efbfdc11d7ef3}\label{class_proiect_i_p_1_1_administrator_a23f9f59b2ab2c139d35efbfdc11d7ef3} 
+\index{ProiectIP.Administrator@{ProiectIP.Administrator}!buttonAdaugaFilmAdmin@{buttonAdaugaFilmAdmin}}
+\index{buttonAdaugaFilmAdmin@{buttonAdaugaFilmAdmin}!ProiectIP.Administrator@{ProiectIP.Administrator}}
+\doxysubsubsection{\texorpdfstring{buttonAdaugaFilmAdmin}{buttonAdaugaFilmAdmin}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Proiect\+IP.\+Administrator.\+button\+Adauga\+Film\+Admin\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_proiect_i_p_1_1_administrator_a281db9b6a44b2f10ef9e04dac729877e}\label{class_proiect_i_p_1_1_administrator_a281db9b6a44b2f10ef9e04dac729877e} 
+\index{ProiectIP.Administrator@{ProiectIP.Administrator}!buttonClose@{buttonClose}}
+\index{buttonClose@{buttonClose}!ProiectIP.Administrator@{ProiectIP.Administrator}}
+\doxysubsubsection{\texorpdfstring{buttonClose}{buttonClose}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Proiect\+IP.\+Administrator.\+button\+Close\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_proiect_i_p_1_1_administrator_a7ac880409d015461242939215330db40}\label{class_proiect_i_p_1_1_administrator_a7ac880409d015461242939215330db40} 
+\index{ProiectIP.Administrator@{ProiectIP.Administrator}!buttonDelogareAdmin@{buttonDelogareAdmin}}
+\index{buttonDelogareAdmin@{buttonDelogareAdmin}!ProiectIP.Administrator@{ProiectIP.Administrator}}
+\doxysubsubsection{\texorpdfstring{buttonDelogareAdmin}{buttonDelogareAdmin}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Proiect\+IP.\+Administrator.\+button\+Delogare\+Admin\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_proiect_i_p_1_1_administrator_a001b0e114081aaa3d37ce46e29e4cdbc}\label{class_proiect_i_p_1_1_administrator_a001b0e114081aaa3d37ce46e29e4cdbc} 
+\index{ProiectIP.Administrator@{ProiectIP.Administrator}!buttonEditeazaFilm@{buttonEditeazaFilm}}
+\index{buttonEditeazaFilm@{buttonEditeazaFilm}!ProiectIP.Administrator@{ProiectIP.Administrator}}
+\doxysubsubsection{\texorpdfstring{buttonEditeazaFilm}{buttonEditeazaFilm}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Proiect\+IP.\+Administrator.\+button\+Editeaza\+Film\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_proiect_i_p_1_1_administrator_a442e8014ea0816adbb366e2c516908ee}\label{class_proiect_i_p_1_1_administrator_a442e8014ea0816adbb366e2c516908ee} 
+\index{ProiectIP.Administrator@{ProiectIP.Administrator}!buttonFilmeAdmin@{buttonFilmeAdmin}}
+\index{buttonFilmeAdmin@{buttonFilmeAdmin}!ProiectIP.Administrator@{ProiectIP.Administrator}}
+\doxysubsubsection{\texorpdfstring{buttonFilmeAdmin}{buttonFilmeAdmin}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Proiect\+IP.\+Administrator.\+button\+Filme\+Admin\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_proiect_i_p_1_1_administrator_aa96d7331a1c4a428f56ab1624e1781d0}\label{class_proiect_i_p_1_1_administrator_aa96d7331a1c4a428f56ab1624e1781d0} 
+\index{ProiectIP.Administrator@{ProiectIP.Administrator}!buttonHelp@{buttonHelp}}
+\index{buttonHelp@{buttonHelp}!ProiectIP.Administrator@{ProiectIP.Administrator}}
+\doxysubsubsection{\texorpdfstring{buttonHelp}{buttonHelp}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Proiect\+IP.\+Administrator.\+button\+Help\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_proiect_i_p_1_1_administrator_a9f5df4c4fd745f56d06ce6f8f0ae2fdd}\label{class_proiect_i_p_1_1_administrator_a9f5df4c4fd745f56d06ce6f8f0ae2fdd} 
+\index{ProiectIP.Administrator@{ProiectIP.Administrator}!buttonMini@{buttonMini}}
+\index{buttonMini@{buttonMini}!ProiectIP.Administrator@{ProiectIP.Administrator}}
+\doxysubsubsection{\texorpdfstring{buttonMini}{buttonMini}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Proiect\+IP.\+Administrator.\+button\+Mini\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_proiect_i_p_1_1_administrator_a8291c85f2cfa43641965432424440e0a}\label{class_proiect_i_p_1_1_administrator_a8291c85f2cfa43641965432424440e0a} 
+\index{ProiectIP.Administrator@{ProiectIP.Administrator}!buttonResize@{buttonResize}}
+\index{buttonResize@{buttonResize}!ProiectIP.Administrator@{ProiectIP.Administrator}}
+\doxysubsubsection{\texorpdfstring{buttonResize}{buttonResize}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Proiect\+IP.\+Administrator.\+button\+Resize\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_proiect_i_p_1_1_administrator_a0de4eb8289b5cebef266f2effb60ca9b}\label{class_proiect_i_p_1_1_administrator_a0de4eb8289b5cebef266f2effb60ca9b} 
+\index{ProiectIP.Administrator@{ProiectIP.Administrator}!buttonStergeFilm@{buttonStergeFilm}}
+\index{buttonStergeFilm@{buttonStergeFilm}!ProiectIP.Administrator@{ProiectIP.Administrator}}
+\doxysubsubsection{\texorpdfstring{buttonStergeFilm}{buttonStergeFilm}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button Proiect\+IP.\+Administrator.\+button\+Sterge\+Film\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_proiect_i_p_1_1_administrator_ad17291875bdfec2c7d92c69ed880cf94}\label{class_proiect_i_p_1_1_administrator_ad17291875bdfec2c7d92c69ed880cf94} 
+\index{ProiectIP.Administrator@{ProiectIP.Administrator}!components@{components}}
+\index{components@{components}!ProiectIP.Administrator@{ProiectIP.Administrator}}
+\doxysubsubsection{\texorpdfstring{components}{components}}
+{\footnotesize\ttfamily System.\+Component\+Model.\+IContainer Proiect\+IP.\+Administrator.\+components = null\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Required designer variable. 
+
+\Hypertarget{class_proiect_i_p_1_1_administrator_a4bf5323bd29d97ae388f9639b6ecd999}\label{class_proiect_i_p_1_1_administrator_a4bf5323bd29d97ae388f9639b6ecd999} 
+\index{ProiectIP.Administrator@{ProiectIP.Administrator}!dataGridViewAdmin@{dataGridViewAdmin}}
+\index{dataGridViewAdmin@{dataGridViewAdmin}!ProiectIP.Administrator@{ProiectIP.Administrator}}
+\doxysubsubsection{\texorpdfstring{dataGridViewAdmin}{dataGridViewAdmin}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Data\+Grid\+View Proiect\+IP.\+Administrator.\+data\+Grid\+View\+Admin\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_proiect_i_p_1_1_administrator_a307a1c42e2605612aaa62ed662785bd9}\label{class_proiect_i_p_1_1_administrator_a307a1c42e2605612aaa62ed662785bd9} 
+\index{ProiectIP.Administrator@{ProiectIP.Administrator}!dateGresite@{dateGresite}}
+\index{dateGresite@{dateGresite}!ProiectIP.Administrator@{ProiectIP.Administrator}}
+\doxysubsubsection{\texorpdfstring{dateGresite}{dateGresite}}
+{\footnotesize\ttfamily bool Proiect\+IP.\+Administrator.\+date\+Gresite = false\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_proiect_i_p_1_1_administrator_ae3ae2b636c7156ab35130c6ce459e67a}\label{class_proiect_i_p_1_1_administrator_ae3ae2b636c7156ab35130c6ce459e67a} 
+\index{ProiectIP.Administrator@{ProiectIP.Administrator}!labelAdmin@{labelAdmin}}
+\index{labelAdmin@{labelAdmin}!ProiectIP.Administrator@{ProiectIP.Administrator}}
+\doxysubsubsection{\texorpdfstring{labelAdmin}{labelAdmin}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Label Proiect\+IP.\+Administrator.\+label\+Admin\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_proiect_i_p_1_1_administrator_aae42985f2e1fc98e69e4e2e328be6cfe}\label{class_proiect_i_p_1_1_administrator_aae42985f2e1fc98e69e4e2e328be6cfe} 
+\index{ProiectIP.Administrator@{ProiectIP.Administrator}!panel1@{panel1}}
+\index{panel1@{panel1}!ProiectIP.Administrator@{ProiectIP.Administrator}}
+\doxysubsubsection{\texorpdfstring{panel1}{panel1}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Panel Proiect\+IP.\+Administrator.\+panel1\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_proiect_i_p_1_1_administrator_a55e864c983a392b25176b971539a667e}\label{class_proiect_i_p_1_1_administrator_a55e864c983a392b25176b971539a667e} 
+\index{ProiectIP.Administrator@{ProiectIP.Administrator}!panelAbout@{panelAbout}}
+\index{panelAbout@{panelAbout}!ProiectIP.Administrator@{ProiectIP.Administrator}}
+\doxysubsubsection{\texorpdfstring{panelAbout}{panelAbout}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Panel Proiect\+IP.\+Administrator.\+panel\+About\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_proiect_i_p_1_1_administrator_a6c366d2d3f1eef04c431c07eaf981b54}\label{class_proiect_i_p_1_1_administrator_a6c366d2d3f1eef04c431c07eaf981b54} 
+\index{ProiectIP.Administrator@{ProiectIP.Administrator}!panelDate@{panelDate}}
+\index{panelDate@{panelDate}!ProiectIP.Administrator@{ProiectIP.Administrator}}
+\doxysubsubsection{\texorpdfstring{panelDate}{panelDate}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Panel Proiect\+IP.\+Administrator.\+panel\+Date\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_proiect_i_p_1_1_administrator_a399950b253270bbe1ba036527a09a4a6}\label{class_proiect_i_p_1_1_administrator_a399950b253270bbe1ba036527a09a4a6} 
+\index{ProiectIP.Administrator@{ProiectIP.Administrator}!panelMenu@{panelMenu}}
+\index{panelMenu@{panelMenu}!ProiectIP.Administrator@{ProiectIP.Administrator}}
+\doxysubsubsection{\texorpdfstring{panelMenu}{panelMenu}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Panel Proiect\+IP.\+Administrator.\+panel\+Menu\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_proiect_i_p_1_1_administrator_ac20d69fe46446423bc009254069900a1}\label{class_proiect_i_p_1_1_administrator_ac20d69fe46446423bc009254069900a1} 
+\index{ProiectIP.Administrator@{ProiectIP.Administrator}!panelNavigation@{panelNavigation}}
+\index{panelNavigation@{panelNavigation}!ProiectIP.Administrator@{ProiectIP.Administrator}}
+\doxysubsubsection{\texorpdfstring{panelNavigation}{panelNavigation}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Panel Proiect\+IP.\+Administrator.\+panel\+Navigation\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Ip\+Comentat/\+Proiect\+IP/\+Proiect\+IP/\mbox{\hyperlink{_administrator_8cs}{Administrator.\+cs}}\item 
+D\+:/\+Ip\+Comentat/\+Proiect\+IP/\+Proiect\+IP/\mbox{\hyperlink{_administrator_8_designer_8cs}{Administrator.\+Designer.\+cs}}\end{DoxyCompactItemize}

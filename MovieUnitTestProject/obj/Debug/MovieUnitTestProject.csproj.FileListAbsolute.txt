@@ -42,3 +42,5 @@ D:\IpComentat\ProiectIP\MovieUnitTestProject\obj\Debug\MovieUnitTestProject.cspr
 D:\IpComentat\ProiectIP\MovieUnitTestProject\obj\Debug\MovieUni.B83C9DE1.Up2Date
 D:\IpComentat\ProiectIP\MovieUnitTestProject\obj\Debug\MovieUnitTestProject.dll
 D:\IpComentat\ProiectIP\MovieUnitTestProject\obj\Debug\MovieUnitTestProject.pdb
+D:\IpComentat\ProiectIP\MovieUnitTestProject\bin\Debug\MovieUnitTestProject.xml
+D:\IpComentat\ProiectIP\MovieUnitTestProject\bin\Debug\ProiectIP.xml

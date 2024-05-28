@@ -37,7 +37,7 @@ namespace ProiectIP
     {
         #region Fields
         private Administrator _admin;
-        public static bool dateGresite = false;
+        public static bool dateGresite = false; //flag
         #endregion
         #region Methods
 

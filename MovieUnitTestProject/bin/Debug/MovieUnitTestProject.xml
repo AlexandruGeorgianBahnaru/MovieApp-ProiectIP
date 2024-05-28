@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MovieUnitTestProject</name>
+    </assembly>
+    <members>
+        <member name="T:MovieUnitTestProject.UnitTestClickButtons">
+            <summary>
+            Testarea functionalitatii butonului Inregistrare din form-ul Inregistrare
+            </summary>
+        </member>
+        <member name="M:MovieUnitTestProject.UnitTestClickButtons.buttonInregistrare_Click2">
+            <summary>
+            Testarea functionalitatii butonului Inregistrare din form-ul Inregistrare #2
+            </summary>
+        </member>
+        <member name="M:MovieUnitTestProject.UnitTestClickButtons.buttonLogin_Click">
+            <summary>
+            Testarea functionalitatii butonului de login din formularul de login
+            </summary>
+        </member>
+        <member name="M:MovieUnitTestProject.UnitTestClickButtons.buttonVeziFilme_Click">
+            <summary>
+            Testarea functionalitatii butonului VeziFilme din form-ul Utilizator
+            </summary>
+        </member>
+        <member name="M:MovieUnitTestProject.UnitTestClickButtons.buttonAdaugaFilmAdmin_Click">
+            <summary>
+            Testarea functionalitatii butonului AdaugaFilm din formularul Administrator
+            </summary>
+        </member>
+        <member name="M:MovieUnitTestProject.UnitTestClickButtons.buttonEditeazaFilm_Click">
+            <summary>
+            Testarea functionalitatii butonului EditeazaFilm din formularul Administrator
+            </summary>
+        </member>
+        <member name="M:MovieUnitTestProject.UnitTestClickButtons.buttonStergeFilm_Click">
+            <summary>
+            Testarea funcționalitatii butonului StergeFilm din formularul Administrator
+            </summary>
+        </member>
+        <member name="M:MovieUnitTestProject.UnitTestClickButtons.buttonAdauga_Click">
+            <summary>
+            Testarea funcționalitatii butonului Adauga din formularul AdaugaFilm
+            </summary>
+        </member>
+        <member name="M:MovieUnitTestProject.UnitTestInvalidInputs.adaugaFilmInputDataInvalid">
+            <summary>
+            Testarea verificarii inputurilor din formularul AdaugaFilm pentru data invalida
+            </summary>
+        </member>
+        <member name="M:MovieUnitTestProject.UnitTestInvalidInputs.adaugaFilmDataInvalid2">
+            <summary>
+            Testarea verificarii inputurilor din form-ul Adaugafilm pentru o a doua data invalida
+            </summary>
+        </member>
+        <member name="M:MovieUnitTestProject.UnitTestInvalidInputs.adaugaFilmInputTimeInvalid">
+            <summary>
+            Testarea verificarii inputurilor din form-ul Adaugafilm #Time invalid
+            </summary>
+        </member>
+        <member name="M:MovieUnitTestProject.UnitTestInvalidInputs.adaugaFilmInputNumeInvalid">
+            <summary>
+            Testarea verificarii inputurilor din form-ul AdaugaFilm pentru un nume invalid
+            </summary>
+        </member>
+        <member name="M:MovieUnitTestProject.UnitTestInvalidInputs.adaugaFilmInputGenInvalid">
+            <summary>
+            Testarea verificarii inputurilor din form-ul AdaugaFilm pentru un gen invalid
+            </summary>
+        </member>
+        <member name="M:MovieUnitTestProject.UnitTestInvalidInputs.adaugaFilmInputDurataInvalid">
+            <summary>
+            Testarea verificarii inputurilor din form-ul Adaugafilm pentru o durata invalida
+            </summary>
+        </member>
+        <member name="M:MovieUnitTestProject.UnitTestInvalidInputs.loginInputEmailInvalid">
+            <summary>
+            Testarea verificarii inputurilor din form-ul Login #Email invalid
+            </summary>
+        </member>
+        <member name="M:MovieUnitTestProject.UnitTestInvalidInputs.loginInputParolaInvalid">
+            <summary>
+            Testarea verificarii inputurilor din form-ul Login #Parola invalida
+            </summary>
+        </member>
+        <member name="M:MovieUnitTestProject.UnitTestInvalidInputs.inregistreazaInputEmailInvalid">
+            <summary>
+            Testarea verificarii inputurilor din form-ul Inregistrare #Email invalid
+            </summary>
+        </member>
+        <member name="M:MovieUnitTestProject.UnitTestInvalidInputs.inregistreazaInputNumeInvalid">
+            <summary>
+            Testarea verificarii inputurilor din form-ul Inregistrare #Nume invalid
+            </summary>
+        </member>
+        <member name="M:MovieUnitTestProject.UnitTestInvalidInputs.inregistreazaInputPrenumeInvalid">
+            <summary>
+            Testarea verificarii inputurilor din form-ul Inregistrare #Prenume invalid
+            </summary>
+        </member>
+        <member name="M:MovieUnitTestProject.UnitTestInvalidInputs.stergeFilmInputInvalid">
+            <summary>
+            Testarea verificarii inputurilor din form-ul Administrator pentru stergerea unui film
+            </summary>
+        </member>
+    </members>
+</doc>

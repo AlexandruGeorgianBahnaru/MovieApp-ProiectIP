@@ -222,3 +222,4 @@ D:\IpComentat\ProiectIP\ProiectIP\obj\Debug\ProiectIP.csproj.CoreCompileInputs.c
 D:\IpComentat\ProiectIP\ProiectIP\obj\Debug\ProiectIP.csproj.Up2Date
 D:\IpComentat\ProiectIP\ProiectIP\obj\Debug\ProiectIP.exe
 D:\IpComentat\ProiectIP\ProiectIP\obj\Debug\ProiectIP.pdb
+D:\IpComentat\ProiectIP\ProiectIP\bin\Debug\ProiectIP.xml

@@ -1,0 +1,702 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProiectIP</name>
+    </assembly>
+    <members>
+        <member name="T:ProiectIP.AdaugaFilm">
+            <summary>
+            Clasa care implementeaza functionalitatea pentru adaugarea unui film nou in baza de date de catre administrator
+            </summary>
+        </member>
+        <member name="M:ProiectIP.AdaugaFilm.#ctor(ProiectIP.Administrator)">
+            <summary>
+            Constructorul clasei AdaugaFilm
+            </summary>
+            <param name="admin">Referinta catre formularul Administrator</param>
+        </member>
+        <member name="M:ProiectIP.AdaugaFilm.buttonAdauga_Click(System.Object,System.EventArgs)">
+            <summary>
+            Metoda apelata la apasarea butonului 'Adauga' pentru a adauga un nou film in baza de date
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul "Adauga"</param>
+            <param name="e">Argumentele asociate evenimentului de click</param>
+        </member>
+        <member name="M:ProiectIP.AdaugaFilm.verificaFormularComplet(System.String,System.String,System.String,System.String,System.String,System.Int32@,System.DateTime@,System.DateTime@)">
+            <summary>
+            Metoda pentru a verifica completitudinea si corectitudinea datelor introduse in formular
+            </summary>
+            <param name="name">Numele filmului</param>
+            <param name="gen">Genul filmului</param>
+            <param name="durataText">Durata filmului</param>
+            <param name="dataText">Data filmului</param>
+            <param name="timeText">Ora filmului</param>
+            <param name="durata">Durata filmului in minute</param>
+            <param name="data">Data filmului</param>
+            <param name="time">Ora filmului</param>
+            <returns>true daca toate datele sunt valide, false in caz contrar</returns>
+        </member>
+        <member name="M:ProiectIP.AdaugaFilm.buttonClose_Click(System.Object,System.EventArgs)">
+            <summary>
+            Inchiderea aplicatiei
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul "Close"</param>
+            <param name="e">Argumentele asociate evenimentului de click</param>
+        </member>
+        <member name="M:ProiectIP.AdaugaFilm.buttonMini_Click(System.Object,System.EventArgs)">
+            <summary>
+            Minimizarea aplicatiei
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul "Mini"</param>
+            <param name="e">Argumentele asociate evenimentului de click</param>
+        </member>
+        <member name="M:ProiectIP.AdaugaFilm.buttonResize_Click(System.Object,System.EventArgs)">
+            <summary>
+            Schimbarea dimensiunii ferestrei aplicatiei intre normal si maximizat
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul "Resize"</param>
+            <param name="e">Argumentele asociate evenimentului de click</param>
+        </member>
+        <member name="M:ProiectIP.AdaugaFilm.buttonAbout_Click(System.Object,System.EventArgs)">
+            <summary>
+            Afisarea informatiilor despre proiect
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul "About"</param>
+            <param name="e">Argumentele asociate evenimentului de click</param>
+        </member>
+        <member name="M:ProiectIP.AdaugaFilm.buttonHelp_Click(System.Object,System.EventArgs)">
+            <summary>
+            Metoda care se executa la apasarea butonului Help
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul "Help"</param>
+            <param name="e">Argumentele asociate evenimentului de click</param>
+        </member>
+        <member name="F:ProiectIP.AdaugaFilm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ProiectIP.AdaugaFilm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ProiectIP.AdaugaFilm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:ProiectIP.Administrator">
+            <summary>
+            Clasa care implementeaza functionalitatea interfetei pentru administrator,
+            oferind optiuni pentru adaugarea, stergerea, editarea si vizualizarea filmelor
+            </summary>
+        </member>
+        <member name="M:ProiectIP.Administrator.#ctor">
+            <summary>
+            Constructorul clasei Administrator
+            </summary>
+        </member>
+        <member name="M:ProiectIP.Administrator.buttonAdaugaFilmAdmin_Click(System.Object,System.EventArgs)">
+            <summary>
+            Metoda pentru afisarea interfetei de adaugare a unui nou film la apasarea butonului 'Adauga Film'
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul "AdaugaFilm"</param>
+            <param name="e">Argumentele asociate evenimentului de click</param>
+        </member>
+        <member name="M:ProiectIP.Administrator.Actualizare">
+            <summary>
+            Metoda pentru actualizarea datelor din DataGridView-ul administratorului
+            </summary>
+        </member>
+        <member name="M:ProiectIP.Administrator.buttonClose_Click(System.Object,System.EventArgs)">
+            <summary>
+            Inchiderea aplicatiei
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul "Close"</param>
+            <param name="e">Argumentele asociate evenimentului de click</param>
+        </member>
+        <member name="M:ProiectIP.Administrator.buttonResize_Click(System.Object,System.EventArgs)">
+            <summary>
+            Schimbarea dimensiunii ferestrei aplicatiei intre normal si maximizat
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul "Resize"</param>
+            <param name="e">Argumentele asociate evenimentului de click</param>
+        </member>
+        <member name="M:ProiectIP.Administrator.buttonMini_Click(System.Object,System.EventArgs)">
+            <summary>
+            Minimizarea aplicatiei
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul "Mini"</param>
+            <param name="e">Argumentele asociate evenimentului de click</param>
+        </member>
+        <member name="M:ProiectIP.Administrator.buttonEditeazaFilm_Click(System.Object,System.EventArgs)">
+            <summary>
+            Metoda pentru editarea unui film selectat la apasarea butonului 'Editeaza Film'
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul "Editeaza Film"</param>
+            <param name="e">Argumentele asociate evenimentului de click</param>
+        </member>
+        <member name="M:ProiectIP.Administrator.buttonStergeFilm_Click(System.Object,System.EventArgs)">
+            <summary>
+            Metoda pentru stergerea unui film selectat la apasarea butonului 'Sterge Film'.
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul 'Sterge Film'.</param>
+            <param name="e">Argumentele asociate evenimentului de click.</param>
+        </member>
+        <member name="M:ProiectIP.Administrator.Administrator_Load(System.Object,System.EventArgs)">
+            <summary>
+            Metoda apelata la incarcarea formularului Administrator pentru a incarca datele filmelor
+            </summary>
+             <param name="sender">Obiectul care a generat evenimentul </param>
+            <param name="e">Argumentele asociate evenimentului de click</param>
+        </member>
+        <member name="M:ProiectIP.Administrator.buttonHelp_Click(System.Object,System.EventArgs)">
+            <summary>
+            Metoda care se executa la apasarea butonului Help
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul "Help"</param>
+            <param name="e">Argumentele asociate evenimentului de click</param>
+        </member>
+        <member name="M:ProiectIP.Administrator.buttonAbout_Click(System.Object,System.EventArgs)">
+            <summary>
+            Afisarea informatiilor despre proiect
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul "About"</param>
+            <param name="e">Argumentele asociate evenimentului de click</param>
+        </member>
+        <member name="M:ProiectIP.Administrator.buttonFilmeAdmin_Click(System.Object,System.EventArgs)">
+            <summary>
+            Metoda apelata la apasarea butonului 'Filme Admin' pentru a deschide interfata de vizualizare a filmelor
+            </summary>
+            <param name="sender">Obiectul care a declansat evenimentul</param>
+            <param name="e">Datele evenimentului</param>
+        </member>
+        <member name="F:ProiectIP.Administrator.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ProiectIP.Administrator.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ProiectIP.Administrator.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:ProiectIP.EditeazaFilm">
+            <summary>
+            Clasa pentru implementarea functionalitatii de editare a unei inregistrari deja existente in tabela Movies de catre administrator
+            </summary>
+        </member>
+        <member name="M:ProiectIP.EditeazaFilm.#ctor(ProiectIP.Administrator,System.Int32,System.Data.DataRow)">
+            <summary>
+            Constructor pentru clasa EditeazaFilm
+            </summary>
+            <param name="admin">Administratorul care efectueaza editarea</param>
+            <param name="filmId">ID-ul filmului de editat</param>
+            <param name="filmData">Datele filmului de editat</param>
+        </member>
+        <member name="M:ProiectIP.EditeazaFilm.FormularEditare">
+            <summary>
+            Metoda pentru completarea formularului de editare cu datele filmului
+            </summary>
+        </member>
+        <member name="M:ProiectIP.EditeazaFilm.verificaFormularComplet(System.String,System.String,System.String,System.String,System.String,System.Int32@,System.DateTime@,System.DateTime@)">
+            <summary>
+            Verifica intregimea si corectitudinea datelor din formular
+            </summary>
+            <param name="name">Numele filmului</param>
+            <param name="gen">Genul filmului</param>
+            <param name="durataText">Durata filmului in minute sub forma de text</param>
+            <param name="dataText">Data filmului sub forma de text</param>
+            <param name="timeText">Ora filmului sub forma de text</param>
+            <param name="durata">Variabila pentru a retine durata filmului</param>
+            <param name="data">Variabila pentru a retine data filmului</param>
+            <param name="time">Variabila pentru a retine ora filmului</param>
+            <returns>Returneaza true daca toate datele sunt valide, altfel false</returns>
+        </member>
+        <member name="M:ProiectIP.EditeazaFilm.buttonClose_Click(System.Object,System.EventArgs)">
+            <summary>
+            Inchide fereastra curenta
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul "Close"</param>
+            <param name="e">Argumentele asociate evenimentului de click</param>
+        </member>
+        <member name="M:ProiectIP.EditeazaFilm.buttonMini_Click(System.Object,System.EventArgs)">
+            <summary>
+            Minimizeaza fereastra curenta
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul "Mini"</param>
+            <param name="e">Argumentele asociate evenimentului de click</param>
+        </member>
+        <member name="M:ProiectIP.EditeazaFilm.buttonResize_Click(System.Object,System.EventArgs)">
+            <summary>
+            Maximzeaza sau restaureaza fereastra curenta in functie de starea sa actuala
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul "Resize"</param>
+            <param name="e">Argumentele asociate evenimentului de click</param>
+        </member>
+        <member name="M:ProiectIP.EditeazaFilm.buttonAbout_Click(System.Object,System.EventArgs)">
+            <summary>
+            Deschide fisierul de ajutor
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul "About"</param>
+            <param name="e">Argumentele asociate evenimentului de click</param>
+        </member>
+        <member name="M:ProiectIP.EditeazaFilm.buttonHelp_Click(System.Object,System.EventArgs)">
+            <summary>
+            Afiseaza un mesaj cu informatii despre proiect
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul "Help"</param>
+            <param name="e">Argumentele asociate evenimentului de click</param>
+        </member>
+        <member name="M:ProiectIP.EditeazaFilm.buttonEditeaza_Click(System.Object,System.EventArgs)">
+            <summary>
+            Metoda pentru actualizarea datelor filmului in baza de date
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul "Editeaza"</param>
+            <param name="e">Argumentele asociate evenimentului de click</param>
+        </member>
+        <member name="F:ProiectIP.EditeazaFilm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ProiectIP.EditeazaFilm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ProiectIP.EditeazaFilm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:ProiectIP.Facade">
+            <summary>
+            Clasa Facade implementeaza sablonul de proiectare Facade pentru interfata Utilizator
+            </summary>
+        </member>
+        <member name="F:ProiectIP.Facade._filme">
+            Instanta a clasei Filme
+        </member>
+        <member name="F:ProiectIP.Facade._utilizator">
+            Instanta a clasei Utilizator
+        </member>
+        <member name="M:ProiectIP.Facade.#ctor(ProiectIP.Utilizator)">
+            <summary>
+            Constructor pentru clasa Facade
+            </summary>
+            <param name="utilizator">Instanta clasei Utilizator</param>
+        </member>
+        <member name="M:ProiectIP.Facade.VeziFilme">
+            <summary>
+            Metoda pentru afisarea ferestrei de filme
+            </summary>
+        </member>
+        <member name="M:ProiectIP.Facade.About">
+            <summary>
+            Afisarea informatiilor despre proiect
+            </summary>
+        </member>
+        <member name="M:ProiectIP.Facade.Help">
+            <summary>
+            Deschiderea fisierului de help care ofera informatii despre utilizarea aplicatiei
+            </summary>
+        </member>
+        <member name="M:ProiectIP.Facade.Close">
+            <summary>
+            Inchiderea aplicatiei (fereastra utilizatorului)
+            </summary>
+        </member>
+        <member name="M:ProiectIP.Facade.Mini">
+            <summary>
+            Minimizarea fereastrei aplicatiei
+            </summary>
+        </member>
+        <member name="M:ProiectIP.Facade.Resize">
+            <summary>
+            Schimbarea dimensiunii ferestrei aplicatiei intre normal si maximizat
+            </summary>
+        </member>
+        <member name="T:ProiectIP.Filme">
+            <summary>
+            Clasa care implementeaza sectiunea de vizualizare a filmelor disponibile
+            </summary>
+        </member>
+        <member name="M:ProiectIP.Filme.#ctor">
+            <summary>
+            Constructorul clasei Filme
+            </summary>
+        </member>
+        <member name="M:ProiectIP.Filme.Filme_Load(System.Object,System.EventArgs)">
+            <summary>
+            Metoda care se executa la incarcarea formularului Filme
+            </summary>
+        </member>
+        <member name="M:ProiectIP.Filme.buttonHelp_Click(System.Object,System.EventArgs)">
+            <summary>
+            Metoda care se executa la apasarea butonului Help
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul "Help"</param>
+            <param name="e">Argumentele asociate evenimentului de clic</param>
+        </member>
+        <member name="M:ProiectIP.Filme.buttonAbout_Click(System.Object,System.EventArgs)">
+            <summary>
+            Afisarea informatiilor despre proiect
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul "About"</param>
+            <param name="e">Argumentele asociate evenimentului de clic</param>
+        </member>
+        <member name="M:ProiectIP.Filme.buttonMini_Click(System.Object,System.EventArgs)">
+            <summary>
+            Minimizarea fereastrei aplicatiei
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul "Mini"</param>
+            <param name="e">Argumentele asociate evenimentului de clic</param>
+        </member>
+        <member name="M:ProiectIP.Filme.buttonResize_Click(System.Object,System.EventArgs)">
+            <summary>
+            Schimbarea dimensiunii ferestrei aplicatiei intre normal si maximizat
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul "Resize"</param>
+            <param name="e">Argumentele asociate evenimentului de clic</param>
+        </member>
+        <member name="M:ProiectIP.Filme.buttonClose_Click(System.Object,System.EventArgs)">
+            <summary>
+            Inchiderea aplicatiei (fereastra utilizatorului)
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul "Close"</param>
+            <param name="e">Argumentele asociate evenimentului de clic</param>
+        </member>
+        <member name="F:ProiectIP.Filme.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ProiectIP.Filme.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ProiectIP.Filme.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:ProiectIP.Inregistrare">
+            <summary>
+            Clasa pentru implementarea optiunii de inregistrare a utilizatorilor noi, prin adaugarea acestora in tabelul Users din baza de date
+            </summary>
+        </member>
+        <member name="M:ProiectIP.Inregistrare.#ctor">
+            <summary>
+            Constructorul clasei Inregistrare
+            </summary>
+        </member>
+        <member name="M:ProiectIP.Inregistrare.buttonInregistrare_Click(System.Object,System.EventArgs)">
+            <summary>
+            Metoda apelata la apasarea butonului de inregistrare a utilizatorului
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, de obicei butonul "Inregistrare"</param>
+            <param name="e">Argumentele asociate evenimentului de clic</param>
+        </member>
+        <member name="M:ProiectIP.Inregistrare.verificaFormularInregistrare(System.String,System.String,System.String,System.String)">
+            <summary>
+            Metoda pentru verificarea corectitudinii datelor din formularul de inregistrare
+            </summary>
+            <param name="nume">Numele utilizatorului</param>
+            <param name="prenume">Prenumele utilizatorului</param>
+            <param name="email">Adresa de email a utilizatorului</param>
+            <param name="parola">Parola utilizatorului</param>
+            <returns>True dacă toate datele sunt valide, altfel False</returns>
+        </member>
+        <member name="M:ProiectIP.Inregistrare.buttonMini_Click(System.Object,System.EventArgs)">
+            <summary>
+            Metoda pentru minimizarea ferestrei
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul "Mini"</param>
+            <param name="e">Argumentele evenimentului</param>
+        </member>
+        <member name="M:ProiectIP.Inregistrare.buttonResize_Click(System.Object,System.EventArgs)">
+            <summary>
+            Schimbarea dimensiunii ferestrei aplicatiei intre normal si maximizat
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul "Resize"</param>
+            <param name="e">Argumentele asociate evenimentului de click</param>
+        </member>
+        <member name="M:ProiectIP.Inregistrare.buttonClose_Click(System.Object,System.EventArgs)">
+            <summary>
+            Metoda pentru inchiderea ferestrei
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul,  aici butonul "Close"</param>
+            <param name="e">Argumentele evenimentului</param>
+        </member>
+        <member name="M:ProiectIP.Inregistrare.buttonAbout_Click(System.Object,System.EventArgs)">
+            <summary>
+            Metoda pentru afisarea informatiilor despre proiect
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul "About"</param>
+            <param name="e">Argumentele evenimentului</param>
+        </member>
+        <member name="M:ProiectIP.Inregistrare.buttonHelp_Click(System.Object,System.EventArgs)">
+            <summary>
+            Metoda pentru deschiderea fisierului de ajutor
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul "Help"</param>
+            <param name="e">Argumentele evenimentului</param>
+        </member>
+        <member name="F:ProiectIP.Inregistrare.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ProiectIP.Inregistrare.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ProiectIP.Inregistrare.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:ProiectIP.Login" -->
+        <member name="M:ProiectIP.Login.#ctor">
+            <summary>
+            Constructorul clasei Login
+            </summary>
+        </member>
+        <member name="M:ProiectIP.Login.buttonLogin_Click(System.Object,System.EventArgs)">
+            <summary>
+            Metoda apelata când utilizatorul apasa butonul de login
+            Verifica credentialele utilizatorului si deschide formularul corespunzator
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul "Login"</param>
+            <param name="e">Argumentele asociate evenimentului de click</param>
+        </member>
+        <member name="M:ProiectIP.Login.buttonAbout_Click(System.Object,System.EventArgs)">
+            <summary>
+            Butonul About permite afisarea unor informatii despre proiect 
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul</param>
+            <param name="e">Argumentele asociate evenimentului de click</param>
+        </member>
+        <member name="M:ProiectIP.Login.buttonHelp_Click(System.Object,System.EventArgs)">
+            <summary>
+            La apasarea 'Help' se deschide un fisier .chm
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul</param>
+            <param name="e">Argumentele asociate evenimentului de click</param>
+        </member>
+        <member name="M:ProiectIP.Login.buttonResize_Click(System.Object,System.EventArgs)">
+            <summary>
+            Schimbarea dimensiunii ferestrei aplicatiei intre normal si maximizat
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul "Resize"</param>
+            <param name="e">Argumentele asociate evenimentului de click</param>
+        </member>
+        <member name="M:ProiectIP.Login.buttonClose_Click(System.Object,System.EventArgs)">
+            <summary>
+            La apasarea butonului Close se inchide interfata curenta
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul "Close"</param>
+            <param name="e">Argumentele asociate evenimentului de click</param>
+        </member>
+        <member name="M:ProiectIP.Login.buttonMini_Click(System.Object,System.EventArgs)">
+            <summary>
+             Butonul 'Mini' este folosit pentru minimizarea ferestrei
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul "Mini"</param>
+            <param name="e">Argumentele asociate evenimentului de click</param>
+        </member>
+        <member name="M:ProiectIP.Login.buttonInregistrare_Click(System.Object,System.EventArgs)">
+            <summary>
+            La apasarea butonului Inregistrare se deschide formularul de inregistrare
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul "Inregistrare"</param>
+            <param name="e">Argumentele asociate evenimentului de click</param>
+        </member>
+        <member name="F:ProiectIP.Login.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ProiectIP.Login.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ProiectIP.Login.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:ProiectIP.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:ProiectIP.Utilizator">
+            <summary>
+            Clasa care implementeaza interfata Utilizator, din care utilizatorul poate accesa filmele disponibile
+            </summary>
+            <summary>
+             Aceasta clasa implementeaza metodele accesibile de un utilizator
+            </summary>
+        </member>
+        <member name="M:ProiectIP.Utilizator.#ctor">
+            <summary>
+            Constructorul clasei Utilizator
+            </summary>
+        </member>
+        <member name="M:ProiectIP.Utilizator.buttonVeziFilme_Click(System.Object,System.EventArgs)">
+            <summary>
+            Metoda care se executa la apasarea butonului "Vezi Filme"
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul "Vezi filme"</param>
+            <param name="e">Argumentele asociate evenimentului de clic</param>
+        </member>
+        <member name="M:ProiectIP.Utilizator.buttonDelogareUser_Click(System.Object,System.EventArgs)">
+            <summary>
+            Metoda care se executa la apasarea butonului "Delogare"
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul "Delogare"</param>
+            <param name="e">Argumentele asociate evenimentului de clic</param>
+        </member>
+        <member name="M:ProiectIP.Utilizator.buttonResize_Click(System.Object,System.EventArgs)">
+            <summary>
+            Metoda care se executa la apasarea butonului de redimensionare
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul "Resize"</param>
+            <param name="e">Argumentele asociate evenimentului de clic</param>
+        </member>
+        <member name="M:ProiectIP.Utilizator.buttonMini_Click(System.Object,System.EventArgs)">
+            <summary>
+            Metoda care se executa la apasarea butonului de minimizare
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul "Mini"</param>
+            <param name="e">Argumentele asociate evenimentului de clic</param>
+        </member>
+        <member name="M:ProiectIP.Utilizator.buttonClose_Click(System.Object,System.EventArgs)">
+            <summary>
+            Metoda care se executa la apasarea butonului de inchidere
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul "Close"</param>
+            <param name="e">Argumentele asociate evenimentului de clic</param>
+        </member>
+        <member name="M:ProiectIP.Utilizator.buttonAbout_Click(System.Object,System.EventArgs)">
+            <summary>
+            Metoda care se executa la apasarea butonului "About"
+            </summary>
+             <param name="sender">Obiectul care a generat evenimentul, aici butonul "About"</param>
+            <param name="e">Argumentele asociate evenimentului de clic</param>
+        </member>
+        <member name="M:ProiectIP.Utilizator.buttonHelp_Click(System.Object,System.EventArgs)">
+            <summary>
+            Metoda care se executa la apasarea butonului "Help"
+            </summary>
+            <param name="sender">Obiectul care a generat evenimentul, aici butonul "Help"</param>
+            <param name="e">Argumentele asociate evenimentului de clic</param>
+        </member>
+        <member name="F:ProiectIP.Utilizator.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ProiectIP.Utilizator.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ProiectIP.Utilizator.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:ProiectIP.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:ProiectIP.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:ProiectIP.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:ProiectIP.Properties.Resources.about">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ProiectIP.Properties.Resources.cheie">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ProiectIP.Properties.Resources.cinema">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ProiectIP.Properties.Resources.help">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ProiectIP.Properties.Resources.movie">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ProiectIP.Properties.Resources.movieCharacters">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ProiectIP.Properties.Resources.movieCharacters1">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ProiectIP.Properties.Resources.movieCharacters2">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ProiectIP.Properties.Resources.movieCharacters3">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ProiectIP.Properties.Resources.user">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+    </members>
+</doc>

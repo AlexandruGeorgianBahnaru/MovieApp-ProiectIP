@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ConexiuneBazaDeDate</name>
+    </assembly>
+    <members>
+        <member name="T:ConexiuneBazaDeDate.Conexiune">
+            <summary>
+            Clasa pentru gestionarea conexiunii la baza de date
+            </summary>
+        </member>
+        <member name="M:ConexiuneBazaDeDate.Conexiune.#ctor">
+            <summary>
+            Constructor privat pentru implementarea sablonului Singleton
+            </summary>
+        </member>
+        <member name="M:ConexiuneBazaDeDate.Conexiune.GetConexiune">
+            <summary>
+            Metoda pentru obtinerea conexiunii la baza de date
+            </summary>
+            <returns>Obiectul de conexiune la baza de date</returns>
+        </member>
+    </members>
+</doc>

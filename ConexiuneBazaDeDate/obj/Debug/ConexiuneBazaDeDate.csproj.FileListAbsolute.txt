@@ -46,3 +46,5 @@ D:\IpComentat\ProiectIP\ConexiuneBazaDeDate\obj\Debug\ConexiuneBazaDeDate.csproj
 D:\IpComentat\ProiectIP\ConexiuneBazaDeDate\obj\Debug\Conexiun.31901B87.Up2Date
 D:\IpComentat\ProiectIP\ConexiuneBazaDeDate\obj\Debug\ConexiuneBazaDeDate.dll
 D:\IpComentat\ProiectIP\ConexiuneBazaDeDate\obj\Debug\ConexiuneBazaDeDate.pdb
+D:\IpComentat\ProiectIP\ConexiuneBazaDeDate\bin\Debug\ConexiuneBazaDeDate.xml
+D:\IpComentat\ProiectIP\ConexiuneBazaDeDate\bin\Debug\ProiectIP.xml
