@@ -83,14 +83,14 @@ namespace ProiectIP
             // 
             this.buttonAdauga.BackColor = System.Drawing.Color.Maroon;
             this.buttonAdauga.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAdauga.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.buttonAdauga.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAdauga.ForeColor = System.Drawing.Color.White;
             this.buttonAdauga.Location = new System.Drawing.Point(292, 502);
             this.buttonAdauga.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonAdauga.Name = "buttonAdauga";
             this.buttonAdauga.Size = new System.Drawing.Size(256, 58);
             this.buttonAdauga.TabIndex = 16;
-            this.buttonAdauga.Text = "Adauga";
+            this.buttonAdauga.Text = "Adaugă";
             this.buttonAdauga.UseVisualStyleBackColor = false;
             this.buttonAdauga.Click += new System.EventHandler(this.buttonAdauga_Click);
             // 
@@ -291,7 +291,7 @@ namespace ProiectIP
             // buttonHelp
             // 
             this.buttonHelp.BackColor = System.Drawing.SystemColors.Window;
-            this.buttonHelp.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonHelp.Font = new System.Drawing.Font("Constantia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonHelp.Location = new System.Drawing.Point(972, 735);
             this.buttonHelp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonHelp.Name = "buttonHelp";
@@ -316,7 +316,7 @@ namespace ProiectIP
             // buttonAbout
             // 
             this.buttonAbout.BackColor = System.Drawing.SystemColors.Window;
-            this.buttonAbout.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAbout.Font = new System.Drawing.Font("Constantia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAbout.Location = new System.Drawing.Point(972, 180);
             this.buttonAbout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonAbout.Name = "buttonAbout";

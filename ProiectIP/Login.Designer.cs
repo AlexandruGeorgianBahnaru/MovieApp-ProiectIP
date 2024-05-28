@@ -219,7 +219,7 @@ namespace ProiectIP
             // 
             // buttonHelp
             // 
-            this.buttonHelp.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonHelp.Font = new System.Drawing.Font("Constantia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonHelp.Location = new System.Drawing.Point(860, 785);
             this.buttonHelp.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.buttonHelp.Name = "buttonHelp";
@@ -243,7 +243,7 @@ namespace ProiectIP
             // 
             // buttonAbout
             // 
-            this.buttonAbout.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAbout.Font = new System.Drawing.Font("Constantia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAbout.Location = new System.Drawing.Point(860, 262);
             this.buttonAbout.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.buttonAbout.Name = "buttonAbout";
@@ -335,7 +335,7 @@ namespace ProiectIP
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.Name = "Login";
-            this.Text = "Sistem de rezervari bilete cinema";
+            this.Text = "Sistem de gestiune filme cinema";
             this.TransparencyKey = this.BackColor;
             this.panelMenu.ResumeLayout(false);
             this.panelDate.ResumeLayout(false);

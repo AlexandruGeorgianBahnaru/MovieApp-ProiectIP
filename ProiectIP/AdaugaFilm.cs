@@ -204,7 +204,7 @@ namespace ProiectIP
         private void buttonAbout_Click(object sender, EventArgs e)
             {
 
-            MessageBox.Show("Proiect IP 2024 - Gestionarea filmelor unui cinema. \nBahnaru George\nButu Alexandra\nChelea Diana \nSpiridon Bianca ", "About");
+            MessageBox.Show("Proiect IP 2024 - Gestionarea filmelor unui cinema \nBahnaru George\nButu Alexandra\nChelea Diana \nSpiridon Bianca ", "About");
         }
 
         /// <summary>

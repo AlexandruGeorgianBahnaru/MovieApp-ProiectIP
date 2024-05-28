@@ -74,13 +74,13 @@ namespace ProiectIP
             // 
             this.buttonEditeaza.BackColor = System.Drawing.Color.Wheat;
             this.buttonEditeaza.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonEditeaza.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.buttonEditeaza.ForeColor = System.Drawing.Color.Maroon;
+            this.buttonEditeaza.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonEditeaza.ForeColor = System.Drawing.Color.Black;
             this.buttonEditeaza.Location = new System.Drawing.Point(226, 651);
             this.buttonEditeaza.Name = "buttonEditeaza";
             this.buttonEditeaza.Size = new System.Drawing.Size(256, 57);
             this.buttonEditeaza.TabIndex = 33;
-            this.buttonEditeaza.Text = "Editeaza";
+            this.buttonEditeaza.Text = "Editează";
             this.buttonEditeaza.UseVisualStyleBackColor = false;
             this.buttonEditeaza.Click += new System.EventHandler(this.buttonEditeaza_Click);
             // 
@@ -233,7 +233,7 @@ namespace ProiectIP
             // 
             // buttonHelp
             // 
-            this.buttonHelp.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonHelp.Font = new System.Drawing.Font("Constantia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonHelp.Location = new System.Drawing.Point(1005, 735);
             this.buttonHelp.Name = "buttonHelp";
             this.buttonHelp.Size = new System.Drawing.Size(146, 95);
@@ -256,7 +256,7 @@ namespace ProiectIP
             // 
             // buttonAbout
             // 
-            this.buttonAbout.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAbout.Font = new System.Drawing.Font("Constantia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAbout.Location = new System.Drawing.Point(996, 209);
             this.buttonAbout.Name = "buttonAbout";
             this.buttonAbout.Size = new System.Drawing.Size(146, 95);

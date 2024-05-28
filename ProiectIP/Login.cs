@@ -143,7 +143,7 @@ namespace ProiectIP
         /// <param name="e">Argumentele asociate evenimentului de click</param>
         private void buttonAbout_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Proiect IP 2024 - Rezervare Online bilete la cinema. \nBahnaru George\nButu Alexandra\nChelea Diana \nSpiridon Bianca ", "Despre");
+            MessageBox.Show("Proiect IP 2024 - Gestiunea filmelor unui cinema \nBahnaru George\nButu Alexandra\nChelea Diana \nSpiridon Bianca ", "Despre");
         }
 
         /// <summary>
