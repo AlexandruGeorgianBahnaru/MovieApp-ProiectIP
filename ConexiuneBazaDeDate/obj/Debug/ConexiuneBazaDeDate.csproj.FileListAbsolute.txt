@@ -34,3 +34,15 @@ D:\Facultate\IP\ProiectIP\ProiectIP\ConexiuneBazaDeDate\bin\Debug\ProiectIP.exe
 D:\Facultate\IP\ProiectIP\ProiectIP\ConexiuneBazaDeDate\bin\Debug\ProiectIP.pdb
 D:\Facultate\IP\ProiectIP\ProiectIP\ConexiuneBazaDeDate\bin\Debug\ProiectIP.exe.config
 D:\Facultate\IP\ProiectIP\ProiectIP\ConexiuneBazaDeDate\obj\Debug\Conexiun.31901B87.Up2Date
+D:\IpComentat\ProiectIP\ConexiuneBazaDeDate\bin\Debug\MovieDatabase.mdf
+D:\IpComentat\ProiectIP\ConexiuneBazaDeDate\bin\Debug\MovieDatabase_log.ldf
+D:\IpComentat\ProiectIP\ConexiuneBazaDeDate\bin\Debug\ConexiuneBazaDeDate.dll
+D:\IpComentat\ProiectIP\ConexiuneBazaDeDate\bin\Debug\ConexiuneBazaDeDate.pdb
+D:\IpComentat\ProiectIP\ConexiuneBazaDeDate\bin\Debug\ProiectIP.exe
+D:\IpComentat\ProiectIP\ConexiuneBazaDeDate\bin\Debug\ProiectIP.pdb
+D:\IpComentat\ProiectIP\ConexiuneBazaDeDate\bin\Debug\ProiectIP.exe.config
+D:\IpComentat\ProiectIP\ConexiuneBazaDeDate\obj\Debug\ConexiuneBazaDeDate.csproj.AssemblyReference.cache
+D:\IpComentat\ProiectIP\ConexiuneBazaDeDate\obj\Debug\ConexiuneBazaDeDate.csproj.CoreCompileInputs.cache
+D:\IpComentat\ProiectIP\ConexiuneBazaDeDate\obj\Debug\Conexiun.31901B87.Up2Date
+D:\IpComentat\ProiectIP\ConexiuneBazaDeDate\obj\Debug\ConexiuneBazaDeDate.dll
+D:\IpComentat\ProiectIP\ConexiuneBazaDeDate\obj\Debug\ConexiuneBazaDeDate.pdb

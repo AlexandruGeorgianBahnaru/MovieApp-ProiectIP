@@ -2,8 +2,7 @@
  *                                                                        *
  *  File:        UnitTestClickButtons.cs                                  *
  *  Copyright:   (c) 2024, Bahnaru, Butu, Chelea, Spiridon                *
- *  Description: Implementează adăugarea înregistrărilor în tabela Movies *
- *  de către admin.                                                       *
+ *  Description: Testarea butoanelor                                      *
  *                                                                        *
  *  This program is free software; you can redistribute it and/or modify  *
  *  it under the terms of the GNU General Public License as published by  *
@@ -30,12 +29,15 @@ namespace MovieUnitTestProject
         [TestMethod]
         public void buttonInregistrare_Click()
         {
-            // arange
+            // Creeaza o instanta a formularului 'Inregistrare'
             Inregistrare inregistrare = new Inregistrare();
+            // Obtine tipul (clasa) formularului 'Inregistrare' pentru a putea accesa membrii sai
             var type = typeof(Inregistrare);
-            // act
-            MethodInfo inregistrareMethod = type.GetMethod("buttonInregistrare_Click", BindingFlags.NonPublic | BindingFlags.Instance);   
-            
+
+            //MethodInfo - Obtine referinte la metode  private, folosind reflexia
+            //FieldInfo - Obtine informatii despre campuei private din formularul 'Inregistrare', folosind reflexia
+            //TextBox - Accesează controalele  din instante si le converteste la tipul TextBox
+            MethodInfo inregistrareMethod = type.GetMethod("buttonInregistrare_Click", BindingFlags.NonPublic | BindingFlags.Instance);
             FieldInfo emailField = type.GetField("textBoxEmail", BindingFlags.NonPublic | BindingFlags.Instance);
             TextBox textBoxEmail = (TextBox)emailField.GetValue(inregistrare);
             FieldInfo parolaField = type.GetField("textBoxParola", BindingFlags.NonPublic | BindingFlags.Instance);
@@ -45,11 +47,13 @@ namespace MovieUnitTestProject
             FieldInfo prenumeField = type.GetField("textBoxPrenume", BindingFlags.NonPublic | BindingFlags.Instance);
             TextBox textBoxPrenume = (TextBox)prenumeField.GetValue(inregistrare);
 
+            // Seteaza valori de test pentru fiecare TextBox
             textBoxNume.Text = "TestNume";
             textBoxPrenume.Text = "TestPrenume";
             textBoxEmail.Text = "test@exam+ple.com";
             textBoxParola.Text = "testparola";
 
+            // Incearca sa apelezi metoda 'buttonInregistrare_Click' si sa verifici ca nu arunca nicio exceptie
             try
             {
                 inregistrareMethod.Invoke(inregistrare, new object[] { null, EventArgs.Empty });
@@ -57,6 +61,7 @@ namespace MovieUnitTestProject
             }
             catch (Exception ex)
             {
+                // Daca este aruncata vreo exceptie, testul esueaza
                 Assert.Fail("Exception thrown");
             }
         }
@@ -67,12 +72,15 @@ namespace MovieUnitTestProject
         [TestMethod]
         public void buttonInregistrare_Click2()
         {
-            // arange
+            // Creeaza o instanta a formularului 'Inregistrare'
             Inregistrare inregistrare = new Inregistrare();
+            // Obtine tipul (clasa) formularului 'Inregistrare' pentru a putea accesa membrii sai
             var type = typeof(Inregistrare);
-            // act
-            MethodInfo inregistrareMethod = type.GetMethod("buttonInregistrare_Click", BindingFlags.NonPublic | BindingFlags.Instance);
 
+            //MethodInfo - Obtine referinte la metode private, folosind reflexia
+            //FieldInfo - Obtine informatii despre campuei private din formularul 'Inregistrare', folosind reflexia
+            //TextBox - Acceseaza controalele din instante si le converteste la tipul TextBox
+            MethodInfo inregistrareMethod = type.GetMethod("buttonInregistrare_Click", BindingFlags.NonPublic | BindingFlags.Instance);
             FieldInfo emailField = type.GetField("textBoxEmail", BindingFlags.NonPublic | BindingFlags.Instance);
             TextBox textBoxEmail = (TextBox)emailField.GetValue(inregistrare);
             FieldInfo parolaField = type.GetField("textBoxParola", BindingFlags.NonPublic | BindingFlags.Instance);
@@ -82,10 +90,14 @@ namespace MovieUnitTestProject
             FieldInfo prenumeField = type.GetField("textBoxPrenume", BindingFlags.NonPublic | BindingFlags.Instance);
             TextBox textBoxPrenume = (TextBox)prenumeField.GetValue(inregistrare);
 
+            // Seteaza valori de test pentru fiecare TextBox
             textBoxNume.Text = "TestNume";
             textBoxPrenume.Text = "TestPrenume";
             textBoxEmail.Text = "test@example.com";
             textBoxParola.Text = "testparola";
+
+
+            // Incearca sa apelezi metoda buttonInregistrare_Click pe instanta inregistrare
             try
             {
                 inregistrareMethod.Invoke(inregistrare, new object[] { null, EventArgs.Empty });
@@ -93,37 +105,46 @@ namespace MovieUnitTestProject
             }
             catch (Exception ex) 
             {
+                // Daca este aruncata vreo exceptie, testul esueaza
                 Assert.Fail("Exception thrown");
             }
         }
 
+
         /// <summary>
-        /// Testarea functionalitatii butonului Login din form-ul Login
+        /// Testarea functionalitatii butonului de login din formularul de login
         /// </summary>
         [TestMethod]
         public void buttonLogin_Click()
         {
-            // arange
+            // Creeaza o instanta a clasei Login pentru a testa functionalitatile
             Login login = new Login();
+            // Obtine tipul clasei Login pentru a putea accesa metodele si campurile acesteia prin reflexie
             var type = typeof(Login);
-            // act
-            MethodInfo loginMethod = type.GetMethod("buttonLogin_Click", BindingFlags.NonPublic | BindingFlags.Instance);
 
+            //MethodInfo - Obtine referinte la metode private, folosind reflexia
+            //FieldInfo - Obtine informatii despre campuei private din formularul 'Inregistrare', folosind reflexia
+            //TextBox - Acceseaza controalele din instante si le converteste la tipul TextBox
+            MethodInfo loginMethod = type.GetMethod("buttonLogin_Click", BindingFlags.NonPublic | BindingFlags.Instance);
             FieldInfo emailField = type.GetField("textBoxEmail", BindingFlags.NonPublic | BindingFlags.Instance);
             TextBox textBoxEmail = (TextBox)emailField.GetValue(login);
             FieldInfo parolaField = type.GetField("textBoxParola", BindingFlags.NonPublic | BindingFlags.Instance);
             TextBox textBoxParola = (TextBox)parolaField.GetValue(login);
 
+            // Seteaza valori in campurile textBox pentru email si parola
             textBoxEmail.Text = "jone.doe@example.com";
             textBoxParola.Text = "password456";
 
             try
             {
+                // Invoca metoda de login simuland un click pe buton
                 loginMethod.Invoke(login, new object[] { null, EventArgs.Empty });
+                // Daca metoda a fost invocata fara erori, marcheaza testul ca fiind reusit pentru aceasta parte
                 Assert.IsTrue(true, "Exception not thrown");
             }
             catch (Exception ex)
             {
+                // Daca se arunca o exceptie in timpul invocarii, marcheaza testul ca fiind nereusit
                 Assert.Fail("Exception thrown");
             }
 
@@ -135,106 +156,132 @@ namespace MovieUnitTestProject
         [TestMethod]
         public void buttonVeziFilme_Click()
         {
-            // arange
+
+            // Creeaza o instanta a clasei Utilizator pentru a testa funcționalitatile
             Utilizator utilizator = new Utilizator();
+
+            // Obtine tipul clasei Utilizator pentru a putea accesa metodele si campurile acesteia prin reflexie
             var type = typeof(Utilizator);
-            // act
+
+            // Obtine metoda buttonVeziFilme_Click folosind reflexia, accesibila doar in interiorul clasei
             MethodInfo loginMethod = type.GetMethod("buttonVeziFilme_Click", BindingFlags.NonPublic | BindingFlags.Instance);
             try
-            { 
+            {
+                // Invoca metoda de vizualizare filme simuland un click pe buton
                 loginMethod.Invoke(utilizator, new object[] { null, EventArgs.Empty });
+                // Daca metoda a fost invocata fara erori, marcheaza testul ca fiind reusit pentru aceasta parte
                 Assert.IsTrue(true, "Exception not thrown");
             }
             catch (Exception ex)
             {
+                // Daca se arunca o exceptie in timpul invocarii, marcheaza testul ca fiind nereusit
                 Assert.Fail("Exception thrown");
             }
 
         }
 
         /// <summary>
-        /// Testarea functionalitatii butonului AdaugaFilm din form-ul Administrator
+        /// Testarea functionalitatii butonului AdaugaFilm din formularul Administrator
         /// </summary>
         [TestMethod]
         public void buttonAdaugaFilmAdmin_Click()
         {
-            // arange
+            // Creeaza o instanta a clasei Administrator pentru a testa functionalitatile
             Administrator administrator = new Administrator();
+
+            // Obtine tipul clasei Administrator pentru a putea accesa metodele si campurile acesteia prin reflexie
             var type = typeof(Administrator);
-            // act
+
+            // Obtine metoda buttonAdaugaFilmAdmin_Click folosind reflexia, accesibila doar in interiorul clasei
             MethodInfo adaugaMethod = type.GetMethod("buttonAdaugaFilmAdmin_Click", BindingFlags.NonPublic | BindingFlags.Instance);
 
             try
             {
+                // Invoca metoda de adaugare film simuland un click pe buton
                 adaugaMethod.Invoke(administrator, new object[] { null, EventArgs.Empty });
+                // Daca metoda a fost invocata fara erori, marcheaza testul ca fiind reusit pentru aceasta parte
                 Assert.IsTrue(true, "Exception Not Thrown");
             }
             catch (Exception ex)
             {
+                // Daca se arunca o exceptie in timpul invocarii, marcheaza testul ca fiind nereusit
                 Assert.Fail("Exception thrown");
             }
         }
 
         /// <summary>
-        /// Testarea functionalitatii butonului EditeazaFilm din form-ul Administrator
+        /// Testarea functionalitatii butonului EditeazaFilm din formularul Administrator
         /// </summary>
         [TestMethod]
         public void buttonEditeazaFilm_Click()
         {
-            // arange
+            // Creeaza o instanta a clasei Administrator pentru a testa funcționalitatile
             Administrator administrator = new Administrator();
+            // Obtine tipul clasei Administrator pentru a putea accesa metodele si campurile acesteia prin reflexie
             var type = typeof(Administrator);
-            // act
+
+            // Obtine metoda buttonEditeazaFilm_Click folosind reflexia, accesibila doar in interiorul clasei
             MethodInfo editeazaMethod = type.GetMethod("buttonEditeazaFilm_Click", BindingFlags.NonPublic | BindingFlags.Instance);
 
             try
             {
+                // Invoca metoda de editare a filmului simuland un click pe buton
                 editeazaMethod.Invoke(administrator, new object[] { null, EventArgs.Empty });
+                // Daca metoda a fost invocata fara erori, marcheaza testul ca fiind reusit pentru aceasta parte
                 Assert.IsTrue(true, "Exception Not Thrown");
             }
             catch (Exception ex)
             {
+                // Daca se arunca o exceptie in timpul invocarii, marcheaza testul ca fiind nereusit
                 Assert.Fail("Exception thrown");
             }
        
         }
 
         /// <summary>
-        /// Testarea functionalitatii butonului StergeFilm din form-ul Administrator
+        /// Testarea funcționalitatii butonului StergeFilm din formularul Administrator
         /// </summary>
         [TestMethod]
         public void buttonStergeFilm_Click()
         {
-            // arange
+            // Creeaza o instanta a clasei Administrator pentru a testa functționalitatile
             Administrator administrator = new Administrator();
+            // Obtine tipul clasei Administrator pentru a putea accesa metodele si campurile acesteia prin reflexie
             var type = typeof(Administrator);
-            // act
+
+            // Obtine metoda buttonStergeFilm_Click folosind reflexia, accesibila doar in interiorul clasei 
             MethodInfo stergeMethod = type.GetMethod("buttonStergeFilm_Click", BindingFlags.NonPublic | BindingFlags.Instance);
 
             try
             {
+                // Invoca metoda de stergere a filmului simuland un click pe buton
                 stergeMethod.Invoke(administrator, new object[] { null, EventArgs.Empty });
+
+                // Daca metoda a fost invocata fara erori, marcheaza testul ca fiind reusit pentru aceasta parte
                 Assert.IsTrue(true, "Exception Not Thrown");
             }
             catch (Exception ex)
-            {
+            { // Daca se arunca o exceptie in timpul invocarii, marcheaza testul ca fiind nereusit
                 Assert.Fail("Exception thrown");
             }
 
         }
 
         /// <summary>
-        /// Testarea functionalitatii butonului Adauga din form-ul A
+        /// Testarea funcționalitatii butonului Adauga din formularul AdaugaFilm
         /// </summary>
         [TestMethod]
         public void buttonAdauga_Click()
         {
-            // arange
+            // Creeaza o instanta a formularului AdaugaFilm, asociata cu un administrator pentru a simula adaugarea unui film
             AdaugaFilm adaugaFilm = new AdaugaFilm(new Administrator());
+            // Obtine tipul clasei AdaugaFilm pentru a putea accesa metodele si campurile acesteia prin reflexie
             var type = typeof(AdaugaFilm);
-            // act
+
+            // Obtine metoda buttonAdauga_Click folosind reflexia, accesibila doar in interiorul clasei
             MethodInfo adaugaMethod = type.GetMethod("buttonAdauga_Click", BindingFlags.NonPublic | BindingFlags.Instance);
 
+            // Obtine campurile private din formularul AdaugaFilm pentru a putea seta valorile necesare pentru adaugarea filmului
             FieldInfo nameField = type.GetField("textBoxDenumireFilm", BindingFlags.NonPublic | BindingFlags.Instance);
             TextBox textBoxName = (TextBox)nameField.GetValue(adaugaFilm);
             FieldInfo genField = type.GetField("textBoxGenFilm", BindingFlags.NonPublic | BindingFlags.Instance);
@@ -246,6 +293,7 @@ namespace MovieUnitTestProject
             FieldInfo timeField = type.GetField("textBoxOraFilm", BindingFlags.NonPublic | BindingFlags.Instance);
             TextBox textBoxTime = (TextBox)timeField.GetValue(adaugaFilm);
 
+            // Seteaza valorile necesare pentru adaugarea unui film
             textBoxName.Text = "NUMEFILM";
             textBoxGen.Text = "GenFIlM";
             textBoxDurata.Text = "120";
@@ -254,11 +302,14 @@ namespace MovieUnitTestProject
 
             try
             {
+                // Invoca metoda de adaugare a filmului simuland un click pe buton
                 adaugaMethod.Invoke(adaugaFilm, new object[] { null, EventArgs.Empty });
+                // Daca metoda a fost invocata fara erori, marcheaza testul ca fiind reusit pentru aceasta parte
                 Assert.IsTrue(true, "Exception Not Thrown");
             }
             catch (Exception ex)
             {
+                // Daca se arunca o exceptie in timpul invocarii, marcheaza testul ca fiind nereusit
                 Assert.Fail("Exception thrown");
             }
 

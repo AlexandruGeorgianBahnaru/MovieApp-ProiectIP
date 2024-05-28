@@ -65,10 +65,10 @@ namespace ProiectIP
             this.panelAbout.BackColor = System.Drawing.Color.Wheat;
             this.panelAbout.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelAbout.BackgroundImage")));
             this.panelAbout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panelAbout.Location = new System.Drawing.Point(764, 118);
-            this.panelAbout.Margin = new System.Windows.Forms.Padding(4);
+            this.panelAbout.Location = new System.Drawing.Point(860, 148);
+            this.panelAbout.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelAbout.Name = "panelAbout";
-            this.panelAbout.Size = new System.Drawing.Size(129, 76);
+            this.panelAbout.Size = new System.Drawing.Size(145, 95);
             this.panelAbout.TabIndex = 12;
             // 
             // buttonLogin
@@ -76,10 +76,10 @@ namespace ProiectIP
             this.buttonLogin.BackColor = System.Drawing.Color.Maroon;
             this.buttonLogin.Font = new System.Drawing.Font("Constantia", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLogin.ForeColor = System.Drawing.Color.FloralWhite;
-            this.buttonLogin.Location = new System.Drawing.Point(220, 355);
+            this.buttonLogin.Location = new System.Drawing.Point(248, 444);
             this.buttonLogin.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.Size = new System.Drawing.Size(228, 50);
+            this.buttonLogin.Size = new System.Drawing.Size(256, 62);
             this.buttonLogin.TabIndex = 0;
             this.buttonLogin.Text = "Login";
             this.buttonLogin.UseVisualStyleBackColor = false;
@@ -90,31 +90,31 @@ namespace ProiectIP
             this.labelEmail.AutoSize = true;
             this.labelEmail.BackColor = System.Drawing.Color.Transparent;
             this.labelEmail.Font = new System.Drawing.Font("Constantia", 20F);
-            this.labelEmail.Location = new System.Drawing.Point(117, 198);
+            this.labelEmail.Location = new System.Drawing.Point(132, 248);
             this.labelEmail.Name = "labelEmail";
-            this.labelEmail.Size = new System.Drawing.Size(115, 41);
+            this.labelEmail.Size = new System.Drawing.Size(135, 49);
             this.labelEmail.TabIndex = 1;
             this.labelEmail.Text = "E-mail";
             // 
             // textBoxEmail
             // 
             this.textBoxEmail.BackColor = System.Drawing.Color.Wheat;
-            this.textBoxEmail.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxEmail.Location = new System.Drawing.Point(249, 204);
+            this.textBoxEmail.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxEmail.Location = new System.Drawing.Point(280, 255);
             this.textBoxEmail.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(288, 35);
+            this.textBoxEmail.Size = new System.Drawing.Size(324, 37);
             this.textBoxEmail.TabIndex = 2;
             // 
             // textBoxParola
             // 
             this.textBoxParola.BackColor = System.Drawing.Color.Wheat;
             this.textBoxParola.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxParola.Location = new System.Drawing.Point(249, 297);
+            this.textBoxParola.Location = new System.Drawing.Point(280, 371);
             this.textBoxParola.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.textBoxParola.Name = "textBoxParola";
             this.textBoxParola.PasswordChar = '*';
-            this.textBoxParola.Size = new System.Drawing.Size(288, 35);
+            this.textBoxParola.Size = new System.Drawing.Size(324, 41);
             this.textBoxParola.TabIndex = 4;
             // 
             // labelParola
@@ -122,9 +122,9 @@ namespace ProiectIP
             this.labelParola.AutoSize = true;
             this.labelParola.BackColor = System.Drawing.Color.Transparent;
             this.labelParola.Font = new System.Drawing.Font("Constantia", 20F);
-            this.labelParola.Location = new System.Drawing.Point(132, 297);
+            this.labelParola.Location = new System.Drawing.Point(148, 371);
             this.labelParola.Name = "labelParola";
-            this.labelParola.Size = new System.Drawing.Size(111, 41);
+            this.labelParola.Size = new System.Drawing.Size(130, 49);
             this.labelParola.TabIndex = 3;
             this.labelParola.Text = "Parolă";
             // 
@@ -134,11 +134,11 @@ namespace ProiectIP
             this.labelTitlu.BackColor = System.Drawing.Color.Wheat;
             this.labelTitlu.Font = new System.Drawing.Font("Constantia", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.labelTitlu.ForeColor = System.Drawing.Color.Black;
-            this.labelTitlu.Location = new System.Drawing.Point(118, 48);
+            this.labelTitlu.Location = new System.Drawing.Point(133, 60);
             this.labelTitlu.Name = "labelTitlu";
-            this.labelTitlu.Size = new System.Drawing.Size(409, 93);
+            this.labelTitlu.Size = new System.Drawing.Size(470, 111);
             this.labelTitlu.TabIndex = 9;
-            this.labelTitlu.Text = "Rezervare online bilete la cinema \r\n\r\nLogin\r\n";
+            this.labelTitlu.Text = "Gestiunea filmelor unui cinema \r\n\r\nLogin\r\n";
             this.labelTitlu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // buttonInregistrare
@@ -146,10 +146,10 @@ namespace ProiectIP
             this.buttonInregistrare.BackColor = System.Drawing.Color.Maroon;
             this.buttonInregistrare.Font = new System.Drawing.Font("Constantia", 14F);
             this.buttonInregistrare.ForeColor = System.Drawing.Color.Transparent;
-            this.buttonInregistrare.Location = new System.Drawing.Point(220, 415);
+            this.buttonInregistrare.Location = new System.Drawing.Point(248, 519);
             this.buttonInregistrare.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.buttonInregistrare.Name = "buttonInregistrare";
-            this.buttonInregistrare.Size = new System.Drawing.Size(228, 49);
+            this.buttonInregistrare.Size = new System.Drawing.Size(256, 61);
             this.buttonInregistrare.TabIndex = 10;
             this.buttonInregistrare.Text = "Înregistrare";
             this.buttonInregistrare.UseVisualStyleBackColor = false;
@@ -168,9 +168,9 @@ namespace ProiectIP
             this.panelMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panelMenu.Controls.Add(this.panelDate);
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
-            this.panelMenu.Margin = new System.Windows.Forms.Padding(4);
+            this.panelMenu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(694, 719);
+            this.panelMenu.Size = new System.Drawing.Size(781, 899);
             this.panelMenu.TabIndex = 13;
             // 
             // panelDate
@@ -187,10 +187,10 @@ namespace ProiectIP
             this.panelDate.Controls.Add(this.pictureBoxUser);
             this.panelDate.Font = new System.Drawing.Font("Bell MT", 8.25F);
             this.panelDate.ForeColor = System.Drawing.Color.Black;
-            this.panelDate.Location = new System.Drawing.Point(43, 118);
-            this.panelDate.Margin = new System.Windows.Forms.Padding(4);
+            this.panelDate.Location = new System.Drawing.Point(48, 148);
+            this.panelDate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelDate.Name = "panelDate";
-            this.panelDate.Size = new System.Drawing.Size(623, 470);
+            this.panelDate.Size = new System.Drawing.Size(701, 588);
             this.panelDate.TabIndex = 15;
             // 
             // pictureBox1
@@ -198,10 +198,10 @@ namespace ProiectIP
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::ProiectIP.Properties.Resources.cheie;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(23, 297);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(26, 371);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(116, 52);
+            this.pictureBox1.Size = new System.Drawing.Size(130, 65);
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
@@ -210,20 +210,20 @@ namespace ProiectIP
             this.pictureBoxUser.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxUser.BackgroundImage = global::ProiectIP.Properties.Resources.user;
             this.pictureBoxUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxUser.Location = new System.Drawing.Point(23, 198);
-            this.pictureBoxUser.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBoxUser.Location = new System.Drawing.Point(26, 248);
+            this.pictureBoxUser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBoxUser.Name = "pictureBoxUser";
-            this.pictureBoxUser.Size = new System.Drawing.Size(116, 52);
+            this.pictureBoxUser.Size = new System.Drawing.Size(130, 65);
             this.pictureBoxUser.TabIndex = 11;
             this.pictureBoxUser.TabStop = false;
             // 
             // buttonHelp
             // 
             this.buttonHelp.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonHelp.Location = new System.Drawing.Point(764, 628);
+            this.buttonHelp.Location = new System.Drawing.Point(860, 785);
             this.buttonHelp.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.buttonHelp.Name = "buttonHelp";
-            this.buttonHelp.Size = new System.Drawing.Size(129, 49);
+            this.buttonHelp.Size = new System.Drawing.Size(145, 61);
             this.buttonHelp.TabIndex = 15;
             this.buttonHelp.Text = "Help";
             this.buttonHelp.UseMnemonic = false;
@@ -235,19 +235,19 @@ namespace ProiectIP
             this.panel1.BackColor = System.Drawing.Color.Wheat;
             this.panel1.BackgroundImage = global::ProiectIP.Properties.Resources.help;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel1.Location = new System.Drawing.Point(764, 518);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(860, 648);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(129, 79);
+            this.panel1.Size = new System.Drawing.Size(145, 99);
             this.panel1.TabIndex = 14;
             // 
             // buttonAbout
             // 
             this.buttonAbout.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAbout.Location = new System.Drawing.Point(764, 210);
+            this.buttonAbout.Location = new System.Drawing.Point(860, 262);
             this.buttonAbout.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.buttonAbout.Name = "buttonAbout";
-            this.buttonAbout.Size = new System.Drawing.Size(129, 49);
+            this.buttonAbout.Size = new System.Drawing.Size(145, 61);
             this.buttonAbout.TabIndex = 13;
             this.buttonAbout.Text = "About";
             this.buttonAbout.UseMnemonic = false;
@@ -263,9 +263,9 @@ namespace ProiectIP
             this.panelNavigation.Controls.Add(this.buttonClose);
             this.panelNavigation.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelNavigation.Location = new System.Drawing.Point(0, 0);
-            this.panelNavigation.Margin = new System.Windows.Forms.Padding(4);
+            this.panelNavigation.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelNavigation.Name = "panelNavigation";
-            this.panelNavigation.Size = new System.Drawing.Size(1047, 67);
+            this.panelNavigation.Size = new System.Drawing.Size(1178, 83);
             this.panelNavigation.TabIndex = 14;
             // 
             // buttonMini
@@ -276,10 +276,10 @@ namespace ProiectIP
             this.buttonMini.BackColor = System.Drawing.Color.Wheat;
             this.buttonMini.Font = new System.Drawing.Font("Microsoft Tai Le", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMini.ForeColor = System.Drawing.Color.Maroon;
-            this.buttonMini.Location = new System.Drawing.Point(863, 11);
+            this.buttonMini.Location = new System.Drawing.Point(971, 14);
             this.buttonMini.Margin = new System.Windows.Forms.Padding(0);
             this.buttonMini.Name = "buttonMini";
-            this.buttonMini.Size = new System.Drawing.Size(43, 31);
+            this.buttonMini.Size = new System.Drawing.Size(48, 39);
             this.buttonMini.TabIndex = 2;
             this.buttonMini.Text = "-";
             this.buttonMini.UseVisualStyleBackColor = false;
@@ -293,10 +293,10 @@ namespace ProiectIP
             this.buttonResize.BackColor = System.Drawing.Color.Wheat;
             this.buttonResize.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonResize.ForeColor = System.Drawing.Color.Maroon;
-            this.buttonResize.Location = new System.Drawing.Point(907, 11);
+            this.buttonResize.Location = new System.Drawing.Point(1020, 14);
             this.buttonResize.Margin = new System.Windows.Forms.Padding(0);
             this.buttonResize.Name = "buttonResize";
-            this.buttonResize.Size = new System.Drawing.Size(43, 31);
+            this.buttonResize.Size = new System.Drawing.Size(48, 39);
             this.buttonResize.TabIndex = 1;
             this.buttonResize.Text = "O";
             this.buttonResize.UseVisualStyleBackColor = false;
@@ -310,10 +310,10 @@ namespace ProiectIP
             this.buttonClose.BackColor = System.Drawing.Color.Wheat;
             this.buttonClose.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonClose.ForeColor = System.Drawing.Color.Maroon;
-            this.buttonClose.Location = new System.Drawing.Point(951, 11);
+            this.buttonClose.Location = new System.Drawing.Point(1070, 14);
             this.buttonClose.Margin = new System.Windows.Forms.Padding(0);
             this.buttonClose.Name = "buttonClose";
-            this.buttonClose.Size = new System.Drawing.Size(43, 31);
+            this.buttonClose.Size = new System.Drawing.Size(48, 39);
             this.buttonClose.TabIndex = 0;
             this.buttonClose.Text = "X";
             this.buttonClose.UseVisualStyleBackColor = false;
@@ -321,11 +321,11 @@ namespace ProiectIP
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProiectIP.Properties.Resources.cinema;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1047, 719);
+            this.ClientSize = new System.Drawing.Size(1178, 899);
             this.Controls.Add(this.buttonHelp);
             this.Controls.Add(this.buttonAbout);
             this.Controls.Add(this.panelAbout);

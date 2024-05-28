@@ -7,29 +7,34 @@ using System.Threading.Tasks;
 
 namespace ConexiuneBazaDeDate
 {
+    /// <summary>
+    /// Clasa pentru gestionarea conexiunii la baza de date
+    /// </summary>
     public class Conexiune
     {
         #region Fields
-        private static SqlConnection _conexiune;     
-        public static string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Facultate\\IP\\ProiectIP\\ProiectIP\\ProiectIP\\MovieDatabase.mdf;Integrated Security=True";
+
+        // Obiectul de conexiune la baza de date
+        private static SqlConnection _conexiune;
+        // Stringul de conexiune la baza de date
+        public static string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\IpComentat\\ProiectIP\\ProiectIP\\MovieDatabase.mdf;Integrated Security=True";
         #endregion
 
         #region Methods
         /// <summary>
-        /// Constructor privat - Singleton
+        /// Constructor privat pentru implementarea sablonului Singleton
         /// </summary>
-        public Conexiune()
+        private Conexiune()
         {
 
         }
 
         /// <summary>
-        /// Metoda pentru crearea unei conexiuni la baza de date
+        /// Metoda pentru obtinerea conexiunii la baza de date
         /// </summary>
-        /// <returns>Connection</returns>
+        /// <returns>Obiectul de conexiune la baza de date</returns>
         public static SqlConnection GetConexiune()
         {
-            _conexiune.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Facultate\\IP\\ProiectIP\\ProiectIP\\ProiectIP\\MovieDatabase.mdf;Integrated Security=True";
             if (_conexiune == null)
             {
                 _conexiune = new SqlConnection(connectionString);
